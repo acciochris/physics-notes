@@ -78,3 +78,29 @@ H(t) =
 1 & \text{if} & t \ge 0
 \end{cases}
 $$
+
+```{admonition} Strategy: Calculating limits
+- try to reduce the number of occurrences of $x$ in $f(x)$
+- try to make the expression inside the limit as simple as possible by applying limit laws
+- consider using two one-sided limits to determine a limit
+```
+
+The precise definition of a limit:
+
+$$
+\lim_{x \to a} f(x) = L
+$$
+
+if for every number $\varepsilon > 0$ there is a number $\delta > 0$ such that
+
+$$
+\text{if} \; 0 < |x - a| < \delta \;\text{then}\; |f(x) - L| < \varepsilon
+$$
+
+Continuity:
+
+$f(x)$ is continuous at a number $a$ if
+
+$$
+\lim_{x \to a} f(x) = f(a)
+$$
