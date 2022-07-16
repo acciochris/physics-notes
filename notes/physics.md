@@ -43,3 +43,35 @@ S = v_0t + \frac 1 2 at^2 \\
 v^2 - v_0^2 = 2aS \\
 S = \frac 1 2 (v_0 + v)t
 $$
+
+```{admonition} Strategy: Maximum/minimum values
+1. write down the expression for the variable
+2. simplify the expression so that it contains one and **only one** **independent** variable
+3. mathematically determine the extremum
+```
+
+```{admonition} Model: Falling objects with initial upward velocity
+$$
+\left\{
+\begin{array}{l}
+    x = v_0 \cos\theta\,t \\
+    y = v_0 \sin\theta\,t - \frac{1}{2}gt^2
+\end{array}
+\right.
+$$
+
+$$
+\left\{
+\begin{array}{l}
+    v_x = v_0\cos\theta \\
+    v_y = v_0\sin\theta - gt
+\end{array}
+\right.
+$$
+```
+
+```{admonition} Model: Objects falling onto a tilted surface
+1. create a coordinate system with the surface as the x(y)-axis
+2. identify the initial conditions (velocity, position and acceleration)
+3. plug in the equations and solve the problem
+```
