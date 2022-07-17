@@ -104,3 +104,49 @@ $f(x)$ is continuous at a number $a$ if
 $$
 \lim_{x \to a} f(x) = f(a)
 $$
+
+```{tip}
+$$
+\lim_{x \to a} f(g(x)) = \lim_{t \to \lim_{x \to a} g(a)} f(t)
+$$
+```
+
+````{warning}
+Limit laws don't apply to infinite limits!
+
+The following is wrong!!!
+
+```{error}
+$$
+\lim_{x \to \infty}(x^2 - x) = \lim_{x \to \infty} x^2 - \lim_{x \to \infty} x = \infty - \infty
+$$
+```
+````
+
+Derivatives:
+
+For function
+
+$$
+y = f(x)
+$$
+
+Its derivative is
+
+$$
+f'(x) = y' = \frac{dy}{dx} = \frac{df}{dx} = \frac{d}{dx}f(x) = Df(x) = D_xf(x) \\
+= \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+$$
+
+Differentiation rules:
+
+$$
+\frac{d}{dx}c = 0 \\
+\frac{d}{dx}x^n = nx^{n-1} \\
+$$
+
+$$
+(f \pm g)' = f' \pm g' \\
+(fg)' = f'g + fg' \\
+(\frac{f}{g})' = \frac{f'g - fg'}{g^2}
+$$
