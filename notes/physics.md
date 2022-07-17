@@ -50,6 +50,8 @@ $$
 3. mathematically determine the extremum
 ```
 
+### Falling objects
+
 ```{admonition} Model: Falling objects with initial upward velocity
 $$
 \left\{
@@ -75,3 +77,39 @@ $$
 2. identify the initial conditions (velocity, position and acceleration)
 3. plug in the equations and solve the problem
 ```
+
+### Circular and spiral motion
+
+Rigid bodies:
+
+- translational motion
+- rotational motion
+- combination motion
+
+Angular velocity
+
+$$
+\omega = \lim_{\Delta t \to 0} \frac{\Delta \theta}{\Delta t} = \frac{d\theta}{dt}
+$$
+
+Angular acceleration
+
+$$
+\beta = \frac{d\omega}{dt}
+$$
+
+
+Constant-angular-acceleration rotational motion:
+
+$$
+\omega = \omega_0 + \beta t \\
+\theta = \omega_0 t + \frac{1}{2}\beta t^2 \\
+\omega^2 - \omega_0^2 = 2\beta\theta \\
+\theta = \frac{1}{2}(\omega_0 + \omega)t
+$$
+
+The radius of curvature $\rho$:
+
+$$
+\rho = \left|\frac{(1 + y'^2)^{3/2}}{y''}\right|
+$$
