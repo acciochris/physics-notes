@@ -1,4 +1,4 @@
-# Problems I didn't work out (at first)
+# Problems I didn't work out (as well as concepts I didn't understand)
 
 ## Calculus
 
@@ -18,3 +18,9 @@ $$
 
 - Example 7
 - Example 8
+- Exercise 43
+- ```{admonition} Question?
+  Instantaneous center of rotation vs center of rotation?
+  
+  Instantaneous velocity & acceleration?
+  ```
