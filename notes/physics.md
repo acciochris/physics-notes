@@ -113,3 +113,19 @@ The radius of curvature $\rho$:
 $$
 \rho = \left|\frac{(1 + y'^2)^{3/2}}{y''}\right|
 $$
+
+```{tip}
+The acceleration of an object stays the same in different inertial reference frames.
+```
+
+````{tip}
+Switching inertial reference frames is an excellent way to calculate acceleration.
+
+```{admonition} Example
+$$
+a = \frac{v^2}{r}
+$$
+
+if the center of rotation is stationary in a particular reference frame
+```
+````
