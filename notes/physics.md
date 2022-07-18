@@ -129,3 +129,30 @@ $$
 if the center of rotation is stationary in a particular reference frame
 ```
 ````
+
+```{admonition} Strategy: Problems involving the angle between two vector quantities
+Express the vector (for example, velocity or acceleration) by selecting a pair of basis vectors and then utilizing the [dot product](linear-algebra.md#dot-products-and-lengths):
+
+$$
+\cos\theta = \frac{\vec{u}\cdot\vec{v}}{\Vert\vec{u}\Vert\Vert\vec{v}\Vert}
+$$
+
+Or more specifically, when $\vec{u}\perp\vec{v}$,
+
+$$
+\vec{u}\cdot\vec{v} = 0
+$$
+```
+
+```{note}
+A reference frame can be rotating, in which case it is called a rotating reference frame. A
+rotating reference frame is **not** an inertial reference frame.
+
+If a **rotating object** seems to be **stationary** in a rotating reference frame, then it has the same
+angular speed as the rotating frame itself, although the direction of $\omega$ (angular velocity)
+is reversed.
+
+$$
+\omega_{object} = -\omega_{frame}
+$$
+```
