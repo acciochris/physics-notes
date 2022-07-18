@@ -32,6 +32,7 @@ extensions = [
 ]
 myst_enable_extensions = [
     "dollarmath",
+    "deflist",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -56,3 +57,6 @@ html_theme = 'furo'
 html_static_path = ['_static']
 
 html_title = project
+
+# Myst configuration
+myst_heading_anchors = 3

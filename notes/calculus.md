@@ -199,3 +199,22 @@ $$
 
 Recursively "peel" the function by differentiating the outmost function evaluated at the inner function and then multiplying the result by the derivative of the inner function.
 ```
+
+## Conic sections
+
+### Parabolas
+
+Parabola, focus, directrix
+: The set of points in a plane that are equidistant from a fixed point F (called the **focus**) and a fixed line (called the **directrix**)
+
+Vertex
+: The point halfway between the **focus** and the **directrix**
+
+Axis
+: The line through the **focus** perpendicular to the **directrix**
+
+An equation of the parabola with focus $(0, p)$ and directrix $y = -p$ is
+
+$$
+y = \frac{x^2}{4p}
+$$
