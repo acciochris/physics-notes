@@ -143,10 +143,59 @@ Differentiation rules:
 $$
 \frac{d}{dx}c = 0 \\
 \frac{d}{dx}x^n = nx^{n-1} \\
+\frac{d}{dx}e^x = e^x \\
+\frac{d}{dx}\sin x = \cos x \\
+\frac{d}{dx}\sec x = \sec x\tan x \\
+\frac{d}{dx}\cos x = -\sin x \\
+\frac{d}{dx}\csc x = -\csc x\cot x \\
+\frac{d}{dx}\tan x = \sec^2 x \\
+\frac{d}{dx}\cot x = -\csc^2 x \\
 $$
 
 $$
 (f \pm g)' = f' \pm g' \\
 (fg)' = f'g + fg' \\
-(\frac{f}{g})' = \frac{f'g - fg'}{g^2}
+\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}
 $$
+
+```{important}
+The Chain Rule:
+
+$$
+(f \circ g)'(x) = f'(g(x)) \cdot g'(x)
+$$
+
+Or alternatively:
+
+$$
+\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx}
+$$
+```
+
+```{tip}
+The Power Rule combined with the Chain Rule:
+
+$$
+y = [g(x)]^n = u^n
+$$
+
+$$
+\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx} = nu^{n-1}\frac{du}{dx} = n[g(x)]^{n-1}g'(x)
+$$
+```
+
+The derivative of any exponential function:
+
+$$
+\frac{d}{dx}b^x = \frac{d}{dx}(e^{\ln b})^x = \frac{d}{dx}e^{(\ln b)x} = \frac{d}{du}e^u\frac{d}{dx}(\ln b)x = e^{(\ln b) x}\ln b = b^x \ln b
+$$
+
+```{tip}
+Using the Chain Rule repeatedly:
+
+$$
+\frac{dy}{dt} = \frac{dy}{du}\frac{du}{dx}\frac{dx}{dt}
+$$
+
+Recursively "peel" the function by differentiating the outmost function evaluated at the inner function and then multiplying the result by the derivative of the inner function.
+```
