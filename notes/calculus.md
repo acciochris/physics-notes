@@ -55,6 +55,8 @@ $$
 
 ## Limits and derivatives
 
+### Limits
+
 $$
 \lim_{x \to a} f(x) = L \\
 f(x) \to L \text{ as } x \to a
@@ -123,7 +125,7 @@ $$
 ```
 ````
 
-Derivatives:
+### Derivatives
 
 For function
 
@@ -141,15 +143,21 @@ $$
 Differentiation rules:
 
 $$
-\frac{d}{dx}c = 0 \\
-\frac{d}{dx}x^n = nx^{n-1} \\
-\frac{d}{dx}e^x = e^x \\
-\frac{d}{dx}\sin x = \cos x \\
-\frac{d}{dx}\sec x = \sec x\tan x \\
-\frac{d}{dx}\cos x = -\sin x \\
-\frac{d}{dx}\csc x = -\csc x\cot x \\
-\frac{d}{dx}\tan x = \sec^2 x \\
-\frac{d}{dx}\cot x = -\csc^2 x \\
+\begin{align*}
+    \frac{d}{dx}c & = 0 \\
+    \frac{d}{dx}x^n & = nx^{n-1} \\
+    \frac{d}{dx}e^x & = e^x \\
+    \frac{d}{dx}\sin x & = \cos x \\
+    \frac{d}{dx}\cos x & = -\sin x \\
+    \frac{d}{dx}\tan x & = \sec^2 x \\
+    \frac{d}{dx}\cot x & = -\csc^2 x \\
+    \frac{d}{dx}\sec x & = \sec x\tan x \\
+    \frac{d}{dx}\csc x & = -\csc x\cot x \\
+    \frac{d}{dx}\sin^{-1} x & = \frac{1}{\sqrt{1-x^2}} \\
+    \frac{d}{dx}\cos^{-1} x & = -\frac{1}{\sqrt{1-x^2}} \\
+    \frac{d}{dx}\tan^{-1} x & = \frac{1}{1+x^2} \\
+    \frac{d}{dx}\cot^{-1} x & = -\frac{1}{1+x^2} \\
+\end{align*}
 $$
 
 $$
@@ -198,6 +206,62 @@ $$
 $$
 
 Recursively "peel" the function by differentiating the outmost function evaluated at the inner function and then multiplying the result by the derivative of the inner function.
+```
+
+### Implicit differentiation
+
+```{important}
+Remember $y$ is a function of $x$
+```
+
+````{warning}
+Failing to differentiate a constant $c$ and leaving it non-zero is a common error!
+
+```{error}
+$$
+\begin{align*}
+    x^2 - 4xy + y^2 & = 4 \\
+    2x - 4y - 4xy' + 2yy' & = 4 \gets \text{this should be 0!}\\
+\end{align*}
+$$
+```
+````
+
+### Logarithmic differentiation
+
+$$
+\begin{align*}
+    \frac{d}{dx}\log_b x & = \frac{1}{x\ln b} \\
+    \frac{d}{dx}\ln x & = \frac{1}{x} \\
+    \frac{d}{dx}\ln |x| & = \frac{1}{x} \\
+\end{align*}
+$$
+
+```{admonition} Example
+Differentiate
+
+$$
+y = \frac{e^{-x}\cos^2x}{x^2 + x + 1}
+$$
+
+1. analyze: $e^{-x} > 0$; $\cos^2 x \ge 0$; $x^2 + x + 1 > 0$, therefore $y \ge 0$ and we can take the logarithm without using absolute values
+2. take the natural logarithm of both sides:
+   
+   $$
+   \ln y = -x + \ln \cos^2 x - \ln(x^2 + x + 1)
+   $$
+
+3. differentiate implicitly with respect to x:
+   
+   $$
+   \frac{1}{y}\frac{dy}{dx} = -1 + \frac{1}{\cos^2 x}[2\cos x\cdot(-\sin x)] - \frac{1}{x^2 + x + 1}(2x + 1)
+   $$
+
+4. substitute $y$ with the original function and simplify
+   
+   $$
+   \frac{dy}{dx} = -\frac{e^{-x}\cos^2x}{x^2 + x + 1}(1 + \frac{\sin 2x}{\cos^2 x} + \frac{2x + 1}{x^2 + x + 1})
+   $$
 ```
 
 ## Conic sections
