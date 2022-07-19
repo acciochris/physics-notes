@@ -264,6 +264,32 @@ $$
    $$
 ```
 
+### Rates of change in physics
+
+Position, velocity and acceleration
+
+Instantaneous velocity is the derivative of the position function with respect to time:
+
+$$
+v = \frac{ds}{dt}
+$$
+
+Acceleration is the derivative of the velocity function with respect to time:
+
+$$
+a = \frac{dv}{dt} = \frac{d^2s}{dt^2}
+$$
+
+---
+
+Charge and current
+
+$$
+I = \frac{dQ}{dt}
+$$
+
+### Exponential growth and decay
+
 ## Conic sections
 
 ### Parabolas
@@ -299,7 +325,7 @@ $$
 \frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \; (a \ge b)
 $$
 
-Vertices:
+Vertices
 : The points $(a, 0)$ and $(-a, 0)$ in the equation above
 
 Foci:
