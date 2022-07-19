@@ -205,7 +205,7 @@ Recursively "peel" the function by differentiating the outmost function evaluate
 ### Parabolas
 
 Parabola, focus, directrix
-: The set of points in a plane that are equidistant from a fixed point F (called the **focus**) and a fixed line (called the **directrix**)
+: The set of points in a plane that are equidistant from a fixed point $F$ (called the **focus**) and a fixed line (called the **directrix**)
 
 Vertex
 : The point halfway between the **focus** and the **directrix**
@@ -216,5 +216,43 @@ Axis
 An equation of the parabola with focus $(0, p)$ and directrix $y = -p$ is
 
 $$
+x^2 = 4py
+$$
+
+Or equivalently:
+
+$$
 y = \frac{x^2}{4p}
 $$
+
+
+### Ellipses
+
+Ellpise, foci
+: An **ellipse** is the set of points in a plane the sum of whose distances from two fixed points $F_1$ and $F_2$ is a constant. The two fixed points are the **foci**.
+
+$$
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \; (a \ge b)
+$$
+
+Vertices:
+: The points $(a, 0)$ and $(-a, 0)$ in the equation above
+
+Foci:
+
+$$
+(\pm c, 0), \text{where}\; c^2 = a^2 - b^2
+$$
+
+### Hyperbolas
+
+Hyperbola
+: The set of points in a plane the difference of whose distances from two fixed points $F_1$ and $F_2$ is a constant.
+
+The hyperbola
+
+$$
+\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1
+$$
+
+has foci $(\pm c, 0)$ where $c^2 = a^2 + b^ 2$, vertices $(\pm a, 0)$ and asymptotes $y = \pm(b/a)x$.
