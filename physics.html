@@ -1,0 +1,561 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Calculus" href="calculus.html" /><link rel="prev" title="My personal physics notes" href="index.html" />
+
+    <meta name="generator" content="sphinx-5.0.2, furo 2022.06.21"/>
+        <title>Physics - Physics Notes</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Physics Notes</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">Physics Notes</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Physics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="calculus.html">Calculus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problems.html">Problems I didn’t work out (as well as concepts I didn’t understand)</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section class="tex2jax_ignore mathjax_ignore" id="physics">
+<h1>Physics<a class="headerlink" href="#physics" title="Permalink to this heading">#</a></h1>
+<section id="motion">
+<h2>Motion<a class="headerlink" href="#motion" title="Permalink to this heading">#</a></h2>
+<p>In an <span class="math notranslate nohighlight">\(O-xyz\)</span> coordinate system the position vector <span class="math notranslate nohighlight">\(\vec r\)</span> is defined as:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec r(t) = x(t)\hat i + y(t)\hat j + z(t)\hat k
+\]</div>
+</div>
+<p>Its magnitude is:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+r(t) = \sqrt{x^2 + y^2 + z^2}
+\]</div>
+</div>
+<p>In polar coordinates, it is usually defined in terms of <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>.</p>
+<p>The displacement vector <span class="math notranslate nohighlight">\(\Delta\vec s\)</span> is defined as:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\Delta\vec s = \vec r(t + \Delta t) - \vec r(t)
+\]</div>
+</div>
+<p>The average velocity is:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\bar{\vec v} = \frac{\Delta\vec s}{\Delta t}
+\]</div>
+</div>
+<p>The instantaneous velocity and acceleration is:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\vec v = \lim_{\Delta t \to 0} \frac{\Delta\vec s}{\Delta t} = \frac{d\vec s}{dt} \\
+\vec a = \frac{d\vec v}{dt}
+\end{split}\]</div>
+</div>
+<p>Formulas for constant acceleration motion on a straight line:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+v = v_0 + at \\
+S = v_0t + \frac 1 2 at^2 \\
+v^2 - v_0^2 = 2aS \\
+S = \frac 1 2 (v_0 + v)t
+\end{split}\]</div>
+</div>
+<div class="admonition-strategy-maximum-minimum-values admonition">
+<p class="admonition-title">Strategy: Maximum/minimum values</p>
+<ol class="arabic simple">
+<li><p>write down the expression for the variable</p></li>
+<li><p>simplify the expression so that it contains one and <strong>only one</strong> <strong>independent</strong> variable</p></li>
+<li><p>mathematically determine the extremum</p></li>
+</ol>
+</div>
+<div class="admonition-alternative-strategy-maximum-minimum-values admonition">
+<p class="admonition-title">Alternative strategy: Maximum/minimum values</p>
+<p>This is best suited for geometric problems (instead of ones that requires tons of calculation).</p>
+<ol class="arabic simple">
+<li><p>try to determine the position of extremum by <em>intuition</em> (sort of obscure)</p></li>
+<li><p>rigorously prove your <em>intuition</em></p></li>
+<li><p>solve the problem</p></li>
+</ol>
+</div>
+<section id="falling-objects">
+<h3>Falling objects<a class="headerlink" href="#falling-objects" title="Permalink to this heading">#</a></h3>
+<div class="admonition-model-falling-objects-with-initial-upward-velocity admonition">
+<p class="admonition-title">Model: Falling objects with initial upward velocity</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left\{
+\begin{array}{l}
+    x = v_0 \cos\theta\,t \\
+    y = v_0 \sin\theta\,t - \frac{1}{2}gt^2
+\end{array}
+\right.
+\end{split}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left\{
+\begin{array}{l}
+    v_x = v_0\cos\theta \\
+    v_y = v_0\sin\theta - gt
+\end{array}
+\right.
+\end{split}\]</div>
+</div>
+</div>
+<div class="admonition-model-objects-falling-onto-a-tilted-surface admonition">
+<p class="admonition-title">Model: Objects falling onto a tilted surface</p>
+<ol class="arabic simple">
+<li><p>create a coordinate system with the surface as the x(y)-axis</p></li>
+<li><p>identify the initial conditions (velocity, position and acceleration)</p></li>
+<li><p>plug in the equations and solve the problem</p></li>
+</ol>
+</div>
+</section>
+<section id="circular-and-spiral-motion">
+<h3>Circular and spiral motion<a class="headerlink" href="#circular-and-spiral-motion" title="Permalink to this heading">#</a></h3>
+<p>Rigid bodies:</p>
+<ul class="simple">
+<li><p>translational motion</p></li>
+<li><p>rotational motion</p></li>
+<li><p>combination motion</p></li>
+</ul>
+<p>Angular velocity</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\omega = \lim_{\Delta t \to 0} \frac{\Delta \theta}{\Delta t} = \frac{d\theta}{dt}
+\]</div>
+</div>
+<p>Angular acceleration</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\beta = \frac{d\omega}{dt}
+\]</div>
+</div>
+<p>Constant-angular-acceleration rotational motion:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\omega = \omega_0 + \beta t \\
+\theta = \omega_0 t + \frac{1}{2}\beta t^2 \\
+\omega^2 - \omega_0^2 = 2\beta\theta \\
+\theta = \frac{1}{2}(\omega_0 + \omega)t
+\end{split}\]</div>
+</div>
+<p>The radius of curvature <span class="math notranslate nohighlight">\(\rho\)</span>:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\rho = \left|\frac{(1 + y'^2)^{3/2}}{y''}\right|
+\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The acceleration of an object stays the same in different inertial reference frames.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Switching inertial reference frames is an excellent way to calculate acceleration.</p>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+a = \frac{v^2}{r}
+\]</div>
+</div>
+<p>if the center of rotation is stationary in a particular reference frame</p>
+</div>
+</div>
+<div class="admonition-strategy-problems-involving-the-angle-between-two-vector-quantities admonition">
+<p class="admonition-title">Strategy: Problems involving the angle between two vector quantities</p>
+<p>Express the vector (for example, velocity or acceleration) by selecting a pair of basis vectors and then utilizing the <a class="reference internal" href="linear-algebra.html#dot-products-and-lengths"><span class="std std-doc">dot product</span></a>:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\cos\theta = \frac{\vec{u}\cdot\vec{v}}{\Vert\vec{u}\Vert\Vert\vec{v}\Vert}
+\]</div>
+</div>
+<p>Or more specifically, when <span class="math notranslate nohighlight">\(\vec{u}\perp\vec{v}\)</span>,</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec{u}\cdot\vec{v} = 0
+\]</div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A reference frame can be rotating, in which case it is called a rotating reference frame. A
+rotating reference frame is <strong>not</strong> an inertial reference frame.</p>
+<p>If a <strong>rotating object</strong> seems to be <strong>stationary</strong> in a rotating reference frame, then it has the same
+angular speed as the rotating frame itself, although the direction of <span class="math notranslate nohighlight">\(\omega\)</span> (angular velocity)
+is reversed.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\omega_{object} = -\omega_{frame}
+\]</div>
+</div>
+</div>
+</section>
+</section>
+<section id="the-balance-of-objects">
+<h2>The balance of objects<a class="headerlink" href="#the-balance-of-objects" title="Permalink to this heading">#</a></h2>
+<section id="the-balance-of-forces">
+<h3>The balance of forces<a class="headerlink" href="#the-balance-of-forces" title="Permalink to this heading">#</a></h3>
+<p>Types of forces:</p>
+<ul class="simple">
+<li><p>gravitational force</p></li>
+<li><p>elastic force</p></li>
+<li><p>friction</p></li>
+<li><p><span class="math notranslate nohighlight">\(\dots\)</span></p></li>
+</ul>
+<p>Springs:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec{F} = -k\Delta\vec{x}
+\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant.</p>
+<p>Multiple springs:</p>
+<ul>
+<li><p>series:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+  \frac{1}{k} = \frac{1}{k_1} + \frac{1}{k_2} + \cdots
+  \]</div>
+</div>
+</li>
+<li><p>parallel:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+  k = k_1 + k_2 + \cdots
+  \]</div>
+</div>
+</li>
+</ul>
+<p>Friction angle:</p>
+<p>let <span class="math notranslate nohighlight">\(\mu = \tan\varphi\)</span>, then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{f_{max}}{N} = \mu_{static} = \tan\varphi
+\]</div>
+</div>
+<p>Generally, <span class="math notranslate nohighlight">\(f_{static} &lt; f_{max}\)</span>. Therefore,</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f_{static} &lt; \mu_{static}N \\
+\frac{f_{static}}{N} &lt; \mu_{static} = \tan\varphi
+\end{split}\]</div>
+</div>
+<p>The angle <span class="math notranslate nohighlight">\(\alpha\)</span> between the full reaction force <span class="math notranslate nohighlight">\(F\)</span> and the normal line cannot be greater than the friction angle <span class="math notranslate nohighlight">\(\varphi\)</span></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\alpha = \arctan\frac{f_{static}}{N} &lt; \varphi
+\]</div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>When the solution to a problem can not be specified as a fixed value, solve for the range of values it lies in.</p>
+</div>
+<div class="admonition-strategy-balancing-objects-influenced-by-friction admonition">
+<p class="admonition-title">Strategy: Balancing objects influenced by friction</p>
+<ol class="arabic">
+<li><p>use “friction angles”</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   \tan\varphi = \mu
+   \]</div>
+</div>
+</li>
+<li><p>use geometry and trigonometry to figure out the relationship between the angles</p></li>
+<li><p>substitute <span class="math notranslate nohighlight">\(\mu\)</span> back in and get the answer</p></li>
+</ol>
+</div>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="calculus.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Calculus</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="index.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Home</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Chris Liu
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Physics</a><ul>
+<li><a class="reference internal" href="#motion">Motion</a><ul>
+<li><a class="reference internal" href="#falling-objects">Falling objects</a></li>
+<li><a class="reference internal" href="#circular-and-spiral-motion">Circular and spiral motion</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-balance-of-objects">The balance of objects</a><ul>
+<li><a class="reference internal" href="#the-balance-of-forces">The balance of forces</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>

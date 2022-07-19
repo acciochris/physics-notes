@@ -1,0 +1,681 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head><meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Linear algebra" href="linear-algebra.html" /><link rel="prev" title="Physics" href="physics.html" />
+
+    <meta name="generator" content="sphinx-5.0.2, furo 2022.06.21"/>
+        <title>Calculus - Physics Notes</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=40978830699223671f4072448e654b5958f38b89" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f8f8f8;
+  --color-code-foreground: black;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-half" viewBox="0 0 24 24">
+    <title>Auto light/dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-shadow">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M13 12h5" />
+      <path d="M13 15h4" />
+      <path d="M13 18h1" />
+      <path d="M13 9h4" />
+      <path d="M13 6h1" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc">
+<label class="overlay sidebar-overlay" for="__navigation">
+  <div class="visually-hidden">Hide navigation sidebar</div>
+</label>
+<label class="overlay toc-overlay" for="__toc">
+  <div class="visually-hidden">Hide table of contents sidebar</div>
+</label>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <div class="visually-hidden">Toggle site navigation sidebar</div>
+        <i class="icon"><svg><use href="#svg-menu"></use></svg></i>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="index.html"><div class="brand">Physics Notes</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle">
+          <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+          <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <div class="visually-hidden">Toggle table of contents sidebar</div>
+        <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="index.html">
+  
+  
+  <span class="sidebar-brand-text">Physics Notes</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder=Search name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="physics.html">Physics</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Calculus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problems.html">Problems I didn’t work out (as well as concepts I didn’t understand)</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle">
+              <div class="visually-hidden">Toggle Light / Dark / Auto color theme</div>
+              <svg class="theme-icon-when-auto"><use href="#svg-sun-half"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <div class="visually-hidden">Toggle table of contents sidebar</div>
+            <i class="icon"><svg><use href="#svg-toc"></use></svg></i>
+          </label>
+        </div>
+        <article role="main">
+          <section class="tex2jax_ignore mathjax_ignore" id="calculus">
+<h1>Calculus<a class="headerlink" href="#calculus" title="Permalink to this heading">#</a></h1>
+<section id="functions-and-models">
+<h2>Functions and models<a class="headerlink" href="#functions-and-models" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>even functions: <span class="math notranslate nohighlight">\(f(x) = f(-x)\)</span></p></li>
+<li><p>odd functions: <span class="math notranslate nohighlight">\(f(-x) = -f(x)\)</span></p></li>
+<li><p>polynomials: <span class="math notranslate nohighlight">\(f(x) = x^2 + 2x + 1\)</span></p></li>
+<li><p>power functions: <span class="math notranslate nohighlight">\(f(x) = x^a\)</span></p></li>
+<li><p>rational functions: <span class="math notranslate nohighlight">\(f(x) = \frac{P(x)}{Q(x)}\)</span> where <span class="math notranslate nohighlight">\(P(x)\)</span> and <span class="math notranslate nohighlight">\(Q(x)\)</span> are polynomials</p></li>
+<li><p>algebraic functions</p></li>
+<li><p>transcendental functions: <span class="math notranslate nohighlight">\(\sin x \cos x \, e^x \, \ln x\)</span></p></li>
+<li><p>exponential functions: <span class="math notranslate nohighlight">\(f(x) = b^x\)</span></p></li>
+<li><p>logarithmic functions: <span class="math notranslate nohighlight">\(f(x) = \log_b x\)</span></p></li>
+</ul>
+<p>Translation:</p>
+<ul class="simple">
+<li><p>up/down: <span class="math notranslate nohighlight">\(y = f(x) \pm c\)</span></p></li>
+<li><p>right/left: <span class="math notranslate nohighlight">\(y = f(x \mp c)\)</span></p></li>
+</ul>
+<p>Stretching:</p>
+<ul class="simple">
+<li><p>vertical: <span class="math notranslate nohighlight">\(y = cf(x)\)</span></p></li>
+<li><p>horizontal <span class="math notranslate nohighlight">\(y = f(c^{-1}x)\)</span></p></li>
+</ul>
+<p>Reflection:</p>
+<ul class="simple">
+<li><p>about the x-axis <span class="math notranslate nohighlight">\(y = -f(x)\)</span></p></li>
+<li><p>about the y-axis <span class="math notranslate nohighlight">\(y = f(-x)\)</span></p></li>
+</ul>
+<p>The composition of two functions:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+(f \circ g)(x) = f(g(x))
+\]</div>
+</div>
+<p>Note that</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+f \circ g \ne g \circ f
+\]</div>
+</div>
+<p>Inverse functions: reflect about the line <span class="math notranslate nohighlight">\(y = x\)</span></p>
+<p>Laws of logarithms;</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\log_b x^r = r\log_b x
+\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\log_b x + \log_b y = \log_b xy \\
+\log_b x - \log_b y = \log_b \frac x y
+\end{split}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\log_b x = \frac{\ln x}{\ln b}
+\]</div>
+</div>
+</section>
+<section id="limits-and-derivatives">
+<h2>Limits and derivatives<a class="headerlink" href="#limits-and-derivatives" title="Permalink to this heading">#</a></h2>
+<section id="limits">
+<h3>Limits<a class="headerlink" href="#limits" title="Permalink to this heading">#</a></h3>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\lim_{x \to a} f(x) = L \\
+f(x) \to L \text{ as } x \to a
+\end{split}\]</div>
+</div>
+<p>One-sided limits:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{array}{lr}
+\lim_{x \to a^+} f(x) = L &amp; \text{right-handed} \\
+\lim_{x \to a^-} f(x) = L &amp; \text{left-handed} \\
+\end{array}
+\end{split}\]</div>
+</div>
+<p>The Heaviside function:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+H(t) =
+\begin{cases}
+0 &amp; \text{if} &amp; t &lt; 0 \\
+1 &amp; \text{if} &amp; t \ge 0
+\end{cases}
+\end{split}\]</div>
+</div>
+<div class="admonition-strategy-calculating-limits admonition">
+<p class="admonition-title">Strategy: Calculating limits</p>
+<ul class="simple">
+<li><p>try to reduce the number of occurrences of <span class="math notranslate nohighlight">\(x\)</span> in <span class="math notranslate nohighlight">\(f(x)\)</span></p></li>
+<li><p>try to make the expression inside the limit as simple as possible by applying limit laws</p></li>
+<li><p>consider using two one-sided limits to determine a limit</p></li>
+</ul>
+</div>
+<p>The precise definition of a limit:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\lim_{x \to a} f(x) = L
+\]</div>
+</div>
+<p>if for every number <span class="math notranslate nohighlight">\(\varepsilon &gt; 0\)</span> there is a number <span class="math notranslate nohighlight">\(\delta &gt; 0\)</span> such that</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\text{if} \; 0 &lt; |x - a| &lt; \delta \;\text{then}\; |f(x) - L| &lt; \varepsilon
+\]</div>
+</div>
+<p>Continuity:</p>
+<p><span class="math notranslate nohighlight">\(f(x)\)</span> is continuous at a number <span class="math notranslate nohighlight">\(a\)</span> if</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\lim_{x \to a} f(x) = f(a)
+\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\lim_{x \to a} f(g(x)) = \lim_{t \to \lim_{x \to a} g(a)} f(t)
+\]</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Limit laws don’t apply to infinite limits!</p>
+<p>The following is wrong!!!</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\lim_{x \to \infty}(x^2 - x) = \lim_{x \to \infty} x^2 - \lim_{x \to \infty} x = \infty - \infty
+\]</div>
+</div>
+</div>
+</div>
+</section>
+<section id="derivatives">
+<h3>Derivatives<a class="headerlink" href="#derivatives" title="Permalink to this heading">#</a></h3>
+<p>For function</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y = f(x)
+\]</div>
+</div>
+<p>Its derivative is</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+f'(x) = y' = \frac{dy}{dx} = \frac{df}{dx} = \frac{d}{dx}f(x) = Df(x) = D_xf(x) \\
+= \lim_{h \to 0} \frac{f(x+h) - f(x)}{h}
+\end{split}\]</div>
+</div>
+<p>Differentiation rules:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \frac{d}{dx}c &amp; = 0 \\
+    \frac{d}{dx}x^n &amp; = nx^{n-1} \\
+    \frac{d}{dx}e^x &amp; = e^x \\
+    \frac{d}{dx}\sin x &amp; = \cos x \\
+    \frac{d}{dx}\cos x &amp; = -\sin x \\
+    \frac{d}{dx}\tan x &amp; = \sec^2 x \\
+    \frac{d}{dx}\cot x &amp; = -\csc^2 x \\
+    \frac{d}{dx}\sec x &amp; = \sec x\tan x \\
+    \frac{d}{dx}\csc x &amp; = -\csc x\cot x \\
+    \frac{d}{dx}\sin^{-1} x &amp; = \frac{1}{\sqrt{1-x^2}} \\
+    \frac{d}{dx}\cos^{-1} x &amp; = -\frac{1}{\sqrt{1-x^2}} \\
+    \frac{d}{dx}\tan^{-1} x &amp; = \frac{1}{1+x^2} \\
+    \frac{d}{dx}\cot^{-1} x &amp; = -\frac{1}{1+x^2} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+(f \pm g)' = f' \pm g' \\
+(fg)' = f'g + fg' \\
+\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}
+\end{split}\]</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The Chain Rule:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+(f \circ g)'(x) = f'(g(x)) \cdot g'(x)
+\]</div>
+</div>
+<p>Or alternatively:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx}
+\]</div>
+</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The Power Rule combined with the Chain Rule:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y = [g(x)]^n = u^n
+\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{dy}{dx} = \frac{dy}{du}\frac{du}{dx} = nu^{n-1}\frac{du}{dx} = n[g(x)]^{n-1}g'(x)
+\]</div>
+</div>
+</div>
+<p>The derivative of any exponential function:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{dx}b^x = \frac{d}{dx}(e^{\ln b})^x = \frac{d}{dx}e^{(\ln b)x} = \frac{d}{du}e^u\frac{d}{dx}(\ln b)x = e^{(\ln b) x}\ln b = b^x \ln b
+\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Using the Chain Rule repeatedly:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{dy}{dt} = \frac{dy}{du}\frac{du}{dx}\frac{dx}{dt}
+\]</div>
+</div>
+<p>Recursively “peel” the function by differentiating the outmost function evaluated at the inner function and then multiplying the result by the derivative of the inner function.</p>
+</div>
+</section>
+<section id="implicit-differentiation">
+<h3>Implicit differentiation<a class="headerlink" href="#implicit-differentiation" title="Permalink to this heading">#</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Remember <span class="math notranslate nohighlight">\(y\)</span> is a function of <span class="math notranslate nohighlight">\(x\)</span></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Failing to differentiate a constant <span class="math notranslate nohighlight">\(c\)</span> and leaving it non-zero is a common error!</p>
+<div class="admonition error">
+<p class="admonition-title">Error</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    x^2 - 4xy + y^2 &amp; = 4 \\
+    2x - 4y - 4xy' + 2yy' &amp; = 4 \gets \text{this should be 0!}\\
+\end{align*}
+\end{split}\]</div>
+</div>
+</div>
+</div>
+</section>
+<section id="logarithmic-differentiation">
+<h3>Logarithmic differentiation<a class="headerlink" href="#logarithmic-differentiation" title="Permalink to this heading">#</a></h3>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \frac{d}{dx}\log_b x &amp; = \frac{1}{x\ln b} \\
+    \frac{d}{dx}\ln x &amp; = \frac{1}{x} \\
+    \frac{d}{dx}\ln |x| &amp; = \frac{1}{x} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="admonition-example admonition">
+<p class="admonition-title">Example</p>
+<p>Differentiate</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y = \frac{e^{-x}\cos^2x}{x^2 + x + 1}
+\]</div>
+</div>
+<ol class="arabic">
+<li><p>analyze: <span class="math notranslate nohighlight">\(e^{-x} &gt; 0\)</span>; <span class="math notranslate nohighlight">\(\cos^2 x \ge 0\)</span>; <span class="math notranslate nohighlight">\(x^2 + x + 1 &gt; 0\)</span>, therefore <span class="math notranslate nohighlight">\(y \ge 0\)</span> and we can take the logarithm without using absolute values</p></li>
+<li><p>take the natural logarithm of both sides:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   \ln y = -x + \ln \cos^2 x - \ln(x^2 + x + 1)
+   \]</div>
+</div>
+</li>
+<li><p>differentiate implicitly with respect to x:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   \frac{1}{y}\frac{dy}{dx} = -1 + \frac{1}{\cos^2 x}[2\cos x\cdot(-\sin x)] - \frac{1}{x^2 + x + 1}(2x + 1)
+   \]</div>
+</div>
+</li>
+<li><p>substitute <span class="math notranslate nohighlight">\(y\)</span> with the original function and simplify</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   \frac{dy}{dx} = -\frac{e^{-x}\cos^2x}{x^2 + x + 1}(1 + \frac{\sin 2x}{\cos^2 x} + \frac{2x + 1}{x^2 + x + 1})
+   \]</div>
+</div>
+</li>
+</ol>
+</div>
+</section>
+</section>
+<section id="conic-sections">
+<h2>Conic sections<a class="headerlink" href="#conic-sections" title="Permalink to this heading">#</a></h2>
+<section id="parabolas">
+<h3>Parabolas<a class="headerlink" href="#parabolas" title="Permalink to this heading">#</a></h3>
+<dl class="simple myst">
+<dt>Parabola, focus, directrix</dt><dd><p>The set of points in a plane that are equidistant from a fixed point <span class="math notranslate nohighlight">\(F\)</span> (called the <strong>focus</strong>) and a fixed line (called the <strong>directrix</strong>)</p>
+</dd>
+<dt>Vertex</dt><dd><p>The point halfway between the <strong>focus</strong> and the <strong>directrix</strong></p>
+</dd>
+<dt>Axis</dt><dd><p>The line through the <strong>focus</strong> perpendicular to the <strong>directrix</strong></p>
+</dd>
+</dl>
+<p>An equation of the parabola with focus <span class="math notranslate nohighlight">\((0, p)\)</span> and directrix <span class="math notranslate nohighlight">\(y = -p\)</span> is</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+x^2 = 4py
+\]</div>
+</div>
+<p>Or equivalently:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y = \frac{x^2}{4p}
+\]</div>
+</div>
+</section>
+<section id="ellipses">
+<h3>Ellipses<a class="headerlink" href="#ellipses" title="Permalink to this heading">#</a></h3>
+<dl class="simple myst">
+<dt>Ellpise, foci</dt><dd><p>An <strong>ellipse</strong> is the set of points in a plane the sum of whose distances from two fixed points <span class="math notranslate nohighlight">\(F_1\)</span> and <span class="math notranslate nohighlight">\(F_2\)</span> is a constant. The two fixed points are the <strong>foci</strong>.</p>
+</dd>
+</dl>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{x^2}{a^2} + \frac{y^2}{b^2} = 1 \; (a \ge b)
+\]</div>
+</div>
+<dl class="simple myst">
+<dt>Vertices:</dt><dd><p>The points <span class="math notranslate nohighlight">\((a, 0)\)</span> and <span class="math notranslate nohighlight">\((-a, 0)\)</span> in the equation above</p>
+</dd>
+</dl>
+<p>Foci:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+(\pm c, 0), \text{where}\; c^2 = a^2 - b^2
+\]</div>
+</div>
+</section>
+<section id="hyperbolas">
+<h3>Hyperbolas<a class="headerlink" href="#hyperbolas" title="Permalink to this heading">#</a></h3>
+<dl class="simple myst">
+<dt>Hyperbola</dt><dd><p>The set of points in a plane the difference of whose distances from two fixed points <span class="math notranslate nohighlight">\(F_1\)</span> and <span class="math notranslate nohighlight">\(F_2\)</span> is a constant.</p>
+</dd>
+</dl>
+<p>The hyperbola</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{x^2}{a^2} - \frac{y^2}{b^2} = 1
+\]</div>
+</div>
+<p>has foci <span class="math notranslate nohighlight">\((\pm c, 0)\)</span> where <span class="math notranslate nohighlight">\(c^2 = a^2 + b^ 2\)</span>, vertices <span class="math notranslate nohighlight">\((\pm a, 0)\)</span> and asymptotes <span class="math notranslate nohighlight">\(y = \pm(b/a)x\)</span>.</p>
+</section>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          <a class="next-page" href="linear-algebra.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Linear algebra</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
+          <a class="prev-page" href="physics.html">
+              <svg><use href="#svg-arrow-right"></use></svg>
+              <div class="page-info">
+                <div class="context">
+                  <span>Previous</span>
+                </div>
+                
+                <div class="title">Physics</div>
+                
+              </div>
+            </a>
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2022, Chris Liu
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            Contents
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <ul>
+<li><a class="reference internal" href="#">Calculus</a><ul>
+<li><a class="reference internal" href="#functions-and-models">Functions and models</a></li>
+<li><a class="reference internal" href="#limits-and-derivatives">Limits and derivatives</a><ul>
+<li><a class="reference internal" href="#limits">Limits</a></li>
+<li><a class="reference internal" href="#derivatives">Derivatives</a></li>
+<li><a class="reference internal" href="#implicit-differentiation">Implicit differentiation</a></li>
+<li><a class="reference internal" href="#logarithmic-differentiation">Logarithmic differentiation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#conic-sections">Conic sections</a><ul>
+<li><a class="reference internal" href="#parabolas">Parabolas</a></li>
+<li><a class="reference internal" href="#ellipses">Ellipses</a></li>
+<li><a class="reference internal" href="#hyperbolas">Hyperbolas</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/scripts/furo.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    </body>
+</html>
