@@ -50,6 +50,13 @@ $$
 3. mathematically determine the extremum
 ```
 
+```{admonition} Alternative strategy: Maximum/minimum values
+This is best suited for geometric problems (instead of ones that requires tons of calculation).
+1. try to determine the position of extremum by *intuition* (sort of obscure)
+2. rigorously prove your *intuition*
+3. solve the problem
+```
+
 ### Falling objects
 
 ```{admonition} Model: Falling objects with initial upward velocity
@@ -155,4 +162,73 @@ is reversed.
 $$
 \omega_{object} = -\omega_{frame}
 $$
+```
+
+## The balance of objects
+
+### The balance of forces
+
+Types of forces:
+
+- gravitational force
+- elastic force
+- friction
+- $\dots$
+
+Springs:
+
+$$
+\vec{F} = -k\Delta\vec{x}
+$$
+
+where $k$ is the spring constant.
+
+Multiple springs:
+
+- series:
+  
+  $$
+  \frac{1}{k} = \frac{1}{k_1} + \frac{1}{k_2} + \cdots
+  $$
+- parallel:
+  
+  $$
+  k = k_1 + k_2 + \cdots
+  $$
+
+Friction angle:
+
+let $\mu = \tan\varphi$, then
+
+$$
+\frac{f_{max}}{N} = \mu_{static} = \tan\varphi
+$$
+
+Generally, $f_{static} < f_{max}$. Therefore, 
+
+$$
+f_{static} < \mu_{static}N \\
+\frac{f_{static}}{N} < \mu_{static} = \tan\varphi
+$$
+
+The angle $\alpha$ between the full reaction force $F$ and the normal line cannot be greater than the friction angle $\varphi$
+
+$$
+\alpha = \arctan\frac{f_{static}}{N} < \varphi
+$$
+
+```{attention}
+When the solution to a problem can not be specified as a fixed value, solve for the range of values it lies in.
+```
+
+```{admonition} Strategy: Balancing objects influenced by friction
+1. use "friction angles"
+   
+   $$
+   \tan\varphi = \mu
+   $$
+   
+2. use geometry and trigonometry to figure out the relationship between the angles
+3. substitute $\mu$ back in and get the answer
+
 ```
