@@ -1,0 +1,24 @@
+name: Build and deploy
+on:
+  push:
+    branches: [main]
+
+jobs:
+  notes:
+    name: Generate notes
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate notes
+        run: make -C notes html
+
+      - name: Upload to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./notes/_build/html
