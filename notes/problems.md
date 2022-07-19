@@ -24,3 +24,7 @@ $$
   
   Instantaneous velocity & acceleration?
   ```
+
+### Section 2.1
+
+- Example 5 (minimum value)
