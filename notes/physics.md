@@ -38,10 +38,12 @@ $$
 Formulas for constant acceleration motion on a straight line:
 
 $$
-v = v_0 + at \\
-S = v_0t + \frac 1 2 at^2 \\
-v^2 - v_0^2 = 2aS \\
-S = \frac 1 2 (v_0 + v)t
+\begin{align*}
+  v & = v_0 + at \\
+  S & = v_0t + \frac 1 2 at^2 \\
+  v^2 - v_0^2 & = 2aS \\
+  S & = \frac 1 2 (v_0 + v)t
+\end{align*}
 $$
 
 ```{admonition} Strategy: Maximum/minimum values
@@ -109,10 +111,12 @@ $$
 Constant-angular-acceleration rotational motion:
 
 $$
-\omega = \omega_0 + \beta t \\
-\theta = \omega_0 t + \frac{1}{2}\beta t^2 \\
-\omega^2 - \omega_0^2 = 2\beta\theta \\
-\theta = \frac{1}{2}(\omega_0 + \omega)t
+\begin{align*}
+  \omega & = \omega_0 + \beta t \\
+  \theta & = \omega_0 t + \frac{1}{2}\beta t^2 \\
+  \omega^2 - \omega_0^2 & = 2\beta\theta \\
+  \theta & = \frac{1}{2}(\omega_0 + \omega)t
+\end{align*}
 $$
 
 The radius of curvature $\rho$:
@@ -230,5 +234,9 @@ When the solution to a problem can not be specified as a fixed value, solve for 
    
 2. use geometry and trigonometry to figure out the relationship between the angles
 3. substitute $\mu$ back in and get the answer
+```
 
+```{admonition} Strategy: The fewer forces, the better
+When a large object is in balance, try to find a segment of the object on which the fewest forces act.
+In other words, restrict yourself to one or two forces.
 ```
