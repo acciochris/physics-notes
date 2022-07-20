@@ -477,6 +477,51 @@ f_{static} &lt; \mu_{static}N \\
 In other words, restrict yourself to one or two forces.</p>
 </div>
 </section>
+<section id="moment-and-rotation">
+<h3>Moment and rotation<a class="headerlink" href="#moment-and-rotation" title="Permalink to this heading">#</a></h3>
+<div class="admonition-model-an-object-with-a-hole-in-it admonition">
+<p class="admonition-title">Model: An object with a hole in it</p>
+<ol class="arabic simple">
+<li><p>pretend that the hole doesn’t exist</p></li>
+<li><p>recreate the hole by putting a force in the opposite direction</p></li>
+</ol>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the direction of a force is unknown, suppose it is in a specific direction and determine whether the system
+can stay in balance.</p>
+<p>Alternatively, use a coordinate system, write down the force as a general vector <span class="math notranslate nohighlight">\(x\hat i + y\hat j + z\hat k\)</span>
+and apply <a class="reference internal" href="linear-algebra.html#linear-algebra"><span class="std std-doc">linear algebra</span></a></p>
+</div>
+<div class="admonition-model-steelyard-balance admonition">
+<p class="admonition-title">Model: Steelyard balance</p>
+<p><img alt="A steelyard balance (By An Elementary Treatise on Analytic Mechanics: With Numerous Examples By Edward A. (Edward Albert) Bowser, 1893., Public Domain, https://commons.wikimedia.org/w/index.php?curid=1319572)" src="_images/19th-century_steelyard.png" /></p>
+<p>Let <span class="math notranslate nohighlight">\(|AC| = d\)</span>, <span class="math notranslate nohighlight">\(|CO| = l_0\)</span>, and let <span class="math notranslate nohighlight">\(M\)</span> be the moment the gravity of the whole balance has on the pivot <span class="math notranslate nohighlight">\(C\)</span></p>
+<p>Then if the mass of the weight is <span class="math notranslate nohighlight">\(m\)</span>, and the mass of the counterweight is <span class="math notranslate nohighlight">\(m_0\)</span>, we have</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+M = m_0gl_0
+\]</div>
+</div>
+<p>and</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+mgd + M = m_0g(l_0 + \lambda m)
+\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(\lambda\)</span> is the ratio of the distance between <span class="math notranslate nohighlight">\(O\)</span> and the counterweight and <span class="math notranslate nohighlight">\(m\)</span>.</p>
+<p>Therefore,</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+d = \lambda m_0
+\]</div>
+</div>
+<p>This is the fundamental equation of steelyard balances.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -545,6 +590,7 @@ In other words, restrict yourself to one or two forces.</p>
 </li>
 <li><a class="reference internal" href="#the-balance-of-objects">The balance of objects</a><ul>
 <li><a class="reference internal" href="#the-balance-of-forces">The balance of forces</a></li>
+<li><a class="reference internal" href="#moment-and-rotation">Moment and rotation</a></li>
 </ul>
 </li>
 </ul>

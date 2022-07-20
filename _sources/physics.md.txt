@@ -240,3 +240,46 @@ When the solution to a problem can not be specified as a fixed value, solve for 
 When a large object is in balance, try to find a segment of the object on which the fewest forces act.
 In other words, restrict yourself to one or two forces.
 ```
+
+### Moment and rotation
+
+```{admonition} Model: An object with a hole in it
+1. pretend that the hole doesn't exist
+2. recreate the hole by putting a force in the opposite direction
+```
+
+```{tip}
+If the direction of a force is unknown, suppose it is in a specific direction and determine whether the system
+can stay in balance.
+
+Alternatively, use a coordinate system, write down the force as a general vector $x\hat i + y\hat j + z\hat k$
+and apply [linear algebra](linear-algebra.md#linear-algebra)
+```
+
+```{admonition} Model: Steelyard balance
+![A steelyard balance (By An Elementary Treatise on Analytic Mechanics: With Numerous Examples By Edward A. (Edward Albert) Bowser, 1893., Public Domain, https://commons.wikimedia.org/w/index.php?curid=1319572)](_static/19th-century_steelyard.png)
+
+Let $|AC| = d$, $|CO| = l_0$, and let $M$ be the moment the gravity of the whole balance has on the pivot $C$
+
+Then if the mass of the weight is $m$, and the mass of the counterweight is $m_0$, we have
+
+$$
+M = m_0gl_0
+$$
+
+and
+
+$$
+mgd + M = m_0g(l_0 + \lambda m)
+$$
+
+where $\lambda$ is the ratio of the distance between $O$ and the counterweight and $m$.
+
+Therefore,
+
+$$
+d = \lambda m_0
+$$
+
+This is the fundamental equation of steelyard balances.
+```
