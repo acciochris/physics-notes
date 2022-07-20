@@ -2,6 +2,8 @@ name: Build and deploy
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   notes:
@@ -18,6 +20,7 @@ jobs:
         run: make -C notes html
 
       - name: Upload to GitHub Pages
+        if: ${{ github.event_name == 'push' }}
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
