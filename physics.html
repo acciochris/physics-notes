@@ -159,7 +159,7 @@
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Physics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="calculus.html">Calculus</a></li>
 <li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">Linear algebra</a></li>
-<li class="toctree-l1"><a class="reference internal" href="problems.html">Problems I didn’t work out (as well as concepts I didn’t understand)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="problems.html">Problems I haven’t worked out</a></li>
 </ul>
 
 </div>
@@ -476,9 +476,54 @@ f_{static} &lt; \mu_{static}N \\
 <p>When a large object is in balance, try to find a segment of the object on which the fewest forces act.
 In other words, restrict yourself to one or two forces.</p>
 </div>
+<p>Young’s modulus</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+E = \frac{\text{stress}}{\text{strain}} = \frac{F/A}{\Delta l/l}
+\]</div>
+</div>
+<p>Shear modulus</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+G = \frac{\text{shear stress}}{\text{shear strain}} = \frac{F/A}{\theta}
+\]</div>
+</div>
 </section>
 <section id="moment-and-rotation">
 <h3>Moment and rotation<a class="headerlink" href="#moment-and-rotation" title="Permalink to this heading">#</a></h3>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\mathbf{M} = \mathbf{r}\times\mathbf{F}
+\]</div>
+</div>
+<p>Condition for balance:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\sum\mathbf{M} = \mathbf{0}
+\]</div>
+</div>
+<p>Force couples:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\tau = Fd
+\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(\tau\)</span> is the torque the couple has on the object and <span class="math notranslate nohighlight">\(d\)</span> is the distance between the two forces.</p>
+<hr class="docutils" />
+<p>The synthesis of parallel forces</p>
+<p>Let <span class="math notranslate nohighlight">\(|AO|\)</span> be the distance between <span class="math notranslate nohighlight">\(F\)</span> (the combined force) and <span class="math notranslate nohighlight">\(F_1\)</span>, and <span class="math notranslate nohighlight">\(|BO|\)</span> be the distance between <span class="math notranslate nohighlight">\(F\)</span> and <span class="math notranslate nohighlight">\(F_2\)</span>, then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{|OA|}{|OB|} = \frac{F_2}{F_1}
+\]</div>
+</div>
+<p>The magnitude of <span class="math notranslate nohighlight">\(F\)</span> depends on whether <span class="math notranslate nohighlight">\(F_1\)</span> and <span class="math notranslate nohighlight">\(F_2\)</span> are in the same direction or not.</p>
 <div class="admonition-model-an-object-with-a-hole-in-it admonition">
 <p class="admonition-title">Model: An object with a hole in it</p>
 <ol class="arabic simple">
@@ -495,7 +540,8 @@ and apply <a class="reference internal" href="linear-algebra.html#linear-algebra
 </div>
 <div class="admonition-model-steelyard-balance admonition">
 <p class="admonition-title">Model: Steelyard balance</p>
-<p><img alt="A steelyard balance (By An Elementary Treatise on Analytic Mechanics: With Numerous Examples By Edward A. (Edward Albert) Bowser, 1893., Public Domain, https://commons.wikimedia.org/w/index.php?curid=1319572)" src="_images/19th-century_steelyard.png" /></p>
+<p><img alt="A steelyard balance" src="_images/19th-century_steelyard.png" /></p>
+<p>(By An Elementary Treatise on Analytic Mechanics: With Numerous Examples By Edward A. (Edward Albert) Bowser, 1893., Public Domain, <a class="reference external" href="https://commons.wikimedia.org/w/index.php?curid=1319572">Link</a>)</p>
 <p>Let <span class="math notranslate nohighlight">\(|AC| = d\)</span>, <span class="math notranslate nohighlight">\(|CO| = l_0\)</span>, and let <span class="math notranslate nohighlight">\(M\)</span> be the moment the gravity of the whole balance has on the pivot <span class="math notranslate nohighlight">\(C\)</span></p>
 <p>Then if the mass of the weight is <span class="math notranslate nohighlight">\(m\)</span>, and the mass of the counterweight is <span class="math notranslate nohighlight">\(m_0\)</span>, we have</p>
 <div class="math-wrapper docutils container">
