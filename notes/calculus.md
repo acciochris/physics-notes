@@ -290,6 +290,39 @@ $$
 
 ### Exponential growth and decay
 
+Consider the differential equation
+
+$$
+\frac{dy}{dt} = ky
+$$
+
+It has only one solution:
+
+$$
+y(t) = y(0)e^{kt}
+$$
+
+This function is extremely common in various sciences.
+
+### Related rates
+
+The essence of relating derivatives with each other is the Chain Rule:
+
+$$
+\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}
+$$
+
+Therfore, to relate $dy/dt$ with $dx/dt$, first find an equation that describes the relationship between $y$ and $x$.
+Then [differentiate implicitly](#implicit-differentiation) with respect to $t$.
+
+```{warning}
+A common error is to forget the minus sign before $dy/dx$ when $x$ is increasing while $y$ is decreasing.
+```
+
+```{tip}
+When circles are involved, try to use the parametric form (with $r$ and $\theta$) instead of using the classic implcit formula.
+```
+
 ## Conic sections
 
 ### Parabolas
