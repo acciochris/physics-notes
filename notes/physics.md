@@ -241,7 +241,49 @@ When a large object is in balance, try to find a segment of the object on which 
 In other words, restrict yourself to one or two forces.
 ```
 
+Young's modulus
+
+$$
+E = \frac{\text{stress}}{\text{strain}} = \frac{F/A}{\Delta l/l}
+$$
+
+Shear modulus
+
+$$
+G = \frac{\text{shear stress}}{\text{shear strain}} = \frac{F/A}{\theta}
+$$
+
 ### Moment and rotation
+
+$$
+\mathbf{M} = \mathbf{r}\times\mathbf{F}
+$$
+
+Condition for balance:
+
+$$
+\sum\mathbf{M} = \mathbf{0}
+$$
+
+Force couples:
+
+$$
+\tau = Fd
+$$
+
+where $\tau$ is the torque the couple has on the object and $d$ is the distance between the two forces.
+
+---
+
+The synthesis of parallel forces
+
+Let $|AO|$ be the distance between $F$ (the combined force) and $F_1$, and $|BO|$ be the distance between $F$ and $F_2$, then
+
+$$
+\frac{|OA|}{|OB|} = \frac{F_2}{F_1}
+$$
+
+The magnitude of $F$ depends on whether $F_1$ and $F_2$ are in the same direction or not.
 
 ```{admonition} Model: An object with a hole in it
 1. pretend that the hole doesn't exist
