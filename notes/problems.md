@@ -1,4 +1,6 @@
-# Problems I didn't work out (as well as concepts I didn't understand)
+# Problems I haven't worked out
+
+as well as concepts I haven't understood
 
 ## Calculus
 

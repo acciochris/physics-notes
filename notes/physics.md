@@ -257,7 +257,9 @@ and apply [linear algebra](linear-algebra.md#linear-algebra)
 ```
 
 ```{admonition} Model: Steelyard balance
-![A steelyard balance (By An Elementary Treatise on Analytic Mechanics: With Numerous Examples By Edward A. (Edward Albert) Bowser, 1893., Public Domain, https://commons.wikimedia.org/w/index.php?curid=1319572)](_static/19th-century_steelyard.png)
+![A steelyard balance](_static/19th-century_steelyard.png)
+
+(By An Elementary Treatise on Analytic Mechanics: With Numerous Examples By Edward A. (Edward Albert) Bowser, 1893., Public Domain, [Link](https://commons.wikimedia.org/w/index.php?curid=1319572))
 
 Let $|AC| = d$, $|CO| = l_0$, and let $M$ be the moment the gravity of the whole balance has on the pivot $C$
 
