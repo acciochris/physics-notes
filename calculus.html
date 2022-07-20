@@ -544,6 +544,41 @@ I = \frac{dQ}{dt}
 </section>
 <section id="exponential-growth-and-decay">
 <h3>Exponential growth and decay<a class="headerlink" href="#exponential-growth-and-decay" title="Permalink to this heading">#</a></h3>
+<p>Consider the differential equation</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{dy}{dt} = ky
+\]</div>
+</div>
+<p>It has only one solution:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y(t) = y(0)e^{kt}
+\]</div>
+</div>
+<p>This function is extremely common in various sciences.</p>
+</section>
+<section id="related-rates">
+<h3>Related rates<a class="headerlink" href="#related-rates" title="Permalink to this heading">#</a></h3>
+<p>The essence of relating derivatives with each other is the Chain Rule:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{dy}{dt} = \frac{dy}{dx}\frac{dx}{dt}
+\]</div>
+</div>
+<p>Therfore, to relate <span class="math notranslate nohighlight">\(dy/dt\)</span> with <span class="math notranslate nohighlight">\(dx/dt\)</span>, first find an equation that describes the relationship between <span class="math notranslate nohighlight">\(y\)</span> and <span class="math notranslate nohighlight">\(x\)</span>.
+Then <a class="reference internal" href="#implicit-differentiation"><span class="std std-doc">differentiate implicitly</span></a> with respect to <span class="math notranslate nohighlight">\(t\)</span>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>A common error is to forget the minus sign before <span class="math notranslate nohighlight">\(dy/dx\)</span> when <span class="math notranslate nohighlight">\(x\)</span> is increasing while <span class="math notranslate nohighlight">\(y\)</span> is decreasing.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>When circles are involved, try to use the parametric form (with <span class="math notranslate nohighlight">\(r\)</span> and <span class="math notranslate nohighlight">\(\theta\)</span>) instead of using the classic implcit formula.</p>
+</div>
 </section>
 </section>
 <section id="conic-sections">
@@ -681,6 +716,7 @@ y = \frac{x^2}{4p}
 <li><a class="reference internal" href="#logarithmic-differentiation">Logarithmic differentiation</a></li>
 <li><a class="reference internal" href="#rates-of-change-in-physics">Rates of change in physics</a></li>
 <li><a class="reference internal" href="#exponential-growth-and-decay">Exponential growth and decay</a></li>
+<li><a class="reference internal" href="#related-rates">Related rates</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#conic-sections">Conic sections</a><ul>
