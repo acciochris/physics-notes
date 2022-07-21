@@ -41,3 +41,7 @@ $$
   The notes claim that when using multiple moment equations to determine a static equilibrium, one
   should be careful to choose two independent rotation axes, but how?
   ```
+
+### Section 2.4
+
+- Example 4
