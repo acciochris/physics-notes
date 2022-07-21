@@ -329,7 +329,7 @@ This is the fundamental equation of steelyard balances.
 ```
 
 ```{tip}
-A useful trigonometric identity (half angle formula for $\tan$)
+A useful trigonometric identity (half angle formula for $\tan$):
 
 $$
 \tan\frac{x}{2} = \pm\sqrt{\frac{1 - \cos x}{1 + \cos x}} = \frac{\sin x}{1 + \cos x} = \frac{1 - \cos x}{\sin x} 
@@ -339,4 +339,24 @@ $$
 ```{important}
 When the number of equations is smaller than the unknowns, the system is statically indeterminate.
 Look for hidden details in the text.
+```
+
+```{tip}
+Focal radii for ellipse
+
+$$
+\left(\frac{x}{a}\right)^2 + \left(\frac{y}{b}\right)^2 = 1
+$$
+
+where $a \ge b > 0$:
+
+Let $F_1$ denote the left focus and $F_2$ denote the right focus, and let $P(m, n)$ be a point on the ellipse, then
+
+$$
+\begin{align*}
+  |PF_1| & = a + em \\
+  |PF_2| & = a - em
+\end{align*}
+$$
+
 ```
