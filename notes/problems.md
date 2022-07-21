@@ -2,7 +2,11 @@
 
 as well as concepts I haven't understood
 
+Discuss the problems below [here](https://github.com/acciochris/physics-notes/discussions).
+
 ## Calculus
+
+Calculus, James Stewart, 8th edition early transcendentals
 
 ### Section 3.3 (p197)
 
@@ -30,3 +34,10 @@ $$
 ### Section 2.1
 
 - Example 5 (minimum value)
+
+### Section 2.3
+
+- ```{admonition} Question?
+  The notes claim that when using multiple moment equations to determine a static equilibrium, one
+  should be careful to choose two independent rotation axes, but how?
+  ```
