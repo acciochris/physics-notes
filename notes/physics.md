@@ -360,3 +360,48 @@ $$
 $$
 
 ```
+
+### Liquids in static equilibrium
+
+```{important}
+Bernoulli's principle:
+
+$$
+p + \frac{1}{2}\rho v^2 + \rho gz = const
+$$
+```
+
+```{note}
+Centrifugal potential energy:
+
+$$
+E = -\int_0^xm\omega^2x\,dx = -\frac{1}{2}m\omega^2x^2
+$$
+```
+
+## Newton's laws
+
+- first: inertia
+- second: $F = ma$
+- third: action and reaction
+
+```{note}
+Newton's laws only apply under macroscopic, low-speed conditions.
+```
+
+Acceleration is the bridge between force and motion.
+
+```{admonition} Strategy: How to find acceleration
+1. relative motion
+   $$
+   a_{abs} = a_{sys} + a_{rel}
+   $$
+2. [L'Hospital's Rule](calculus.md#applications-of-differentiation)
+   
+   $$
+   \lim_{t \to 0}\frac{s_1(t)}{s_2(t)} = \lim_{t \to 0}\frac{v_1(t)}{v_2(t)} = \lim_{t \to 0}\frac{a_1(t)}{a_2(t)}
+   $$
+   
+   provided that when $t \to 0$, both $v_1$ and $v_2$ $\to 0$.
+3. Touching objects have the same acceleration in the direction of the line perpendicular to the surface
+```
