@@ -393,6 +393,7 @@ Acceleration is the bridge between force and motion.
 
 ```{admonition} Strategy: How to find acceleration
 1. relative motion
+   
    $$
    a_{abs} = a_{sys} + a_{rel}
    $$
