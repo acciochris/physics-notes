@@ -323,6 +323,49 @@ A common error is to forget the minus sign before $dy/dx$ when $x$ is increasing
 When circles are involved, try to use the parametric form (with $r$ and $\theta$) instead of using the classic implcit formula.
 ```
 
+### Applications of differentiation
+
+Maximum and minimum values
+
+Fermat's theorem
+: If $f$ has a local extremum at $c$, and if $f'(c)$ exists, then $f'(c) = 0$.
+
+Critical number
+: a number $c$ such that $f'(c) = 0$ or $f'(c)$ doesn't exist
+
+```{admonition} Strategy: The closed interval method
+To find the absolute maximum/minimum of a continuous function $f$ on a closed interval $[a, b]$,
+
+1. calculate $f(c)$ for every critical number $c$ on the open interval $(a, b)$
+2. calculate the endpoints
+```
+
+- The mean value theorem
+- Increasing/decreasing test (first derivative)
+- The first derivative test
+- Concavity test
+- Inflection point
+- The second derivative test
+
+```{important}
+L'Hospital's Rule:
+
+If limit
+
+$$
+\lim_{x \to a}\frac{f(x)}{g(x)}
+$$
+
+is of the indeterminate form ($\frac{0}{0}$ or $\frac{\infty}{\infty}$), then
+
+$$
+\lim_{x \to a}\frac{f(x)}{g(x)} = \lim_{x \to a}\frac{f'(x)}{g'(x)}
+$$
+
+provided that $f'(x)$ and $g'(x)$ exist.
+
+```
+
 ## Conic sections
 
 ### Parabolas
