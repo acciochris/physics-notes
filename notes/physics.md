@@ -406,3 +406,43 @@ Acceleration is the bridge between force and motion.
    provided that when $t \to 0$, both $v_1$ and $v_2$ $\to 0$.
 3. Touching objects have the same acceleration in the direction of the line perpendicular to the surface
 ```
+
+### Non-inertial reference frames
+
+Inertial force
+
+$$
+\mathbf{F}_{inertial} = -m\mathbf{a}
+$$
+
+Rotating reference frames:
+
+$$
+F_{centrifugal} = m\omega^2r \\
+F_{coriolis} = 2m\mathbf{v}\times\boldsymbol{\omega}
+$$
+
+### Planetary motion
+
+Kepler's laws:
+
+- first
+- second
+- third:
+  
+  $$
+  \frac{T^2}{a^3} = \frac{4\pi^2}{GM}
+  $$
+
+Newton's law of gravity:
+
+$$
+F = G\frac{m_1m_2}{r^2}
+$$
+
+where $G=6.67\times 10^{-11} N\cdot m^2/kg^2$
+
+```{tip}
+To avoid using the gravitational constant or the mass of the Sun/Earth, find the ratio between 
+the unknown quantitiy and what we already know.
+```
