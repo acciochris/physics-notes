@@ -422,3 +422,26 @@ $$
 $$
 
 has foci $(\pm c, 0)$ where $c^2 = a^2 + b^ 2$, vertices $(\pm a, 0)$ and asymptotes $y = \pm(b/a)x$.
+
+### Conic sections in polar forms
+
+Eccentricity $e$, directrix $x = \pm d$
+
+$$
+r = \frac{ed}{1 \pm e\cos\theta}
+$$
+
+Eccentricity $e$, directrix $y = \pm d$
+
+$$
+r = \frac{ed}{1 \mp e\cos\theta}
+$$
+
+Specifically, the polar equation of an ellipse with focus at the origin, semimajor axis $a$,
+eccentricity $e$, and directrix $x = d$ can be written as:
+
+$$
+r = \frac{a(1-e^2)}{1 + e\cos\theta}
+$$
+
+In the equation above, the perihelion distance is $a(1 - e)$ and the aphelion distance is $a(1 + e)$.
