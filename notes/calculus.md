@@ -363,8 +363,26 @@ $$
 $$
 
 provided that $f'(x)$ and $g'(x)$ exist.
-
 ```
+
+Curve sketching:
+
+1. Domain
+2. Intercepts (if the equation is easy to solve)
+3. Symmetry (even/odd) / periodic
+4. Asymptotes
+   - horizontal: $\lim_{x \to \pm\infty}$
+   - vertical: $\lim = \pm\infty$
+   - slant: $\lim_{x \to \pm\infty}[f(x)-(mx+b)] = 0$
+5. Intervals of increase/decrease
+6. Local max/min values
+7. Concavity and points of inflection
+
+Newton's method:
+
+$$
+x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
+$$
 
 ## Conic sections
 
