@@ -486,3 +486,63 @@ For rockets:
 $$
 v = u\ln\frac{m_0}{m}
 $$
+
+Moment of inertia:
+
+$$
+I = \int r^2dm
+$$
+
+The parallel axis theorem:
+
+$$
+I = I_{cm} + md^2
+$$
+
+The perpendicular axis theorem:
+
+If a flat disk is in the $xy$-plane, then
+
+$$
+I_z = I_x + I_y
+$$
+
+[Common moments of inertia](https://en.wikipedia.org/wiki/List_of_moments_of_inertia)
+
+Angular momentum:
+
+$$
+\mathbf{L} = \mathbf{r}\times\mathbf{p} = mrv\sin\theta
+$$
+
+The formula
+
+$$
+\mathbf{L} = I\boldsymbol{\omega}
+$$
+
+is only true when rotating about an axis of symmetry or a fixed axle.
+
+$$
+\boldsymbol{\tau} = \frac{d\mathbf{L}}{dt}
+$$
+
+## Energy
+
+### Work and Power
+
+Work
+
+$$
+W = \mathbf{F}\cdot\mathbf{s} = Fs\cos\theta
+$$
+
+Power
+
+$$
+P = \frac{W}{t} = \mathbf{F}\cdot\mathbf{v} = Fv\cos\theta
+$$
+
+```{important}
+Energy and work are frame-dependent!
+```
