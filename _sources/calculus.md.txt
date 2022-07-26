@@ -363,8 +363,62 @@ $$
 $$
 
 provided that $f'(x)$ and $g'(x)$ exist.
-
 ```
+
+Curve sketching:
+
+1. Domain
+2. Intercepts (if the equation is easy to solve)
+3. Symmetry (even/odd) / periodic
+4. Asymptotes
+   - horizontal: $\lim_{x \to \pm\infty}$
+   - vertical: $\lim = \pm\infty$
+   - slant: $\lim_{x \to \pm\infty}[f(x)-(mx+b)] = 0$
+5. Intervals of increase/decrease
+6. Local max/min values
+7. Concavity and points of inflection
+
+Newton's method:
+
+$$
+x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
+$$
+
+## Integrals
+
+### The definite and indefinite integrals
+
+$$
+\int_a^bf(x)\,dx = \lim_{n \to \infty}\sum_{i=1}^n f(x_i^*)\Delta x
+$$
+
+$$
+\int f(x)\,dx = F(x)
+$$
+
+### The FUNDAMENTAL theorem of calculus
+
+Part 1
+
+If
+
+$$
+g(x)= \int_a^x f(t)\,dt
+$$
+
+then
+
+$$
+g'(x) = f(x)
+$$
+
+Part 2
+
+$$
+\int_a^b f(x)\,dx = F(b) - F(a)
+$$
+
+where $F$ is any antiderivative of $f$ ($F' = f$).
 
 ## Conic sections
 
