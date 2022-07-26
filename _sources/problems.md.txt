@@ -45,3 +45,9 @@ $$
 ### Section 2.4
 
 - Example 4
+
+### Section 5.1
+
+- ```{admonition} Question?
+  The principle of virtual work
+  ```
