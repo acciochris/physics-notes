@@ -384,6 +384,42 @@ $$
 x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
 $$
 
+## Integrals
+
+### The definite and indefinite integrals
+
+$$
+\int_a^bf(x)\,dx = \lim_{n \to \infty}\sum_{i=1}^n f(x_i^*)\Delta x
+$$
+
+$$
+\int f(x)\,dx = F(x)
+$$
+
+### The FUNDAMENTAL theorem of calculus
+
+Part 1
+
+If
+
+$$
+g(x)= \int_a^x f(t)\,dt
+$$
+
+then
+
+$$
+g'(x) = f(x)
+$$
+
+Part 2
+
+$$
+\int_a^b f(x)\,dx = F(b) - F(a)
+$$
+
+where $F$ is any antiderivative of $f$ ($F' = f$).
+
 ## Conic sections
 
 ### Parabolas
