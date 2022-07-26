@@ -59,6 +59,17 @@ This is best suited for geometric problems (instead of ones that requires tons o
 3. solve the problem
 ```
 
+General motion in polar coordinates:
+
+$$
+\mathbf{r} = (r\cos\theta, r\sin\theta) \\
+\mathbf{\dot r} = (
+  \dot r\cos\theta - r\sin\theta\dot\theta,
+  \dot r\sin\theta + r\cos\theta\dot\theta
+) = \dot r\hat r + r\dot\theta\hat\theta \\
+\mathbf{\ddot r} = (\ddot r - r\dot\theta^2)\hat r + (2\dot r\dot\theta + r\ddot\theta)\hat\theta 
+$$
+
 ### Falling objects
 
 ```{admonition} Model: Falling objects with initial upward velocity
@@ -446,3 +457,32 @@ where $G=6.67\times 10^{-11} N\cdot m^2/kg^2$
 To avoid using the gravitational constant or the mass of the Sun/Earth, find the ratio between 
 the unknown quantitiy and what we already know.
 ```
+
+```{important}
+[Conic sections in polar coordinates](calculus.md#conic-sections-in-polar-forms)
+```
+
+## Momentum and angular momentum
+
+Impluse
+
+$$
+\vec{I} = \vec{F}\Delta t
+$$
+
+
+$$
+\vec{F}\Delta t = m\vec{v}_2 - m\vec{v}_1
+$$
+
+Variable-mass system:
+
+$$
+\mathbf{F}_{ext} + \mathbf{v}_{rel}\frac{dm}{dt} = m\frac{d\mathbf{v}}{dt}
+$$
+
+For rockets:
+
+$$
+v = u\ln\frac{m_0}{m}
+$$

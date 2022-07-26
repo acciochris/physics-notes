@@ -263,6 +263,18 @@ r(t) = \sqrt{x^2 + y^2 + z^2}
 <li><p>solve the problem</p></li>
 </ol>
 </div>
+<p>General motion in polar coordinates:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\mathbf{r} = (r\cos\theta, r\sin\theta) \\
+\mathbf{\dot r} = (
+  \dot r\cos\theta - r\sin\theta\dot\theta,
+  \dot r\sin\theta + r\cos\theta\dot\theta
+) = \dot r\hat r + r\dot\theta\hat\theta \\
+\mathbf{\ddot r} = (\ddot r - r\dot\theta^2)\hat r + (2\dot r\dot\theta + r\ddot\theta)\hat\theta 
+\end{split}\]</div>
+</div>
 <section id="falling-objects">
 <h3>Falling objects<a class="headerlink" href="#falling-objects" title="Permalink to this heading">#</a></h3>
 <div class="admonition-model-falling-objects-with-initial-upward-velocity admonition">
@@ -709,7 +721,41 @@ F = G\frac{m_1m_2}{r^2}
 <p>To avoid using the gravitational constant or the mass of the Sun/Earth, find the ratio between
 the unknown quantitiy and what we already know.</p>
 </div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><a class="reference internal" href="calculus.html#conic-sections-in-polar-forms"><span class="std std-doc">Conic sections in polar coordinates</span></a></p>
+</div>
 </section>
+</section>
+<section id="momentum-and-angular-momentum">
+<h2>Momentum and angular momentum<a class="headerlink" href="#momentum-and-angular-momentum" title="Permalink to this heading">#</a></h2>
+<p>Impluse</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec{I} = \vec{F}\Delta t
+\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec{F}\Delta t = m\vec{v}_2 - m\vec{v}_1
+\]</div>
+</div>
+<p>Variable-mass system:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\mathbf{F}_{ext} + \mathbf{v}_{rel}\frac{dm}{dt} = m\frac{d\mathbf{v}}{dt}
+\]</div>
+</div>
+<p>For rockets:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+v = u\ln\frac{m_0}{m}
+\]</div>
+</div>
 </section>
 </section>
 
@@ -787,6 +833,7 @@ the unknown quantitiy and what we already know.</p>
 <li><a class="reference internal" href="#planetary-motion">Planetary motion</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#momentum-and-angular-momentum">Momentum and angular momentum</a></li>
 </ul>
 </li>
 </ul>
