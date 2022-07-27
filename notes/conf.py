@@ -57,6 +57,7 @@ html_theme = 'furo'
 html_static_path = ['_static']
 
 html_title = project
+html_favicon = "_static/favicon.ico"
 
 # Myst configuration
 myst_heading_anchors = 3
