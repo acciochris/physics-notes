@@ -14,6 +14,12 @@ $$
 41.\;\lim_{t \to 0} \frac{\tan 6t}{\sin 2t}
 $$
 
+### Section 5.5 (p419)
+
+$$
+73.\;\int_0^1\frac{dx}{(1 + \sqrt{x})^4}
+$$
+
 ## Physics
 
 ### Section 1.2
