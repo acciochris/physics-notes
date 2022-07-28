@@ -482,7 +482,7 @@ $$
 
 ### Integration techniques
 
-This section is **particularly important** because integration is a tricky process and require a **significant amount** of skill as well as ingenuity.
+This section is **particularly important** because integration is a tricky process and requires a **significant amount** of skill as well as ingenuity.
 
 1. try the formulas given [above](#the-definite-and-indefinite-integrals)
 2. simplify the integrand if possible, e.g.
@@ -502,7 +502,7 @@ This section is **particularly important** because integration is a tricky proce
    - trigonometric functions:
      - powers of $\sin x$ and $\cos x$, or powers of $\tan x$ and $\sec x$, or powers of $\cot x$ and $\csc x$:
        
-       use trignometric identities to transform the expression and then use the substitution rule
+       use trigonometric identities to transform the expression and then use the substitution rule
        
      - others:
        
@@ -547,6 +547,7 @@ This section is **particularly important** because integration is a tricky proce
      1. separate the integrand into two parts $u$ and $dv$ keeping in mind that $u$ should be as simple as possible while $dv$
         should be easy to integrate
      2. plug everything in:
+        
         $$
         \int u\,dv = uv - \int v\,du
         $$
