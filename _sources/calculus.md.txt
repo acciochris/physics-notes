@@ -440,6 +440,27 @@ $$
 
 where $F$ is any antiderivative of $f$ ($F' = f$).
 
+```{important}
+A few VERY useful trigonometric identities:
+
+Let $u = \tan\frac{x}{2}$, then
+
+$$
+\sin x = \frac{2u}{1 + u^2} \;
+\csc x = \frac{1 + u^2}{2u}
+$$
+
+$$
+\cos x = \frac{1 - u^2}{1 + u^2} \;
+\sec x = \frac{1 + u^2}{1 - u^2}
+$$
+
+$$
+\tan x = \frac{2u}{1 - u^2} \;
+\cot x = \frac{1 - u^2}{2u}
+$$
+```
+
 ## Conic sections
 
 ### Parabolas
