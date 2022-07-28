@@ -157,6 +157,8 @@ $$
     \frac{d}{dx}\cos^{-1} x & = -\frac{1}{\sqrt{1-x^2}} \\
     \frac{d}{dx}\tan^{-1} x & = \frac{1}{1+x^2} \\
     \frac{d}{dx}\cot^{-1} x & = -\frac{1}{1+x^2} \\
+    \frac{d}{dx}\sinh x & = \cosh x \\
+    \frac{d}{dx}\cosh x & = \sinh x \\
 \end{align*}
 $$
 
@@ -416,6 +418,23 @@ $$
 \end{align*}
 $$
 
+Some more exotic ones:
+
+$$
+\begin{align*}
+  \int \tan x\,dx & = \ln |\sec x| + C \\
+  \int \cot x\,dx & = \ln |\sin x| + C \\
+  \int \sec x\,dx & = \ln |\sec x + \tan x| + C \\
+  \int \csc x\,dx & = \ln |\csc x - \cot x| + C \\
+  \int \sinh x\,dx & = \cosh x + C \\
+  \int \cosh x\,dx & = \sinh x + C \\
+  \int \frac{dx}{x^2 + a^2} & = \frac{1}{a}\tan^{-1}\left(\frac{x}{a}\right) \\
+  \int \frac{dx}{\sqrt{a^2 - x^2}} & = \sin^{-1}\left(\frac{x}{a}\right), \;a > 0 \\
+  \int \frac{dx}{x^2 - a^2} & = \frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right| \\
+  \int \frac{dx}{\sqrt{x^2 \pm a^2}} & = \ln\left|x + \sqrt{x^2 \pm a^2}\right|
+\end{align*}
+$$
+
 ### The FUNDAMENTAL theorem of calculus
 
 Part 1
@@ -460,6 +479,77 @@ $$
 \cot x = \frac{1 - u^2}{2u}
 $$
 ```
+
+### Integration techniques
+
+This section is **particularly important** because integration is a tricky process and require a **significant amount** of skill as well as ingenuity.
+
+1. try the formulas given [above](#the-definite-and-indefinite-integrals)
+2. simplify the integrand if possible, e.g.
+   
+   $$
+   \int \frac{\tan x}{\sec^2 x}\,dx = \int \sin x\cos x\,dx = \frac{1}{2}\int\sin 2x\,dx
+   $$
+   
+3. try the substitution rule:
+   1. look for a part in the expression whose derivative also exists in the integrand
+   2. let the part be $u$ where $u = g(x)$
+   3. evaluate $du = g'(x)\,dx$
+   4. substitue every $x$ in the integrand with appropriate forms of $u$
+   5. evaluate the integral $\int f(u)\,du$
+   6. If it is an indefinite integral, substitute $x$ back in. Otherwise, replace the limits of integration for $x$ with the corresponding values for $u$.
+4. classify the integrand:
+   - trigonometric functions:
+     - powers of $\sin x$ and $\cos x$, or powers of $\tan x$ and $\sec x$, or powers of $\cot x$ and $\csc x$:
+       
+       use trignometric identities to transform the expression and then use the substitution rule
+       
+     - others:
+       
+       apply the VERY useful identity above to eliminate everything but $\tan\frac{x}{2}$
+     
+   - rational functions:
+     
+     use partial fractions:
+     
+     1. long division
+        
+        $$
+        f(x) = \frac{P(x)}{Q(x)} = S(x) + \frac{R(x)}{Q(x)}
+        $$
+        
+     2. write $f(x)$ in this way
+        
+        $$
+        f(x) = \sum_{i=1}^m\sum_{u=1}^{u_i}\frac{A_{iu}}{(a_ix + b_i)^u}
+             + \sum_{j=1}^n\sum_{v=1}^{v_j}\frac{A_{jv}x + B_{jv}}{(a_jx^2 + b_jx + c_j)^v}
+        $$
+        
+     3. evaluate the transformed integrate section by section, completing squares and substituting with $u$ when necessary
+     
+   - radicals:
+     - $\sqrt{\pm x^2 \pm a^2}$:
+       
+       | Expression       | Substitution                                                                  | Identity                          |
+       | ---------------- | ----------------------------------------------------------------------------- | --------------------------------- |
+       | $\sqrt{a^2-x^2}$ | $x = a\sin\theta, \;-\pi/2 \le \theta \le \pi/2$                              | $1 - \sin^2\theta = \cos^2\theta$ |
+       | $\sqrt{a^2+x^2}$ | $x = a\tan\theta, \;-\pi/2 < \theta < \pi/2$                                  | $1 + \tan^2\theta = \sec^2\theta$ |
+       | $\sqrt{x^2-a^2}$ | $x = a\sec\theta, \;0 \le \theta < \pi/2\;\text{or}\;\pi \le \theta < 3\pi/2$ | $\sec^2\theta - 1 = \tan^2\theta$ |
+       
+     - $\sqrt[n]{ax + b}$:
+       
+       use substitution $u = \sqrt[n]{ax + b}$
+     
+   - other:
+     
+     try integration by parts:
+     
+     1. separate the integrand into two parts $u$ and $dv$ keeping in mind that $u$ should be as simple as possible while $dv$
+        should be easy to integrate
+     2. plug everything in:
+        $$
+        \int u\,dv = uv - \int v\,du
+        $$
 
 ## Conic sections
 
