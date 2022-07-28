@@ -389,6 +389,8 @@ f'(x) = y' = \frac{dy}{dx} = \frac{df}{dx} = \frac{d}{dx}f(x) = Df(x) = D_xf(x) 
     \frac{d}{dx}\cos^{-1} x &amp; = -\frac{1}{\sqrt{1-x^2}} \\
     \frac{d}{dx}\tan^{-1} x &amp; = \frac{1}{1+x^2} \\
     \frac{d}{dx}\cot^{-1} x &amp; = -\frac{1}{1+x^2} \\
+    \frac{d}{dx}\sinh x &amp; = \cosh x \\
+    \frac{d}{dx}\cosh x &amp; = \sinh x \\
 \end{align*}
 \end{split}\]</div>
 </div>
@@ -695,6 +697,24 @@ x_{n+1} = x_n - \frac{f(x_n)}{f'(x_n)}
 \end{align*}
 \end{split}\]</div>
 </div>
+<p>Some more exotic ones:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \int \tan x\,dx &amp; = \ln |\sec x| + C \\
+  \int \cot x\,dx &amp; = \ln |\sin x| + C \\
+  \int \sec x\,dx &amp; = \ln |\sec x + \tan x| + C \\
+  \int \csc x\,dx &amp; = \ln |\csc x - \cot x| + C \\
+  \int \sinh x\,dx &amp; = \cosh x + C \\
+  \int \cosh x\,dx &amp; = \sinh x + C \\
+  \int \frac{dx}{x^2 + a^2} &amp; = \frac{1}{a}\tan^{-1}\left(\frac{x}{a}\right) \\
+  \int \frac{dx}{\sqrt{a^2 - x^2}} &amp; = \sin^{-1}\left(\frac{x}{a}\right), \;a &gt; 0 \\
+  \int \frac{dx}{x^2 - a^2} &amp; = \frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right| \\
+  \int \frac{dx}{\sqrt{x^2 \pm a^2}} &amp; = \ln\left|x + \sqrt{x^2 \pm a^2}\right|
+\end{align*}
+\end{split}\]</div>
+</div>
 </section>
 <section id="the-fundamental-theorem-of-calculus">
 <h3>The FUNDAMENTAL theorem of calculus<a class="headerlink" href="#the-fundamental-theorem-of-calculus" title="Permalink to this heading">#</a></h3>
@@ -747,6 +767,112 @@ g'(x) = f(x)
 \]</div>
 </div>
 </div>
+</section>
+<section id="integration-techniques">
+<h3>Integration techniques<a class="headerlink" href="#integration-techniques" title="Permalink to this heading">#</a></h3>
+<p>This section is <strong>particularly important</strong> because integration is a tricky process and require a <strong>significant amount</strong> of skill as well as ingenuity.</p>
+<ol class="arabic">
+<li><p>try the formulas given <a class="reference internal" href="#the-definite-and-indefinite-integrals"><span class="std std-doc">above</span></a></p></li>
+<li><p>simplify the integrand if possible, e.g.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   \int \frac{\tan x}{\sec^2 x}\,dx = \int \sin x\cos x\,dx = \frac{1}{2}\int\sin 2x\,dx
+   \]</div>
+</div>
+</li>
+<li><p>try the substitution rule:</p>
+<ol class="arabic simple">
+<li><p>look for a part in the expression whose derivative also exists in the integrand</p></li>
+<li><p>let the part be <span class="math notranslate nohighlight">\(u\)</span> where <span class="math notranslate nohighlight">\(u = g(x)\)</span></p></li>
+<li><p>evaluate <span class="math notranslate nohighlight">\(du = g'(x)\,dx\)</span></p></li>
+<li><p>substitue every <span class="math notranslate nohighlight">\(x\)</span> in the integrand with appropriate forms of <span class="math notranslate nohighlight">\(u\)</span></p></li>
+<li><p>evaluate the integral <span class="math notranslate nohighlight">\(\int f(u)\,du\)</span></p></li>
+<li><p>If it is an indefinite integral, substitute <span class="math notranslate nohighlight">\(x\)</span> back in. Otherwise, replace the limits of integration for <span class="math notranslate nohighlight">\(x\)</span> with the corresponding values for <span class="math notranslate nohighlight">\(u\)</span>.</p></li>
+</ol>
+</li>
+<li><p>classify the integrand:</p>
+<ul>
+<li><p>trigonometric functions:</p>
+<ul>
+<li><p>powers of <span class="math notranslate nohighlight">\(\sin x\)</span> and <span class="math notranslate nohighlight">\(\cos x\)</span>, or powers of <span class="math notranslate nohighlight">\(\tan x\)</span> and <span class="math notranslate nohighlight">\(\sec x\)</span>, or powers of <span class="math notranslate nohighlight">\(\cot x\)</span> and <span class="math notranslate nohighlight">\(\csc x\)</span>:</p>
+<p>use trignometric identities to transform the expression and then use the substitution rule</p>
+</li>
+<li><p>others:</p>
+<p>apply the VERY useful identity above to eliminate everything but <span class="math notranslate nohighlight">\(\tan\frac{x}{2}\)</span></p>
+</li>
+</ul>
+</li>
+<li><p>rational functions:</p>
+<p>use partial fractions:</p>
+<ol class="arabic">
+<li><p>long division</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+        f(x) = \frac{P(x)}{Q(x)} = S(x) + \frac{R(x)}{Q(x)}
+        \]</div>
+</div>
+</li>
+<li><p>write <span class="math notranslate nohighlight">\(f(x)\)</span> in this way</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+        f(x) = \sum_{i=1}^m\sum_{u=1}^{u_i}\frac{A_{iu}}{(a_ix + b_i)^u}
+             + \sum_{j=1}^n\sum_{v=1}^{v_j}\frac{A_{jv}x + B_{jv}}{(a_jx^2 + b_jx + c_j)^v}
+        \]</div>
+</div>
+</li>
+<li><p>evaluate the transformed integrate section by section, completing squares and substituting with <span class="math notranslate nohighlight">\(u\)</span> when necessary</p></li>
+</ol>
+</li>
+<li><p>radicals:</p>
+<ul>
+<li><p><span class="math notranslate nohighlight">\(\sqrt{\pm x^2 \pm a^2}\)</span>:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Expression</p></th>
+<th class="head"><p>Substitution</p></th>
+<th class="head"><p>Identity</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\sqrt{a^2-x^2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(x = a\sin\theta, \;-\pi/2 \le \theta \le \pi/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1 - \sin^2\theta = \cos^2\theta\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(\sqrt{a^2+x^2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(x = a\tan\theta, \;-\pi/2 &lt; \theta &lt; \pi/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(1 + \tan^2\theta = \sec^2\theta\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(\sqrt{x^2-a^2}\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(x = a\sec\theta, \;0 \le \theta &lt; \pi/2\;\text{or}\;\pi \le \theta &lt; 3\pi/2\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(\sec^2\theta - 1 = \tan^2\theta\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p><span class="math notranslate nohighlight">\(\sqrt[n]{ax + b}\)</span>:</p>
+<p>use substitution <span class="math notranslate nohighlight">\(u = \sqrt[n]{ax + b}\)</span></p>
+</li>
+</ul>
+</li>
+<li><p>other:</p>
+<p>try integration by parts:</p>
+<ol class="arabic simple">
+<li><p>separate the integrand into two parts <span class="math notranslate nohighlight">\(u\)</span> and <span class="math notranslate nohighlight">\(dv\)</span> keeping in mind that <span class="math notranslate nohighlight">\(u\)</span> should be as simple as possible while <span class="math notranslate nohighlight">\(dv\)</span>
+should be easy to integrate</p></li>
+<li><p>plug everything in:
+$<span class="math notranslate nohighlight">\(
+\int u\,dv = uv - \int v\,du
+\)</span>$</p></li>
+</ol>
+</li>
+</ul>
+</li>
+</ol>
 </section>
 </section>
 <section id="conic-sections">
@@ -922,6 +1048,7 @@ r = \frac{a(1-e^2)}{1 + e\cos\theta}
 <li><a class="reference internal" href="#integrals">Integrals</a><ul>
 <li><a class="reference internal" href="#the-definite-and-indefinite-integrals">The definite and indefinite integrals</a></li>
 <li><a class="reference internal" href="#the-fundamental-theorem-of-calculus">The FUNDAMENTAL theorem of calculus</a></li>
+<li><a class="reference internal" href="#integration-techniques">Integration techniques</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#conic-sections">Conic sections</a><ul>
