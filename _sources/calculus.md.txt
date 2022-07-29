@@ -568,7 +568,7 @@ To solve separable equations,
 1. put all of $y$ on one side and all of $x$ on the other side
    
    $$
-   h(y)\,dx = g(x)\,dx
+   h(y)\,dy = g(x)\,dx
    $$
    
 2. integrate both sides
@@ -609,12 +609,11 @@ Auxiliary equations
 : the quadratic equations
 
 $$
-ar^2 + br + c = 0
+P(x)r^2 + Q(x)r + R(x) = 0
 $$
 
-where $a$, $b$ and $c$ are the functions $P(x)$, $Q(x)$ and $R(x)$ in the equation above.
-
-The solution for second-order linear homogeneous equations:
+After solving the auxiliary equation, we can get the solution for the original second-order homogeneous linear differential equation
+(OMG, that's really a mouthful):
 
 | Roots of the auxiliary equation          | General solution                                    |
 | ---------------------------------------- | --------------------------------------------------- |
@@ -623,7 +622,7 @@ The solution for second-order linear homogeneous equations:
 | $r_1$, $r_2$, complex: $\alpha + i\beta$ | $y = e^{\alpha x}(c_1\cos\beta x + c_2\sin\beta x)$ |
 
 For non-homogeneous linear equations, use either the method of undetermined coefficients or the method
-of variation of parameters
+of variation of parameters.
 
 
 ```{admonition} Method: undetermined coefficients
