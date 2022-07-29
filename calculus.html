@@ -823,7 +823,7 @@ g'(x) = f(x)
         \]</div>
 </div>
 </li>
-<li><p>evaluate the transformed integrate section by section, completing squares and substituting with <span class="math notranslate nohighlight">\(u\)</span> when necessary</p></li>
+<li><p>evaluate the transformed integral section by section, completing squares and substituting with <span class="math notranslate nohighlight">\(u\)</span> when necessary</p></li>
 </ol>
 </li>
 <li><p>radicals:</p>
@@ -877,6 +877,120 @@ should be easy to integrate</p></li>
 </ul>
 </li>
 </ol>
+</section>
+</section>
+<section id="differential-equations">
+<h2>Differential equations<a class="headerlink" href="#differential-equations" title="Permalink to this heading">#</a></h2>
+<section id="first-order-odes">
+<h3>First-order ODEs<a class="headerlink" href="#first-order-odes" title="Permalink to this heading">#</a></h3>
+<dl class="simple myst">
+<dt>Separable equations</dt><dd><p>Differential equations that can be written in the form</p>
+</dd>
+</dl>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{dy}{dx} = \frac{g(x)}{h(y)}
+\]</div>
+</div>
+<p>To solve separable equations,</p>
+<ol class="arabic">
+<li><p>put all of <span class="math notranslate nohighlight">\(y\)</span> on one side and all of <span class="math notranslate nohighlight">\(x\)</span> on the other side</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   h(y)\,dx = g(x)\,dx
+   \]</div>
+</div>
+</li>
+<li><p>integrate both sides</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   \int h(y)\,dy = \int g(x)\,dx
+   \]</div>
+</div>
+</li>
+</ol>
+<dl class="simple myst">
+<dt>Linear equations</dt><dd><p>Differential equations that can be put into the form</p>
+</dd>
+</dl>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{dy}{dx} + P(x)y = Q(x)
+\]</div>
+</div>
+<p>To solve linear equations,</p>
+<ol class="arabic">
+<li><p>let</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   I(x) = e^{\int P(x)\,dx}
+   \]</div>
+</div>
+</li>
+<li><p>multiply both sides by <span class="math notranslate nohighlight">\(I(x)\)</span></p></li>
+<li><p>transform the left side into a derivative with the product rule</p></li>
+<li><p>integrate both sides</p></li>
+</ol>
+</section>
+<section id="second-order-odes">
+<h3>Second-order ODEs<a class="headerlink" href="#second-order-odes" title="Permalink to this heading">#</a></h3>
+<dl class="simple myst">
+<dt>Second-order linear homogeneous equations</dt><dd><p>equations in the form</p>
+</dd>
+</dl>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = 0
+\]</div>
+</div>
+<dl class="simple myst">
+<dt>Auxiliary equations</dt><dd><p>the quadratic equations</p>
+</dd>
+</dl>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+ar^2 + br + c = 0
+\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span> are the functions <span class="math notranslate nohighlight">\(P(x)\)</span>, <span class="math notranslate nohighlight">\(Q(x)\)</span> and <span class="math notranslate nohighlight">\(R(x)\)</span> in the equation above.</p>
+<p>The solution for second-order linear homogeneous equations:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Roots of the auxiliary equation</p></th>
+<th class="head"><p>General solution</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(r_1\)</span>, <span class="math notranslate nohighlight">\(r_2\)</span>, real and distinct</p></td>
+<td><p><span class="math notranslate nohighlight">\(y = c_1e^{r_1x} + c_2e^{r_2x}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p><span class="math notranslate nohighlight">\(r_1 = r_2 = r\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(y = c_1e^{rx} + c_2xe^{rx}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p><span class="math notranslate nohighlight">\(r_1\)</span>, <span class="math notranslate nohighlight">\(r_2\)</span>, complex: <span class="math notranslate nohighlight">\(\alpha + i\beta\)</span></p></td>
+<td><p><span class="math notranslate nohighlight">\(y = e^{\alpha x}(c_1\cos\beta x + c_2\sin\beta x)\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>For non-homogeneous linear equations, use either the method of undetermined coefficients or the method
+of variation of parameters</p>
+<div class="admonition-method-undetermined-coefficients admonition">
+<p class="admonition-title">Method: undetermined coefficients</p>
+<p>TODO</p>
+</div>
+<div class="admonition-method-variation-of-parameters admonition">
+<p class="admonition-title">Method: variation of parameters</p>
+<p>TODO</p>
+</div>
 </section>
 </section>
 <section id="conic-sections">
@@ -1053,6 +1167,11 @@ r = \frac{a(1-e^2)}{1 + e\cos\theta}
 <li><a class="reference internal" href="#the-definite-and-indefinite-integrals">The definite and indefinite integrals</a></li>
 <li><a class="reference internal" href="#the-fundamental-theorem-of-calculus">The FUNDAMENTAL theorem of calculus</a></li>
 <li><a class="reference internal" href="#integration-techniques">Integration techniques</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#differential-equations">Differential equations</a><ul>
+<li><a class="reference internal" href="#first-order-odes">First-order ODEs</a></li>
+<li><a class="reference internal" href="#second-order-odes">Second-order ODEs</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#conic-sections">Conic sections</a><ul>

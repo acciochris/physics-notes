@@ -525,7 +525,7 @@ This section is **particularly important** because integration is a tricky proce
              + \sum_{j=1}^n\sum_{v=1}^{v_j}\frac{A_{jv}x + B_{jv}}{(a_jx^2 + b_jx + c_j)^v}
         $$
         
-     3. evaluate the transformed integrate section by section, completing squares and substituting with $u$ when necessary
+     3. evaluate the transformed integral section by section, completing squares and substituting with $u$ when necessary
      
    - radicals:
      - $\sqrt{\pm x^2 \pm a^2}$:
@@ -551,6 +551,88 @@ This section is **particularly important** because integration is a tricky proce
         $$
         \int u\,dv = uv - \int v\,du
         $$
+
+## Differential equations
+
+### First-order ODEs
+
+Separable equations
+: Differential equations that can be written in the form
+
+$$
+\frac{dy}{dx} = \frac{g(x)}{h(y)}
+$$
+
+To solve separable equations,
+
+1. put all of $y$ on one side and all of $x$ on the other side
+   
+   $$
+   h(y)\,dx = g(x)\,dx
+   $$
+   
+2. integrate both sides
+   
+   $$
+   \int h(y)\,dy = \int g(x)\,dx
+   $$
+
+Linear equations
+: Differential equations that can be put into the form
+
+$$
+\frac{dy}{dx} + P(x)y = Q(x)
+$$
+
+To solve linear equations,
+
+1. let
+   
+   $$
+   I(x) = e^{\int P(x)\,dx}
+   $$
+   
+2. multiply both sides by $I(x)$
+3. transform the left side into a derivative with the product rule
+4. integrate both sides
+
+### Second-order ODEs
+
+Second-order linear homogeneous equations
+: equations in the form
+
+$$
+P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = 0
+$$
+
+Auxiliary equations
+: the quadratic equations
+
+$$
+ar^2 + br + c = 0
+$$
+
+where $a$, $b$ and $c$ are the functions $P(x)$, $Q(x)$ and $R(x)$ in the equation above.
+
+The solution for second-order linear homogeneous equations:
+
+| Roots of the auxiliary equation          | General solution                                    |
+| ---------------------------------------- | --------------------------------------------------- |
+| $r_1$, $r_2$, real and distinct          | $y = c_1e^{r_1x} + c_2e^{r_2x}$                     |
+| $r_1 = r_2 = r$                          | $y = c_1e^{rx} + c_2xe^{rx}$                        |
+| $r_1$, $r_2$, complex: $\alpha + i\beta$ | $y = e^{\alpha x}(c_1\cos\beta x + c_2\sin\beta x)$ |
+
+For non-homogeneous linear equations, use either the method of undetermined coefficients or the method
+of variation of parameters
+
+
+```{admonition} Method: undetermined coefficients
+TODO
+```
+
+```{admonition} Method: variation of parameters
+TODO
+```
 
 ## Conic sections
 
