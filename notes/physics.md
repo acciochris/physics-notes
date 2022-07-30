@@ -470,6 +470,7 @@ $$
 \vec{I} = \vec{F}\Delta t
 $$
 
+The impulse-momentum theorem:
 
 $$
 \vec{F}\Delta t = m\vec{v}_2 - m\vec{v}_1
@@ -547,4 +548,52 @@ $$
 Energy and work are frame-dependent!
 ```
 
-### 
+### Work and Energy
+
+The work-kinetic energy theorem:
+
+$$
+W_{net} = \Delta E_{kinetic}
+$$
+
+Conservation of mechanical energy:
+
+$$
+K_f + U_f = K_i + U_i
+$$
+
+where $K$ and $U$ are kinetic energy and potential energy, respectively.
+
+### Collisions
+
+During a perfectly **inelastic** collision, the two objects move together and only momentum is conserved.
+
+$$
+m_1\mathbf{v}_1 + m_2\mathbf{v}_2 = m\mathbf{v}
+$$
+
+---
+
+During a perfectly **elastic** collision, both momentum and energy are conserved:
+
+$$
+m_1\mathbf{v}_1 + m_2\mathbf{v}_2 = m_1\mathbf{v}_1' + m_2\mathbf{v}_2' \\
+\frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 = \frac{1}{2}m_1v_1'^2 + \frac{1}{2}m_2v_2'^2
+$$
+
+---
+
+Coefficient of restitution
+: the ratio of the relative speed after and before the collision
+
+$$
+e = \frac{|v_1' - v_2'|}{|v_1 - v_2|}
+$$
+
+- For a perfectly **elastic** collision, $e = 1$.
+- For a perfectly **inelastic** collision, $e = 0$.
+- Otherwise, $0 < e < 1$.
+
+### Satellite orbits and energies
+
+TODO
