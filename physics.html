@@ -840,7 +840,7 @@ P = \frac{W}{t} = \mathbf{F}\cdot\mathbf{v} = Fv\cos\theta
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
-W_{net} = \Delta E_{kinetic}
+W_{net} = \Delta E_{k}
 \]</div>
 </div>
 <p>Conservation of mechanical energy:</p>
@@ -866,8 +866,10 @@ m_1\mathbf{v}_1 + m_2\mathbf{v}_2 = m\mathbf{v}
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}
-m_1\mathbf{v}_1 + m_2\mathbf{v}_2 = m_1\mathbf{v}_1' + m_2\mathbf{v}_2' \\
-\frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 = \frac{1}{2}m_1v_1'^2 + \frac{1}{2}m_2v_2'^2
+\begin{align*}
+  m_1\mathbf{v}_1 + m_2\mathbf{v}_2 &amp; = m_1\mathbf{v}_1' + m_2\mathbf{v}_2' \\
+  \frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 &amp; = \frac{1}{2}m_1v_1'^2 + \frac{1}{2}m_2v_2'^2
+\end{align*}
 \end{split}\]</div>
 </div>
 <hr class="docutils" />
@@ -889,7 +891,50 @@ e = \frac{|v_1' - v_2'|}{|v_1 - v_2|}
 </section>
 <section id="satellite-orbits-and-energies">
 <h3>Satellite orbits and energies<a class="headerlink" href="#satellite-orbits-and-energies" title="Permalink to this heading">#</a></h3>
-<p>TODO</p>
+<div class="admonition-strategy admonition">
+<p class="admonition-title">Strategy</p>
+<ol class="arabic">
+<li><p><a class="reference internal" href="#planetary-motion"><span class="std std-doc">Kepler’s second law</span></a> or <a class="reference internal" href="#momentum-and-angular-momentum"><span class="std std-doc">conservation of angular momentum</span></a></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   rv\sin\alpha = r'v'\sin\beta
+   \]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha\)</span> and <span class="math notranslate nohighlight">\(\beta\)</span> are the angle between <span class="math notranslate nohighlight">\(\mathbf{r}\)</span> and <span class="math notranslate nohighlight">\(\mathbf{v}\)</span>.</p>
+</li>
+<li><p>Conservation of energy</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   E = E_k + E_{grav} = E_k' + E_{grav}'
+   \]</div>
+</div>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Orbit type</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(E\)</span></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Ellipse</p></td>
+<td><p><span class="math notranslate nohighlight">\(-\frac{GMm}{2a}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Parabola</p></td>
+<td><p><span class="math notranslate nohighlight">\(0\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Hyperbola</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{GMm}{2a}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li><p><a class="reference internal" href="#planetary-motion"><span class="std std-doc">Kepler’s third law</span></a></p></li>
+<li><p><a class="reference internal" href="calculus.html#conic-sections-in-polar-forms"><span class="std std-doc">Orbits in polar coordinates</span></a></p></li>
+</ol>
+</div>
 </section>
 </section>
 </section>
