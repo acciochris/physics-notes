@@ -284,8 +284,8 @@ r(t) = \sqrt{x^2 + y^2 + z^2}
 \mathbf{\ddot r} = (\ddot r - r\dot\theta^2)\hat r + (2\dot r\dot\theta + r\ddot\theta)\hat\theta 
 \end{split}\]</div>
 </div>
-<section id="falling-objects">
-<h3>Falling objects<a class="headerlink" href="#falling-objects" title="Permalink to this heading">#</a></h3>
+<section id="projectile-motion">
+<h3>Projectile motion<a class="headerlink" href="#projectile-motion" title="Permalink to this heading">#</a></h3>
 <div class="admonition-model-falling-objects-with-initial-upward-velocity admonition">
 <p class="admonition-title">Model: Falling objects with initial upward velocity</p>
 <div class="math-wrapper docutils container">
@@ -745,6 +745,7 @@ the unknown quantitiy and what we already know.</p>
 \vec{I} = \vec{F}\Delta t
 \]</div>
 </div>
+<p>The impulse-momentum theorem:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
@@ -833,6 +834,63 @@ P = \frac{W}{t} = \mathbf{F}\cdot\mathbf{v} = Fv\cos\theta
 <p>Energy and work are frame-dependent!</p>
 </div>
 </section>
+<section id="work-and-energy">
+<h3>Work and Energy<a class="headerlink" href="#work-and-energy" title="Permalink to this heading">#</a></h3>
+<p>The work-kinetic energy theorem:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+W_{net} = \Delta E_{kinetic}
+\]</div>
+</div>
+<p>Conservation of mechanical energy:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+K_f + U_f = K_i + U_i
+\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(K\)</span> and <span class="math notranslate nohighlight">\(U\)</span> are kinetic energy and potential energy, respectively.</p>
+</section>
+<section id="collisions">
+<h3>Collisions<a class="headerlink" href="#collisions" title="Permalink to this heading">#</a></h3>
+<p>During a perfectly <strong>inelastic</strong> collision, the two objects move together and only momentum is conserved.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+m_1\mathbf{v}_1 + m_2\mathbf{v}_2 = m\mathbf{v}
+\]</div>
+</div>
+<hr class="docutils" />
+<p>During a perfectly <strong>elastic</strong> collision, both momentum and energy are conserved:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+m_1\mathbf{v}_1 + m_2\mathbf{v}_2 = m_1\mathbf{v}_1' + m_2\mathbf{v}_2' \\
+\frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 = \frac{1}{2}m_1v_1'^2 + \frac{1}{2}m_2v_2'^2
+\end{split}\]</div>
+</div>
+<hr class="docutils" />
+<dl class="simple myst">
+<dt>Coefficient of restitution</dt><dd><p>the ratio of the relative speed after and before the collision</p>
+</dd>
+</dl>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+e = \frac{|v_1' - v_2'|}{|v_1 - v_2|}
+\]</div>
+</div>
+<ul class="simple">
+<li><p>For a perfectly <strong>elastic</strong> collision, <span class="math notranslate nohighlight">\(e = 1\)</span>.</p></li>
+<li><p>For a perfectly <strong>inelastic</strong> collision, <span class="math notranslate nohighlight">\(e = 0\)</span>.</p></li>
+<li><p>Otherwise, <span class="math notranslate nohighlight">\(0 &lt; e &lt; 1\)</span>.</p></li>
+</ul>
+</section>
+<section id="satellite-orbits-and-energies">
+<h3>Satellite orbits and energies<a class="headerlink" href="#satellite-orbits-and-energies" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
 </section>
 </section>
 
@@ -900,7 +958,7 @@ P = \frac{W}{t} = \mathbf{F}\cdot\mathbf{v} = Fv\cos\theta
             <ul>
 <li><a class="reference internal" href="#">Physics</a><ul>
 <li><a class="reference internal" href="#motion">Motion</a><ul>
-<li><a class="reference internal" href="#falling-objects">Falling objects</a></li>
+<li><a class="reference internal" href="#projectile-motion">Projectile motion</a></li>
 <li><a class="reference internal" href="#circular-and-spiral-motion">Circular and spiral motion</a></li>
 </ul>
 </li>
@@ -918,6 +976,9 @@ P = \frac{W}{t} = \mathbf{F}\cdot\mathbf{v} = Fv\cos\theta
 <li><a class="reference internal" href="#momentum-and-angular-momentum">Momentum and angular momentum</a></li>
 <li><a class="reference internal" href="#energy">Energy</a><ul>
 <li><a class="reference internal" href="#work-and-power">Work and Power</a></li>
+<li><a class="reference internal" href="#work-and-energy">Work and Energy</a></li>
+<li><a class="reference internal" href="#collisions">Collisions</a></li>
+<li><a class="reference internal" href="#satellite-orbits-and-energies">Satellite orbits and energies</a></li>
 </ul>
 </li>
 </ul>
