@@ -508,7 +508,15 @@ $$
 I_z = I_x + I_y
 $$
 
-[Common moments of inertia](https://en.wikipedia.org/wiki/List_of_moments_of_inertia)
+[Common moments of inertia](https://en.wikipedia.org/wiki/List_of_moments_of_inertia):
+
+| Object          | Moment of inertia                       |
+| --------------- | --------------------------------------- |
+| rod/slab        | $\frac{1}{12}mL^2$ or $\frac{1}{3}mL^2$ |
+| cylinder/disk   | $\frac{1}{2}mR^2$                       |
+| hoop            | $mR^2$                                  |
+| sphere          | $\frac{2}{5}mR^2$                       |
+| spherical shell | $\frac{2}{3}mR^2$                       |
 
 Angular momentum:
 
