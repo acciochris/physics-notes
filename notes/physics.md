@@ -577,8 +577,10 @@ $$
 During a perfectly **elastic** collision, both momentum and energy are conserved:
 
 $$
-m_1\mathbf{v}_1 + m_2\mathbf{v}_2 = m_1\mathbf{v}_1' + m_2\mathbf{v}_2' \\
-\frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 = \frac{1}{2}m_1v_1'^2 + \frac{1}{2}m_2v_2'^2
+\begin{align*}
+  m_1\mathbf{v}_1 + m_2\mathbf{v}_2 & = m_1\mathbf{v}_1' + m_2\mathbf{v}_2' \\
+  \frac{1}{2}m_1v_1^2 + \frac{1}{2}m_2v_2^2 & = \frac{1}{2}m_1v_1'^2 + \frac{1}{2}m_2v_2'^2
+\end{align*}
 $$
 
 ---
