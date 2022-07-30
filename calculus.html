@@ -981,15 +981,74 @@ P(x)r^2 + Q(x)r + R(x) = 0
 </tbody>
 </table>
 </div>
-<p>For non-homogeneous linear equations, use either the method of undetermined coefficients or the method
+<p>For non-homogeneous linear equations such as</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = G(x)
+\]</div>
+</div>
+<p>it can be proven that the general solution is</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y = y_p + y_c
+\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(y_c\)</span> is the general solution of the complementary homogeneous equation</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = 0
+\]</div>
+</div>
+<p>and <span class="math notranslate nohighlight">\(y_p\)</span> is a particular solution of the original equation.</p>
+<p>To find a particular solution, use either the method of undetermined coefficients or the method
 of variation of parameters.</p>
 <div class="admonition-method-undetermined-coefficients admonition">
-<p class="admonition-title">Method: undetermined coefficients</p>
-<p>TODO</p>
+<p class="admonition-title">Method: Undetermined coefficients</p>
+<ol class="arabic simple">
+<li><p>guess the form of the solution by classifying the function <span class="math notranslate nohighlight">\(G(x)\)</span></p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(Ce^{kx}\;\to\;Ae^{kx}\)</span></p></li>
+<li><p>a polynomial <span class="math notranslate nohighlight">\(P(x)\;\to\;Q(x)\)</span>, where <span class="math notranslate nohighlight">\(Q(x)\)</span> is a polynomial of the same degree as <span class="math notranslate nohighlight">\(P(x)\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(C\sin kx \;\text{or}\; C\cos kx\;\to\;A\cos kx + B\sin kx\)</span></p></li>
+<li><p>Everything above can be freely combined or superimposed together.</p></li>
+<li><p>If the guessed form is already a solution of the complementary equation, multiply it by <span class="math notranslate nohighlight">\(x\)</span> or <span class="math notranslate nohighlight">\(x^2\)</span></p></li>
+</ul>
+</li>
+<li><p>differentiate the function and substitute it into the differential equation</p></li>
+<li><p>solve for the coefficients</p></li>
+</ol>
 </div>
 <div class="admonition-method-variation-of-parameters admonition">
-<p class="admonition-title">Method: variation of parameters</p>
-<p>TODO</p>
+<p class="admonition-title">Method: Variation of parameters</p>
+<ol class="arabic">
+<li><p>replace the constants <span class="math notranslate nohighlight">\(c_1\)</span> and <span class="math notranslate nohighlight">\(c_2\)</span> in <span class="math notranslate nohighlight">\(y_c\)</span> with functions <span class="math notranslate nohighlight">\(u_1(x)\)</span> and <span class="math notranslate nohighlight">\(u_2(x)\)</span></p></li>
+<li><p>differentiate the altered function <span class="math notranslate nohighlight">\(y_p\)</span> and simplify it by imposing conditions</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The condition</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+u_1'y_1 + u_2'y_2 = 0
+\]</div>
+</div>
+<p>often works well.</p>
+</div>
+</li>
+<li><p>plug everything into the original equation and let</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+   P(x)y'' + Q(x)y' + R(x)y
+   \]</div>
+</div>
+<p>be zero, because <span class="math notranslate nohighlight">\(y_1\)</span> and <span class="math notranslate nohighlight">\(y_2\)</span> are particular solutions of the complementary equation.</p>
+</li>
+<li><p>solve for <span class="math notranslate nohighlight">\(u_1\)</span> and <span class="math notranslate nohighlight">\(u_2\)</span></p></li>
+</ol>
 </div>
 </section>
 </section>
