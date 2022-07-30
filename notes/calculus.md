@@ -621,17 +621,63 @@ After solving the auxiliary equation, we can get the solution for the original s
 | $r_1 = r_2 = r$                          | $y = c_1e^{rx} + c_2xe^{rx}$                        |
 | $r_1$, $r_2$, complex: $\alpha + i\beta$ | $y = e^{\alpha x}(c_1\cos\beta x + c_2\sin\beta x)$ |
 
-For non-homogeneous linear equations, use either the method of undetermined coefficients or the method
+For non-homogeneous linear equations such as
+
+$$
+P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = G(x)
+$$
+
+it can be proven that the general solution is
+
+$$
+y = y_p + y_c
+$$
+
+where $y_c$ is the general solution of the complementary homogeneous equation
+
+$$
+P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = 0
+$$
+
+and $y_p$ is a particular solution of the original equation.
+
+To find a particular solution, use either the method of undetermined coefficients or the method
 of variation of parameters.
 
-
-```{admonition} Method: undetermined coefficients
-TODO
+```{admonition} Method: Undetermined coefficients
+1. guess the form of the solution by classifying the function $G(x)$
+   
+   - $Ce^{kx}\;\to\;Ae^{kx}$
+   - a polynomial $P(x)\;\to\;Q(x)$, where $Q(x)$ is a polynomial of the same degree as $P(x)$
+   - $C\sin kx \;\text{or}\; C\cos kx\;\to\;A\cos kx + B\sin kx$
+   - Everything above can be freely combined or superimposed together.
+   - If the guessed form is already a solution of the complementary equation, multiply it by $x$ or $x^2$
+   
+2. differentiate the function and substitute it into the differential equation
+3. solve for the coefficients
 ```
 
-```{admonition} Method: variation of parameters
-TODO
-```
+````{admonition} Method: Variation of parameters
+1. replace the constants $c_1$ and $c_2$ in $y_c$ with functions $u_1(x)$ and $u_2(x)$
+2. differentiate the altered function $y_p$ and simplify it by imposing conditions
+   ```{tip}
+   The condition
+   
+   $$
+   u_1'y_1 + u_2'y_2 = 0
+   $$
+   
+   often works well.
+   ```
+3. plug everything into the original equation and let
+   
+   $$
+   P(x)y'' + Q(x)y' + R(x)y
+   $$
+   
+   be zero, because $y_1$ and $y_2$ are particular solutions of the complementary equation.
+4. solve for $u_1$ and $u_2$
+````
 
 ## Conic sections
 
