@@ -70,7 +70,7 @@ $$
 \mathbf{\ddot r} = (\ddot r - r\dot\theta^2)\hat r + (2\dot r\dot\theta + r\ddot\theta)\hat\theta 
 $$
 
-### Falling objects
+### Projectile motion
 
 ```{admonition} Model: Falling objects with initial upward velocity
 $$
@@ -546,3 +546,5 @@ $$
 ```{important}
 Energy and work are frame-dependent!
 ```
+
+### 
