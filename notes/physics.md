@@ -553,7 +553,7 @@ Energy and work are frame-dependent!
 The work-kinetic energy theorem:
 
 $$
-W_{net} = \Delta E_{kinetic}
+W_{net} = \Delta E_{k}
 $$
 
 Conservation of mechanical energy:
@@ -598,4 +598,25 @@ $$
 
 ### Satellite orbits and energies
 
-TODO
+```{admonition} Strategy
+1. [Kepler's second law](#planetary-motion) or [conservation of angular momentum](#momentum-and-angular-momentum)
+   
+   $$
+   rv\sin\alpha = r'v'\sin\beta
+   $$
+   
+   where $\alpha$ and $\beta$ are the angle between $\mathbf{r}$ and $\mathbf{v}$.
+2. Conservation of energy
+   
+   $$
+   E = E_k + E_{grav} = E_k' + E_{grav}'
+   $$
+   
+   | Orbit type | $E$               |
+   | ---------- | ----------------- |
+   | Ellipse    | $-\frac{GMm}{2a}$ |
+   | Parabola   | $0$               |
+   | Hyperbola  | $\frac{GMm}{2a}$  |
+3. [Kepler's third law](#planetary-motion)
+4. [Orbits in polar coordinates](calculus.md#conic-sections-in-polar-forms)
+```
