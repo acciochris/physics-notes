@@ -605,11 +605,14 @@ $$
 P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = 0
 $$
 
+If $P(x)$, $Q(x)$ and $R(x)$ are constant-valued functions ($a$, $b$ and $c$), the second-order differential equation
+can be easily solved by using auxiliary equations.
+
 Auxiliary equations
 : the quadratic equations
 
 $$
-P(x)r^2 + Q(x)r + R(x) = 0
+ar^2 + br + c = 0
 $$
 
 After solving the auxiliary equation, we can get the solution for the original second-order homogeneous linear differential equation
