@@ -276,12 +276,14 @@ r(t) = \sqrt{x^2 + y^2 + z^2}
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}
-\mathbf{r} = (r\cos\theta, r\sin\theta) \\
-\mathbf{\dot r} = (
-  \dot r\cos\theta - r\sin\theta\dot\theta,
-  \dot r\sin\theta + r\cos\theta\dot\theta
-) = \dot r\hat r + r\dot\theta\hat\theta \\
-\mathbf{\ddot r} = (\ddot r - r\dot\theta^2)\hat r + (2\dot r\dot\theta + r\ddot\theta)\hat\theta 
+\begin{align*}
+  \mathbf{r} &amp; = (r\cos\theta, r\sin\theta) \\
+  \mathbf{\dot r} &amp; = (
+    \dot r\cos\theta - r\sin\theta\dot\theta,
+    \dot r\sin\theta + r\cos\theta\dot\theta
+  ) = \dot r\hat r + r\dot\theta\hat\theta \\
+  \mathbf{\ddot r} &amp; = (\ddot r - r\dot\theta^2)\hat r + (2\dot r\dot\theta + r\ddot\theta)\hat\theta
+\end{align*}
 \end{split}\]</div>
 </div>
 <section id="projectile-motion">
@@ -788,7 +790,33 @@ I = I_{cm} + md^2
 I_z = I_x + I_y
 \]</div>
 </div>
-<p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_moments_of_inertia">Common moments of inertia</a></p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/List_of_moments_of_inertia">Common moments of inertia</a>:</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Object</p></th>
+<th class="head"><p>Moment of inertia</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>rod/slab</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{12}mL^2\)</span> or <span class="math notranslate nohighlight">\(\frac{1}{3}mL^2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>cylinder/disk</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{1}{2}mR^2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>hoop</p></td>
+<td><p><span class="math notranslate nohighlight">\(mR^2\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>sphere</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{2}{5}mR^2\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>spherical shell</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{2}{3}mR^2\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <p>Angular momentum:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">

@@ -949,6 +949,8 @@ should be easy to integrate</p></li>
 P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = 0
 \]</div>
 </div>
+<p>If <span class="math notranslate nohighlight">\(P(x)\)</span>, <span class="math notranslate nohighlight">\(Q(x)\)</span> and <span class="math notranslate nohighlight">\(R(x)\)</span> are constant-valued functions (<span class="math notranslate nohighlight">\(a\)</span>, <span class="math notranslate nohighlight">\(b\)</span> and <span class="math notranslate nohighlight">\(c\)</span>), the second-order differential equation
+can be easily solved by using auxiliary equations.</p>
 <dl class="simple myst">
 <dt>Auxiliary equations</dt><dd><p>the quadratic equations</p>
 </dd>
@@ -956,7 +958,7 @@ P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = 0
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
-P(x)r^2 + Q(x)r + R(x) = 0
+ar^2 + br + c = 0
 \]</div>
 </div>
 <p>After solving the auxiliary equation, we can get the solution for the original second-order homogeneous linear differential equation
@@ -1050,6 +1052,37 @@ u_1'y_1 + u_2'y_2 = 0
 <li><p>solve for <span class="math notranslate nohighlight">\(u_1\)</span> and <span class="math notranslate nohighlight">\(u_2\)</span></p></li>
 </ol>
 </div>
+<p>If, however, the coefficients of <span class="math notranslate nohighlight">\(y\)</span> are not constant-valued functions, some of the second-order ODEs
+can still be solved by downgrading them to first-order ODEs.</p>
+<p>If the equation is in the form</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y'' = f(y, y')
+\]</div>
+</div>
+<p>then let <span class="math notranslate nohighlight">\(p = y'\)</span>. Therefore</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y'' = \frac{dp}{dx} = \frac{dp}{dy}\frac{dy}{dx} = p\frac{dp}{dx}
+\]</div>
+</div>
+<p>and the original equation turns into a first-order ODE:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+p\frac{dp}{dy} = f(y, p)
+\]</div>
+</div>
+<p>If the equation is in the form</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+y'' = f(x, y')
+\]</div>
+</div>
+<p>then simply substitute <span class="math notranslate nohighlight">\(y'\)</span> with <span class="math notranslate nohighlight">\(p\)</span> and integrate <span class="math notranslate nohighlight">\(p\)</span> after solving the transformed equation.</p>
 </section>
 </section>
 <section id="conic-sections">
