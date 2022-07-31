@@ -790,3 +790,11 @@ r = \frac{a(1-e^2)}{1 + e\cos\theta}
 $$
 
 In the equation above, the perihelion distance is $a(1 - e)$ and the aphelion distance is $a(1 + e)$.
+
+## Multivariable calculus
+
+TODO
+
+## Vector calculus
+
+TODO
