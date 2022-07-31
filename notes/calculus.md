@@ -682,6 +682,35 @@ of variation of parameters.
 4. solve for $u_1$ and $u_2$
 ````
 
+If, however, the coefficients of $y$ are not constant-valued functions, some of the second-order ODEs
+can still be solved by downgrading them to first-order ODEs.
+
+If the equation is in the form
+
+$$
+y'' = f(y, y')
+$$
+
+then let $p = y'$. Therefore
+
+$$
+y'' = \frac{dp}{dx} = \frac{dp}{dy}\frac{dy}{dx} = p\frac{dp}{dx}
+$$
+
+and the original equation turns into a first-order ODE:
+
+$$
+p\frac{dp}{dy} = f(y, p)
+$$
+
+If the equation is in the form
+
+$$
+y'' = f(x, y')
+$$
+
+then simply substitute $y'$ with $p$ and integrate $p$ after solving the transformed equation.
+
 ## Conic sections
 
 ### Parabolas
