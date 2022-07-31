@@ -62,12 +62,14 @@ This is best suited for geometric problems (instead of ones that requires tons o
 General motion in polar coordinates:
 
 $$
-\mathbf{r} = (r\cos\theta, r\sin\theta) \\
-\mathbf{\dot r} = (
-  \dot r\cos\theta - r\sin\theta\dot\theta,
-  \dot r\sin\theta + r\cos\theta\dot\theta
-) = \dot r\hat r + r\dot\theta\hat\theta \\
-\mathbf{\ddot r} = (\ddot r - r\dot\theta^2)\hat r + (2\dot r\dot\theta + r\ddot\theta)\hat\theta 
+\begin{align*}
+  \mathbf{r} & = (r\cos\theta, r\sin\theta) \\
+  \mathbf{\dot r} & = (
+    \dot r\cos\theta - r\sin\theta\dot\theta,
+    \dot r\sin\theta + r\cos\theta\dot\theta
+  ) = \dot r\hat r + r\dot\theta\hat\theta \\
+  \mathbf{\ddot r} & = (\ddot r - r\dot\theta^2)\hat r + (2\dot r\dot\theta + r\ddot\theta)\hat\theta
+\end{align*}
 $$
 
 ### Projectile motion
