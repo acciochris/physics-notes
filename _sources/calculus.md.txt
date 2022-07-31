@@ -627,7 +627,7 @@ After solving the auxiliary equation, we can get the solution for the original s
 For non-homogeneous linear equations such as
 
 $$
-P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = G(x)
+a\frac{d^2y}{dx^2} + b\frac{dy}{dx} + cy = G(x)
 $$
 
 it can be proven that the general solution is
@@ -639,7 +639,7 @@ $$
 where $y_c$ is the general solution of the complementary homogeneous equation
 
 $$
-P(x)\frac{d^2y}{dx^2} + Q(x)\frac{dy}{dx} + R(x)y = 0
+a\frac{d^2y}{dx^2} + b\frac{dy}{dx} + cy = 0
 $$
 
 and $y_p$ is a particular solution of the original equation.
@@ -675,7 +675,7 @@ of variation of parameters.
 3. plug everything into the original equation and let
    
    $$
-   P(x)y'' + Q(x)y' + R(x)y
+   ay'' + by' + cy
    $$
    
    be zero, because $y_1$ and $y_2$ are particular solutions of the complementary equation.
@@ -790,3 +790,11 @@ r = \frac{a(1-e^2)}{1 + e\cos\theta}
 $$
 
 In the equation above, the perihelion distance is $a(1 - e)$ and the aphelion distance is $a(1 + e)$.
+
+## Multivariable calculus
+
+TODO
+
+## Vector calculus
+
+TODO
