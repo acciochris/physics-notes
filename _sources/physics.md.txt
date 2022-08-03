@@ -656,9 +656,9 @@ $$
 ```
 
 ```{caution}
-Be careful with the domains of the inverse trigonometric functions!
+Be careful with the ranges of the inverse trigonometric functions!
 
-| Function    | Domain                            |
+| Function    | Range                             |
 | ----------- | --------------------------------- |
 | $\arcsin x$ | $[-\frac{\pi}{2}, \frac{\pi}{2}]$ |
 | $\arccos x$ | $[0, \pi]$                        |
