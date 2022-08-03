@@ -654,3 +654,13 @@ $$
 \end{align*}
 $$
 ```
+
+```{caution}
+Be careful with the domains of the inverse trigonometric functions!
+
+| Function    | Domain                            |
+| ----------- | --------------------------------- |
+| $\arcsin x$ | $[-\frac{\pi}{2}, \frac{\pi}{2}]$ |
+| $\arccos x$ | $[0, \pi]$                        |
+| $\arctan x$ | $(-\frac{\pi}{2}, \frac{\pi}{2})$ |
+```
