@@ -630,3 +630,27 @@ $$
 3. [Kepler's third law](#planetary-motion)
 4. [Orbits in polar coordinates](calculus.md#conic-sections-in-polar-forms)
 ```
+
+```{tip}
+Useful trigonometric identities:
+
+$$
+\begin{align*}
+\sin a \sin b & = \frac{\cos(a - b) - \cos(a + b)}{2} \\
+\cos a \cos b & = \frac{\cos(a - b) + \cos(a + b)}{2} \\
+\sin a \cos b & = \frac{\sin(a + b) + \sin(a - b)}{2} \\
+\cos a \sin b & = \frac{\sin(a + b) - \sin(a - b)}{2}
+\end{align*}
+$$
+
+Reverse identities:
+
+$$
+\begin{align*}
+\sin a + \sin b & = 2 \sin \left(\frac{a + b}{2} \right) \cos \left(\frac{a - b}{2} \right) \\
+\sin a - \sin b & = 2 \cos \left(\frac{a + b}{2} \right) \sin \left(\frac{a - b}{2} \right) \\
+\cos a + \cos b & = 2 \cos \left(\frac{a + b}{2} \right) \cos \left(\frac{a - b}{2} \right) \\
+\cos a - \cos b & = -2 \sin \left(\frac{a + b}{2} \right) \sin \left(\frac{a - b}{2} \right)
+\end{align*}
+$$
+```
