@@ -469,13 +469,13 @@ the unknown quantitiy and what we already know.
 Impluse
 
 $$
-\vec{I} = \vec{F}\Delta t
+\mathbf{I} = \mathbf{F}\Delta t
 $$
 
 The impulse-momentum theorem:
 
 $$
-\vec{F}\Delta t = m\vec{v}_2 - m\vec{v}_1
+\mathbf{F}\Delta t = m\mathbf{v}_2 - m\mathbf{v}_1
 $$
 
 Variable-mass system:
