@@ -664,3 +664,119 @@ Be careful with the ranges of the inverse trigonometric functions!
 | $\arccos x$ | $[0, \pi]$                        |
 | $\arctan x$ | $(-\frac{\pi}{2}, \frac{\pi}{2})$ |
 ```
+
+## Oscillations and waves
+
+### Simple harmonic motion
+
+Position, speed and acceleration:
+
+$$
+\begin{align*}
+  x & = A\cos(\omega t + \varphi_0) \\
+  v & = -\omega A\sin(\omega t + \varphi_0) \\
+  a & = -\omega^2 A\cos(\omega t + \varphi_0) \\
+\end{align*}
+$$
+
+For a second-order differential equation in the form
+
+$$
+\ddot{x} = -\omega^2 x
+$$
+
+the solution is simply SHM with angular frequency $\omega$.
+
+Period:
+
+$$
+T = 2\pi\sqrt{\frac{1}{\omega}}
+$$
+
+For springs and simple pendulums,
+
+$$
+\begin{align*}
+  T_{spring} & = 2\pi\sqrt{\frac{m}{k}} \\
+  T_{pendulum} & = 2\pi\sqrt{\frac{l}{g}}
+\end{align*}
+$$
+
+```{admonition} Strategy: General SHM
+In more general conditions other than springs and pendulums, try to determine the system's **equivalent**
+"mass" and "spring coefficient".
+
+1. write down the system's potential energy $V(q)$ where $q$ is a custom variable
+2. The equilibrium points are those such that $V'(q) = 0$.
+3. The equivalent "spring coefficient" $k^*$ is given by $V''(q)$
+4. determine the equivalent "mass" by writing down the kinetic energy:
+   
+   $$
+   T(\dot{q}) = \frac{1}{2}m^*\dot{q}^2
+   $$
+   
+5. plug everything into the spring equation above
+```
+
+### Waves
+
+A sinusoidal wave
+
+$$
+y(x, t) = A\cos(\omega t - kx + \varphi_0)
+$$
+
+has the following properties:
+
+| Name              | Value                                   |
+| ----------------- | --------------------------------------- |
+| amplitude         | $A$                                     |
+| frequency         | $f$                                     |
+| wavelength        | $\lambda$                               |
+| initial phase     | $\varphi_0$                             |
+| angular frequency | $\omega = 2\pi f = \frac{2\pi}{T}$      |
+| period            | $T = \frac{1}{f} = \frac{2\pi}{\omega}$ |
+| wave number       | $k = \frac{2\pi}{\lambda}$              |
+| wave speed        | $v = \lambda f = \frac{\lambda}{T}$     |
+| phase             | $\varphi = \varphi_0 + \omega t$        |
+
+```{note}
+It is perfectly fine (although highly discouraged, see the note below) to replace the cosine function
+with a sine function, however do keep in mind the differences between sine and cosine, including the
+ranges of their inverse functions (see above).
+```
+
+In the wave equation above, if $x$ is fixed at $x_0$, then $y$ turns into a function of $t$.
+This function represents the oscillation at a fixed point as time goes on.
+
+$$
+y(t) = A\cos(\omega t - kx_0 + \varphi_0)
+$$
+
+There is a subtle but extremely important detail in the equation above, namely the fact that
+the actual phase is represented by $\varphi_0 + \omega t$, while the term $-kx$ determines the
+displacement at different x-coordinates.
+
+As a result, if the wave travels in the opposite direction, the signs of both $\varphi_0$ and $\omega t$
+need to be inverted. However, as the cosine function is an even function, it is equivalent with replacing
+$-kx$ with $kx$. (If a sine function is used instead, make sure that an additional minus sign is added.)
+
+```{tip}
+For both sine and cosine functions, if $kx$ and $\omega t$ are opposite in sign, the wave travels to the
+right. If they are the same in sign, the wave travels to the left.
+```
+
+```{important}
+In simple problems concerning waves (especially the phases of a travelling wave), it is highly recommended
+to stick to the cosine expression above. The reason is that at a fixed point, it is not at all intuitive
+to have a $-\omega t$ term, as if the "phase" is "decreasing", like this:
+
+$$
+y(t) = A\sin(kx_0 - \omega t + \varphi_0)
+$$
+
+(even though I have seen many books and websites recommend this approach)
+
+Therefore, in more complex problems, it is usually much more preferable to use complex exponentials so as
+to avoid the tricky phase problem.
+```
