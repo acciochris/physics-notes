@@ -780,3 +780,17 @@ $$
 Therefore, in more complex problems, it is usually much more preferable to use complex exponentials so as
 to avoid the tricky phase problem.
 ```
+
+### Waves as complex exponentials
+
+$$
+\widetilde{y}(x, t) = \widetilde{A}e^{i(\omega t \mp kx)}
+$$
+
+where
+
+$$
+\widetilde{A} = Ae^{i\varphi_0}
+$$
+
+is the complex amplitude.
