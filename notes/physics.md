@@ -784,7 +784,7 @@ to avoid the tricky phase problem.
 ### Waves as complex exponentials
 
 $$
-\widetilde{y}(x, t) = \widetilde{A}e^{i(\omega t \mp kx)}
+\widetilde{U}(x, t) = \widetilde{A}e^{i(\omega t \mp kx)}
 $$
 
 where
@@ -794,3 +794,33 @@ $$
 $$
 
 is the complex amplitude.
+
+The complex conjugate of the wave function is
+
+$$
+\widetilde{U}^*(x, t) = \widetilde{A}^*e^{-i(\omega t \mp kx)}
+$$
+
+To transform the complex wave function back into a trigonometric one, simply apply this formula:
+
+$$
+\begin{align*}
+  \Re(\widetilde{U}) & = \frac{\widetilde{U} + \widetilde{U}^*}{2} \\
+                     & = A\cos(\varphi_0 + \omega t \mp kx) \\
+  \Im(\widetilde{U}) & = \frac{\widetilde{U} - \widetilde{U}^*}{2i} \\
+                     & = A\sin(\varphi_0 + \omega t \mp kx) \\
+\end{align*}
+$$
+
+```{warning}
+In the second equation, as the wave travels to the right, there is a $-kx$ term in the $\sin$,
+which is an odd function. As a result, the phase of the wave is also "inverted".
+
+Therefore, under most circumstances, it **definitely** should **NOT** be used.
+```
+
+According to a [rule](calculus.md#complex-numbers) concerning complex conjugates, we have
+
+$$
+\widetilde{U}\widetilde{U}^* = |U|^2 = A^2
+$$
