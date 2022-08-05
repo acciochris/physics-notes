@@ -744,14 +744,14 @@ the unknown quantitiy and what we already know.</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
-\vec{I} = \vec{F}\Delta t
+\mathbf{I} = \mathbf{F}\Delta t
 \]</div>
 </div>
 <p>The impulse-momentum theorem:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
-\vec{F}\Delta t = m\vec{v}_2 - m\vec{v}_1
+\mathbf{F}\Delta t = m\mathbf{v}_2 - m\mathbf{v}_1
 \]</div>
 </div>
 <p>Variable-mass system:</p>
@@ -1170,7 +1170,7 @@ to avoid the tricky phase problem.</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
-\widetilde{y}(x, t) = \widetilde{A}e^{i(\omega t \mp kx)}
+\widetilde{U}(x, t) = \widetilde{A}e^{i(\omega t \mp kx)}
 \]</div>
 </div>
 <p>where</p>
@@ -1181,6 +1181,38 @@ to avoid the tricky phase problem.</p>
 \]</div>
 </div>
 <p>is the complex amplitude.</p>
+<p>The complex conjugate of the wave function is</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\widetilde{U}^*(x, t) = \widetilde{A}^*e^{-i(\omega t \mp kx)}
+\]</div>
+</div>
+<p>To transform the complex wave function back into a trigonometric one, simply apply this formula:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \Re(\widetilde{U}) &amp; = \frac{\widetilde{U} + \widetilde{U}^*}{2} \\
+                     &amp; = A\cos(\varphi_0 + \omega t \mp kx) \\
+  \Im(\widetilde{U}) &amp; = \frac{\widetilde{U} - \widetilde{U}^*}{2i} \\
+                     &amp; = A\sin(\varphi_0 + \omega t \mp kx) \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In the second equation, as the wave travels to the right, there is a <span class="math notranslate nohighlight">\(-kx\)</span> term in the <span class="math notranslate nohighlight">\(\sin\)</span>,
+which is an odd function. As a result, the phase of the wave is also “inverted”.</p>
+<p>Therefore, under most circumstances, it <strong>definitely</strong> should <strong>NOT</strong> be used.</p>
+</div>
+<p>According to a <a class="reference internal" href="calculus.html#complex-numbers"><span class="std std-doc">rule</span></a> concerning complex conjugates, we have</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\widetilde{U}\widetilde{U}^* = |U|^2 = A^2
+\]</div>
+</div>
 </section>
 </section>
 </section>
