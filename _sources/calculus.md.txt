@@ -798,3 +798,62 @@ TODO
 ## Vector calculus
 
 TODO
+
+## Complex numbers
+
+A complex number
+
+$$
+z = a + bi
+$$
+
+has a real part and an imaginary part:
+
+$$
+\Re(z) = a \\
+\Im(z) = b
+$$
+
+Its complex conjugate is
+
+$$
+\overline{z} = a - bi
+$$
+
+The modulus of $z$ is
+
+$$
+|z| = \sqrt{a^2 + b^2}
+$$
+
+$$
+z\overline{z} = |z|^2
+$$
+
+The polar form of a complex number $z$:
+
+$$
+z = r(\cos\theta + i\sin\theta)
+$$
+
+To multiply (or divide) complex numbers in polar form, simply multiply (or divide) the moduli and
+add (or subtract) the arguments.
+
+```{important}
+Euler's formula:
+
+$$
+e^{ix} = \cos x + i\sin x
+$$
+
+Therefore
+
+$$
+\begin{align*}
+  e^{-ix} & = \cos(-x) + i\sin(-x) \\
+          & = \cos x - i\sin x \\
+  \cos x & = \frac{e^{ix} + e^{-ix}}{2} \\
+  \sin x & = \frac{e^{ix} - e^{-ix}}{2i}
+\end{align*}
+$$
+```
