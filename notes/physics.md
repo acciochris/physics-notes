@@ -698,7 +698,8 @@ For springs and simple pendulums,
 $$
 \begin{align*}
   T_{spring} & = 2\pi\sqrt{\frac{m}{k}} \\
-  T_{pendulum} & = 2\pi\sqrt{\frac{l}{g}}
+  T_{pendulum} & = 2\pi\sqrt{\frac{l}{g}} \\
+  E_{string} & = \frac{1}{2}kA^2 \\
 \end{align*}
 $$
 
