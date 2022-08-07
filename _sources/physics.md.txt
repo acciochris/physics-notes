@@ -698,7 +698,8 @@ For springs and simple pendulums,
 $$
 \begin{align*}
   T_{spring} & = 2\pi\sqrt{\frac{m}{k}} \\
-  T_{pendulum} & = 2\pi\sqrt{\frac{l}{g}}
+  T_{pendulum} & = 2\pi\sqrt{\frac{l}{g}} \\
+  E_{string} & = \frac{1}{2}kA^2 \\
 \end{align*}
 $$
 
@@ -824,3 +825,63 @@ According to a [rule](calculus.md#complex-numbers) concerning complex conjugates
 $$
 \widetilde{U}\widetilde{U}^* = |U|^2 = A^2
 $$
+
+### Standing waves
+
+When two waves have the same amplitude, frequency and wavelength and at the same time travels in the
+opposite direction, they interfere with each other and produce a standing wave.
+
+$$
+\begin{align*}
+  \widetilde{U}_1 & = Ae^{i(\omega t - kx)} \\
+  \widetilde{U}_2 & = Ae^{i(\omega t + kx)} \\
+  \widetilde{U} & = \widetilde{U}_1 + \widetilde{U}_2 \\
+                & = Ae^{i\omega t}(e^{-ikx} + e^{ikx}) \\
+  \Re(\widetilde{U}) & = 2A\cos\omega t\cos kx \\
+\end{align*}
+$$
+
+The amplitude function
+
+$$
+A(x) = \left|2A\cos kx\right|
+$$
+
+```{tip}
+Euler's formula:
+
+$$
+-e^{ix} = e^{i\pi}e^{ix} = e^{i(\pi + x)}
+$$
+```
+
+For tubes/strings, there are three distinct cases
+
+| Type          | Endpoint | Frequency                           |
+| ------------- | -------- | ----------------------------------- |
+| closed-closed | node     | $f = n\frac{v}{2L}$                 |
+| open-open     | antinode | $f = n\frac{v}{2L}$                 |
+| open-closed   | mixed    | $f = (n - \frac{1}{2})\frac{v}{2L}$ |
+
+### The Doppler effect
+
+In the table below, the velocities of the source, the observer and the wave in the medium are $u$, $v$ and $c$,
+respectively.
+
+| Source     | Observer   | Frequency                       |
+| ---------- | ---------- | ------------------------------- |
+| stationary | stationary | $f' = f$                        |
+| stationary | moving     | $f' = \frac{c \pm v}{c}f$       |
+| moving     | stationary | $f' = \frac{c}{c \mp u}f$       |
+| moving     | moving     | $f' = \frac{c \pm v}{c \mp u}f$ |
+
+```{note}
+When both the source and the observer are moving, it is not recommended to use the equation above
+as it may yield incorrect answers when the velocities are not on the same line.
+
+Instead, trace the motion of a single wave crest (or trough) and use the definition of the frequency.
+```
+
+```{important}
+The velocity of a wave ($v = \lambda f$) is the velocity relative to the medium!
+```
