@@ -181,6 +181,11 @@ $$
 $$
 ```
 
+```{tip}
+When the relative motion between two objects is involved and one of the objects has a fixed velocity
+and/or acceleration, try switching reference frames.
+```
+
 ## The balance of objects
 
 ### The balance of forces
