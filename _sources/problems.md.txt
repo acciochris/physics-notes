@@ -57,3 +57,7 @@ $$
 - ```{admonition} Question?
   The principle of virtual work
   ```
+
+### Section 7.4
+
+- The correct derivation for the equation for adiabatic processes ($pV^\gamma = constant$)
