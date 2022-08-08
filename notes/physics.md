@@ -917,7 +917,7 @@ $$
 p = nk_BT
 $$
 
-By analyzing the motion of each molecule and adding them all tegether, we get
+By analyzing the motion of each molecule and adding them all together, we get
 
 $$
 p = \frac{2}{3}n\overline{E_k}
@@ -941,4 +941,28 @@ $$
 $$
 \nu\propto V
 $$
+```
+
+### The first law of thermodynamics
+
+The change in internal energy equals the sum of the heat transferred from the environment and the
+work done by the environment.
+
+$$
+\Delta U = Q + W
+$$
+
+```{caution}
+Make sure the signs before $Q$ and $W$ are correct! They must correspond to the heat **FROM** the environment
+and the work **BY** the environment!
+```
+
+The work done on the system can always be calculated with integration:
+
+$$
+W = \int\mathbf{F}\cdot d\mathbf{r} = \int p\,dV
+$$
+
+```{caution}
+When calculating the work, **never ever** forget to take the atmospheric pressure $p_0$ into account.
 ```
