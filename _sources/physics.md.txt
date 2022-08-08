@@ -181,6 +181,11 @@ $$
 $$
 ```
 
+```{tip}
+When the relative motion between two objects is involved and one of the objects has a fixed velocity
+and/or acceleration, try switching reference frames.
+```
+
 ## The balance of objects
 
 ### The balance of forces
@@ -884,4 +889,56 @@ Instead, trace the motion of a single wave crest (or trough) and use the definit
 
 ```{important}
 The velocity of a wave ($v = \lambda f$) is the velocity relative to the medium!
+```
+
+## Thermodynamics
+
+### The ideal gas law
+
+$$
+pV = \nu RT
+$$
+
+Avogrado's number
+
+$$
+N_A = 6.02 \times 10^{23} \text{mol}^{-1}
+$$
+
+Boltzmann's constant
+
+$$
+k_B = \frac{R}{N_A} = 1.38 \times 10^{-23} J/K
+$$
+
+Let $n$ be the particle density $N/V$, and we get
+
+$$
+p = nk_BT
+$$
+
+By analyzing the motion of each molecule and adding them all tegether, we get
+
+$$
+p = \frac{2}{3}n\overline{E_k}
+$$
+
+Combining the last two equations together, here is another formula for $\overline{E_k}$:
+
+$$
+\overline{E_k} = \frac{3}{2}k_BT
+$$
+
+```{tip}
+The binomial approximation:
+
+$$
+(1 + x)^n \approx 1 + nx
+$$
+```
+
+```{tip}
+$$
+\nu\propto V
+$$
 ```
