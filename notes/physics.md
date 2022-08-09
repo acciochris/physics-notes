@@ -1036,3 +1036,60 @@ then directly analyzing $A \to B$ and $B \to C$ may not be plausible.
 
 Instead, try $A \to C$.
 ```
+
+### Surface phenomena
+
+Surface tension is caused by the attractive forces between molecules of a liquid.
+
+$$
+f = \sigma L
+$$
+
+Alternatively, use the work-area formula:
+
+$$
+W = \sigma\Delta A
+$$
+
+Wetting and capillary action depends on the cohesion between liquid molecules and adhesion among
+liquid and solid molecules.
+
+Let $\theta$ be the contact angle, and $r$ be the radius of the tube, then
+
+$$
+F_{cap} = f\cos\theta = 2\sigma\pi r\cos\theta = \rho\pi r^2gh
+$$
+
+Therefore
+
+$$
+h = \frac{2\sigma\cos\theta}{\rho gr}
+$$
+
+```{admonition} Laplace pressure
+$$
+\Delta p = \sigma\left(\frac{1}{\rho_x} + \frac{1}{\rho_y}\right)
+$$
+
+where $\rho_x$ and $\rho_y$ are the radii of curvature in two perpendicular directions parallel
+to the surface.
+
+Proof:
+
+![Laplace pressure](_static/laplace.jpg)
+
+$$
+\begin{align*}
+  \because \Delta p\,dS & = 2F_1\sin\left(\frac{1}{2}\frac{dx}{\rho_x}\right)
+                          + 2F_3\sin\left(\frac{1}{2}\frac{dy}{\rho_y}\right) \\
+                        & \approx F_1\frac{dx}{\rho_x} + F_3\frac{dy}{\rho_y} \\
+                        & = \sigma\frac{dx\,dy}{\rho_x} + \sigma\frac{dx\,dy}{\rho_y} \\
+                        & = \sigma dS \left(\frac{1}{\rho_x} + \frac{1}{\rho_y}\right) \\
+  \therefore \Delta p & = \sigma\left(\frac{1}{\rho_x} + \frac{1}{\rho_y}\right)
+\end{align*}
+$$
+```
+
+```{important}
+Laplace pressure is **very** useful, especially when one of the radii (or both of them) is $\infty$.
+```
