@@ -1492,6 +1492,69 @@ A \to B \to C
 <p>Instead, try <span class="math notranslate nohighlight">\(A \to C\)</span>.</p>
 </div>
 </section>
+<section id="surface-phenomena">
+<h3>Surface phenomena<a class="headerlink" href="#surface-phenomena" title="Permalink to this heading">#</a></h3>
+<p>Surface tension is caused by the attractive forces between molecules of a liquid.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+f = \sigma L
+\]</div>
+</div>
+<p>Alternatively, use the work-area formula:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+W = \sigma\Delta A
+\]</div>
+</div>
+<p>Wetting and capillary action depends on the cohesion between liquid molecules and adhesion among
+liquid and solid molecules.</p>
+<p>Let <span class="math notranslate nohighlight">\(\theta\)</span> be the contact angle, and <span class="math notranslate nohighlight">\(r\)</span> be the radius of the tube, then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+F_{cap} = f\cos\theta = 2\sigma\pi r\cos\theta = \rho\pi r^2gh
+\]</div>
+</div>
+<p>Therefore</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+h = \frac{2\sigma\cos\theta}{\rho gr}
+\]</div>
+</div>
+<div class="admonition-laplace-pressure admonition">
+<p class="admonition-title">Laplace pressure</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\Delta p = \sigma\left(\frac{1}{\rho_x} + \frac{1}{\rho_y}\right)
+\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(\rho_x\)</span> and <span class="math notranslate nohighlight">\(\rho_y\)</span> are the radii of curvature in two perpendicular directions parallel
+to the surface.</p>
+<p>Proof:</p>
+<p><img alt="Laplace pressure" src="_images/laplace.jpg" /></p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \because \Delta p\,dS &amp; = 2F_1\sin\left(\frac{1}{2}\frac{dx}{\rho_x}\right)
+                          + 2F_3\sin\left(\frac{1}{2}\frac{dy}{\rho_y}\right) \\
+                        &amp; \approx F_1\frac{dx}{\rho_x} + F_3\frac{dy}{\rho_y} \\
+                        &amp; = \sigma\frac{dx\,dy}{\rho_x} + \sigma\frac{dx\,dy}{\rho_y} \\
+                        &amp; = \sigma dS \left(\frac{1}{\rho_x} + \frac{1}{\rho_y}\right) \\
+  \therefore \Delta p &amp; = \sigma\left(\frac{1}{\rho_x} + \frac{1}{\rho_y}\right)
+\end{align*}
+\end{split}\]</div>
+</div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Laplace pressure is <strong>very</strong> useful, especially when one of the radii (or both of them) is <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -1594,6 +1657,7 @@ A \to B \to C
 <li><a class="reference internal" href="#the-ideal-gas-law">The ideal gas law</a></li>
 <li><a class="reference internal" href="#the-first-law-of-thermodynamics">The first law of thermodynamics</a></li>
 <li><a class="reference internal" href="#ideal-gas-processes">Ideal-gas processes</a></li>
+<li><a class="reference internal" href="#surface-phenomena">Surface phenomena</a></li>
 </ul>
 </li>
 </ul>
