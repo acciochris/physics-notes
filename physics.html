@@ -1415,6 +1415,83 @@ W = \int\mathbf{F}\cdot d\mathbf{r} = \int p\,dV
 <p>When calculating the work, <strong>never ever</strong> forget to take the atmospheric pressure <span class="math notranslate nohighlight">\(p_0\)</span> into account.</p>
 </div>
 </section>
+<section id="ideal-gas-processes">
+<h3>Ideal-gas processes<a class="headerlink" href="#ideal-gas-processes" title="Permalink to this heading">#</a></h3>
+<p>Isochoric (constant-volume)</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \because W &amp; = 0 \\
+  \therefore \Delta U &amp; = Q \\
+  \therefore \frac{i}{2}\nu RT &amp; = \nu C_V \Delta T \\
+  \therefore C_V &amp; = \frac{i}{2}R
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Isobaric (constant-pressure)</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \because \Delta U &amp; = Q + W \\
+  \therefore \frac{i}{2}\nu RT &amp; = \nu C_P \Delta t - p \Delta V \\
+                               &amp; = \nu C_P \Delta t - \nu R \Delta t \\
+  \therefore C_P &amp; = C_V + R
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Isothermal (constant-temperature)</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \because \Delta U &amp; = 0 \\
+  \therefore Q &amp; = -W \\
+               &amp; = \int_{V_1}^{V_2} p\,dV \\
+               &amp; = \int_{V_1}^{V_2} \frac{\nu RT}{V}\,dV \\
+               &amp; = \nu RT\ln\frac{V_2}{V_1} \\
+               &amp; = \nu RT\ln\frac{p_1}{p_2}
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Adiabatic</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \because Q &amp; = 0 \\
+  \therefore W &amp; = \Delta U \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>If</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\gamma = \frac{C_P}{C_V}
+\]</div>
+</div>
+<p>then we have</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+p_iV_i^\gamma = p_fV_f^\gamma = constant
+\]</div>
+</div>
+<div class="admonition-strategy-multistep-processes admonition">
+<p class="admonition-title">Strategy: Multistep processes</p>
+<p>If a process involves more than two states, such as this one:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+A \to B \to C
+\]</div>
+</div>
+<p>then directly analyzing <span class="math notranslate nohighlight">\(A \to B\)</span> and <span class="math notranslate nohighlight">\(B \to C\)</span> may not be plausible.</p>
+<p>Instead, try <span class="math notranslate nohighlight">\(A \to C\)</span>.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -1516,6 +1593,7 @@ W = \int\mathbf{F}\cdot d\mathbf{r} = \int p\,dV
 <li><a class="reference internal" href="#thermodynamics">Thermodynamics</a><ul>
 <li><a class="reference internal" href="#the-ideal-gas-law">The ideal gas law</a></li>
 <li><a class="reference internal" href="#the-first-law-of-thermodynamics">The first law of thermodynamics</a></li>
+<li><a class="reference internal" href="#ideal-gas-processes">Ideal-gas processes</a></li>
 </ul>
 </li>
 </ul>
