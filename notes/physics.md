@@ -966,3 +966,73 @@ $$
 ```{caution}
 When calculating the work, **never ever** forget to take the atmospheric pressure $p_0$ into account.
 ```
+
+### Ideal-gas processes
+
+Isochoric (constant-volume)
+
+$$
+\begin{align*}
+  \because W & = 0 \\
+  \therefore \Delta U & = Q \\
+  \therefore \frac{i}{2}\nu RT & = \nu C_V \Delta T \\
+  \therefore C_V & = \frac{i}{2}R
+\end{align*}
+$$
+
+Isobaric (constant-pressure)
+
+$$
+\begin{align*}
+  \because \Delta U & = Q + W \\
+  \therefore \frac{i}{2}\nu RT & = \nu C_P \Delta t - p \Delta V \\
+                               & = \nu C_P \Delta t - \nu R \Delta t \\
+  \therefore C_P & = C_V + R
+\end{align*}
+$$
+
+Isothermal (constant-temperature)
+
+$$
+\begin{align*}
+  \because \Delta U & = 0 \\
+  \therefore Q & = -W \\
+               & = \int_{V_1}^{V_2} p\,dV \\
+               & = \int_{V_1}^{V_2} \frac{\nu RT}{V}\,dV \\
+               & = \nu RT\ln\frac{V_2}{V_1} \\
+               & = \nu RT\ln\frac{p_1}{p_2}
+\end{align*}
+$$
+
+Adiabatic
+
+$$
+\begin{align*}
+  \because Q & = 0 \\
+  \therefore W & = \Delta U \\
+\end{align*}
+$$
+
+If
+
+$$
+\gamma = \frac{C_P}{C_V}
+$$
+
+then we have
+
+$$
+p_iV_i^\gamma = p_fV_f^\gamma = constant
+$$
+
+```{admonition} Strategy: Multistep processes
+If a process involves more than two states, such as this one:
+
+$$
+A \to B \to C
+$$
+
+then directly analyzing $A \to B$ and $B \to C$ may not be plausible.
+
+Instead, try $A \to C$.
+```
