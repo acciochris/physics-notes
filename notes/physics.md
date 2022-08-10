@@ -1119,3 +1119,29 @@ Concerning thermal expansion, I have seen various different expressions contradi
 
 Therefore, this topic is currently omitted.
 ```
+
+### Maxwell-Boltzmann distribution
+
+$$
+f(v) = 4\pi\left(\frac{m}{2\pi kT}\right)^{\frac{3}{2}}e^{-\frac{mv^2}{2kT}}v^2
+$$
+
+There are three distinct speeds related to this distribution
+
+The average speed
+
+$$
+v_{avg} = \sqrt{\frac{8kT}{\pi m}} = \sqrt{\frac{8RT}{\pi M}}
+$$
+
+The root-mean-square speed
+
+$$
+v_{rms} = \sqrt{\frac{3kT}{m}} = \sqrt{\frac{3RT}{M}}
+$$
+
+The most probable speed
+
+$$
+v_p = \sqrt{\frac{2kT}{m}} = \sqrt{\frac{2RT}{M}}
+$$
