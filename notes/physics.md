@@ -1145,3 +1145,10 @@ The most probable speed
 $$
 v_p = \sqrt{\frac{2kT}{m}} = \sqrt{\frac{2RT}{M}}
 $$
+
+### The second law of thermodynamics
+
+- The entropy of an isolated system never decreases.
+- Heat cannot be spontaneously transferred from a cold reservoir to a hot reservoir.
+- There are no perfect heat engines or perfect refrigerators. 
+- $\dots$
