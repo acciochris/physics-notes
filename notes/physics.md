@@ -317,7 +317,7 @@ and apply [linear algebra](linear-algebra.md#linear-algebra)
 ```
 
 ```{admonition} Model: Steelyard balance
-![A steelyard balance](_static/19th-century_steelyard.png)
+![A steelyard balance](images/19th-century_steelyard.png)
 
 (By An Elementary Treatise on Analytic Mechanics: With Numerous Examples By Edward A. (Edward Albert) Bowser, 1893., Public Domain, [Link](https://commons.wikimedia.org/w/index.php?curid=1319572))
 
@@ -1076,7 +1076,7 @@ to the surface.
 
 Proof:
 
-![Laplace pressure](_static/laplace.jpg)
+![Laplace pressure](images/laplace.jpg)
 
 $$
 \begin{align*}

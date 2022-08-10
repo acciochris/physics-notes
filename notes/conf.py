@@ -75,6 +75,7 @@ html_theme_options = {
     "source_branch": "main",
     "source_directory": "notes/",
 }
+html_copy_source = False
 
 # Myst configuration
 myst_heading_anchors = 3
