@@ -1051,7 +1051,7 @@ $$
 W = \sigma\Delta A
 $$
 
-Wetting and capillary action depends on the cohesion between liquid molecules and adhesion among
+Wetting and capillary action depends on the cohesion between liquid molecules and the adhesion among
 liquid and solid molecules.
 
 Let $\theta$ be the contact angle, and $r$ be the radius of the tube, then
@@ -1092,4 +1092,30 @@ $$
 
 ```{important}
 Laplace pressure is **very** useful, especially when one of the radii (or both of them) is $\infty$.
+```
+
+### Heat transfer and thermal expansion
+
+Conduction
+
+$$
+Q = K\frac{\Delta T}{l}S\Delta t
+$$
+
+Radiation (black body)
+
+$$
+J = \sigma T^4
+$$
+
+Radiation
+
+$$
+J = \varepsilon\sigma T^4
+$$
+
+```{note}
+Concerning thermal expansion, I have seen various different expressions contradicting one another.
+
+Therefore, this topic is currently omitted.
 ```
