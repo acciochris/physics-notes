@@ -1159,3 +1159,25 @@ Entropy
 Unfortunately, till now, I haven't fully grasped the concept of entropy. I'll fill in this section
 after I become more familiar with it.
 ```
+
+## Electromagnetism
+
+### Electrostatics
+
+Coulomb's law
+
+$$
+F = \frac{1}{4\pi\varepsilon_0}\frac{|q_1||q_2|}{r^2}
+$$
+
+The electric field of a particle
+
+$$
+\mathbf{E} = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\mathbf{\hat{r}}
+$$
+
+Gauss's Law
+
+$$
+\Phi_e = \oint\mathbf{E}\cdot d\mathbf{A} = \frac{Q_{in}}{\varepsilon_0}
+$$
