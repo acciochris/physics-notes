@@ -2,11 +2,10 @@
 
 ```{toctree}
 ---
-maxdepth: 2
-caption: "Contents:"
+maxdepth: 3
 ---
-physics
-calculus
+physics/index
+calculus/index
 linear-algebra
 problems
 ```
