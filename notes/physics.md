@@ -1152,3 +1152,10 @@ $$
 - Heat cannot be spontaneously transferred from a cold reservoir to a hot reservoir.
 - There are no perfect heat engines or perfect refrigerators. 
 - $\dots$
+
+Entropy
+
+```{note}
+Unfortunately, till now, I haven't fully grasped the concept of entropy. I'll fill in this section
+after I become more familiar with it.
+```
