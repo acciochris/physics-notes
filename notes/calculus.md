@@ -694,7 +694,7 @@ $$
 then let $p = y'$. Therefore
 
 $$
-y'' = \frac{dp}{dx} = \frac{dp}{dy}\frac{dy}{dx} = p\frac{dp}{dx}
+y'' = \frac{dp}{dx} = \frac{dp}{dy}\frac{dy}{dx} = p\frac{dp}{dy}
 $$
 
 and the original equation turns into a first-order ODE:
