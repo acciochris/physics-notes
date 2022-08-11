@@ -1160,9 +1160,9 @@ Unfortunately, till now, I haven't fully grasped the concept of entropy. I'll fi
 after I become more familiar with it.
 ```
 
-## Electromagnetism
+## Electrostatics
 
-### Electrostatics
+### The electric field
 
 Coulomb's law
 
@@ -1181,10 +1181,11 @@ Gauss's Law
 $$
 \Phi_e = \oint\mathbf{E}\cdot d\mathbf{A} = \frac{Q_{in}}{\varepsilon_0}
 $$
-The electric potential
+
+### The electric potential
 
 $$
-V = \frac{U}{q}
+\phi = \frac{U}{q}
 $$
 
 The electric potential of a point charge
@@ -1193,12 +1194,16 @@ $$
 \begin{align*}
   \because U & = -\int_\infty^r \frac{1}{4\pi\varepsilon_0}\frac{Qq}{r^2}\,dR \\
              & = \frac{1}{4\pi\varepsilon_0}\frac{Qq}{r} \\
-  \therefore V & = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r}
+  \therefore \phi & = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r}
 \end{align*}
 $$
 
+```{important}
+Electric potentials follow the rule of superposition!
+```
+
 ```{admonition} Strategy: Calculating electric potential
-1. basic tool: the electric potential of a point charge (see above)
+1. basic tools: the electric potential of a point charge and superposition (see above)
 2. determine the symmetry of the system
 3. transform the system according to the symmetry in a way that does not change the (average) potential.
 4. common transformations:
@@ -1218,4 +1223,8 @@ As a result, most of the strategies above still apply if the electric **field** 
 1. Whenever possible, try to use "accumulated" quantities such as [momentum](#momentum-and-angular-momentum)
    or [energy](#energy), including electric potential energy. This can sometimes simplify the calculations a lot.
 2. When the whole process is difficult to reason about, try to analyze a short segment such as $dt$ or $ds$.
+```
+
+```{attention}
+Coulumb's law only applies to **point** charges!
 ```
