@@ -1181,3 +1181,36 @@ Gauss's Law
 $$
 \Phi_e = \oint\mathbf{E}\cdot d\mathbf{A} = \frac{Q_{in}}{\varepsilon_0}
 $$
+
+### The electric potential
+
+$$
+V = \frac{U}{q}
+$$
+
+The electric potential of a point charge
+
+$$
+\begin{align*}
+  \because U & = -\int_\infty^r \frac{1}{4\pi\varepsilon_0}\frac{Qq}{r^2}\,dR \\
+             & = \frac{1}{4\pi\varepsilon_0}\frac{Qq}{r} \\
+  \therefore V & = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r}
+\end{align*}
+$$
+
+```{admonition} Strategy: Calculating electric potential
+1. basic tool: the electric potential of a point charge (see above)
+2. determine the symmetry of the system
+3. transform the system according to the symmetry in a way that does not change the (average) potential.
+4. common transformations:
+   - moving the charge around along a surface
+   - using the definition of the potential, i.e. $\text{energy}/\text{charge}$ to swap the potential producer and receiver
+   - utilizing the fact that the potential inside a uniformly charged spherical shell is constant
+   - making copies of the original charge to get a higher degree of symmetery
+   - $\dots$ (other excellent transformations you *might* think of)
+```
+
+```{note}
+Calculating the electric **field** is essentially the same as calculating the electric **potential**.
+As a result, most of the strategies above still apply if the electric **field** is desired instead.
+```
