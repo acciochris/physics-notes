@@ -1181,8 +1181,7 @@ Gauss's Law
 $$
 \Phi_e = \oint\mathbf{E}\cdot d\mathbf{A} = \frac{Q_{in}}{\varepsilon_0}
 $$
-
-### The electric potential
+The electric potential
 
 $$
 V = \frac{U}{q}
@@ -1213,4 +1212,10 @@ $$
 ```{note}
 Calculating the electric **field** is essentially the same as calculating the electric **potential**.
 As a result, most of the strategies above still apply if the electric **field** is desired instead.
+```
+
+```{tip}
+1. Whenever possible, try to use "accumulated" quantities such as [momentum](#momentum-and-angular-momentum)
+   or [energy](#energy), including electric potential energy. This can sometimes simplify the calculations a lot.
+2. When the whole process is difficult to reason about, try to analyze a short segment such as $dt$ or $ds$.
 ```
