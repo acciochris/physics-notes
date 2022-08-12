@@ -1302,3 +1302,37 @@ splitting the dipole into its parallel and perpendicular components, or by takin
 ```{important}
 The formulas above only work when $R \gg d$!
 ```
+
+### Capacitors
+
+$$
+C = \frac{Q}{U}
+$$
+
+Parallel-plate capacitors
+
+$$
+C = \frac{Q}{Ed} = \frac{\sigma A}{\frac{\sigma}{\varepsilon_0}d} = \frac{\varepsilon_0 A}{d}
+$$
+
+```{note}
+The capacitance of other capacitors can be easily derived with the definition of capacitance.
+```
+
+The capacitance of an isolated spherical conductor
+
+$$
+C = \frac{Q}{\frac{1}{4\pi\varepsilon_0}\frac{Q}{R}} = 4\pi\varepsilon_0 R
+$$
+
+Parallel capacitors
+
+$$
+C = \sum_{i=1}^n C_i
+$$
+
+Series capacitors
+
+$$
+\frac{1}{C} = \sum_{i=1}^n\frac{1}{C_i}
+$$
