@@ -1206,18 +1206,34 @@ The electric field of various charge distributions
 ### The electric potential
 
 $$
-\phi = \frac{U}{q}
+\varphi = \frac{U_{elec}}{q}
+$$
+
+As a result, the potential difference is equal to the work done divided by the charge:
+
+$$
+\Delta\varphi_{AB} = \frac{W_{AB}}{q}
 $$
 
 The electric potential of a point charge
 
 $$
 \begin{align*}
-  \because U & = -\int_\infty^r \frac{1}{4\pi\varepsilon_0}\frac{Qq}{r^2}\,dR \\
+  \because U_{elec} & = -\int_\infty^r \frac{1}{4\pi\varepsilon_0}\frac{Qq}{r^2}\,dR \\
              & = \frac{1}{4\pi\varepsilon_0}\frac{Qq}{r} \\
-  \therefore \phi & = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r}
+  \therefore \varphi & = \frac{1}{4\pi\varepsilon_0}\frac{Q}{r}
 \end{align*}
 $$
+
+```{tip}
+Common electric potentials:
+
+| Distribution              | Potential $\varphi$                      |
+| ------------------------- | ---------------------------------------- |
+| point charge              | $\frac{1}{4\pi\varepsilon_0}\frac{q}{r}$ |
+| spherical shell (inside)  | $\frac{1}{4\pi\varepsilon_0}\frac{q}{R}$ |
+| spherical shell (outside) | $\frac{1}{4\pi\varepsilon_0}\frac{q}{r}$ |
+```
 
 ```{important}
 Electric potentials follow the rule of superposition!
@@ -1248,4 +1264,41 @@ As a result, most of the strategies above still apply if the electric **field** 
 
 ```{attention}
 Coulumb's law only applies to **point** charges!
+```
+
+### Electric dipoles
+
+The behavior of electric dipoles is characterized by its moment
+
+$$
+\mathbf{p} = q\mathbf{d}
+$$
+
+The direction of $\mathbf{p}$ points from the negative charge to the positive charge.
+
+The electric potential of an electric dipole is given by
+
+$$
+\varphi \approx \frac{1}{4\pi\varepsilon_0}\frac{\mathbf{p}\cdot\mathbf{\hat{R}}}{R^2}
+$$
+
+where $\mathbf{R}$ represents the vector from the center of the dipole to the point at which the
+potential is evaluated.
+
+Taking the gradient of the potential, we now have the electric field
+
+$$
+\begin{align*}
+  E_\perp & \approx \frac{1}{4\pi\varepsilon_0}\frac{p}{r^3} \\
+  E_\parallel & \approx \frac{1}{4\pi\varepsilon_0}\frac{2p}{r^3}
+\end{align*}
+$$
+
+```{note}
+The general formula for the electric field is omitted (for now) as it can be easily derived by
+splitting the dipole into its parallel and perpendicular components, or by taking the gradient.
+```
+
+```{important}
+The formulas above only work when $R \gg d$!
 ```
