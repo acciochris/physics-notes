@@ -1247,7 +1247,7 @@ Electric potentials follow the rule of superposition!
    - moving the charge around along a surface
    - using the definition of the potential, i.e. $\text{energy}/\text{charge}$ to swap the potential producer and receiver
    - utilizing the fact that the potential inside a uniformly charged spherical shell is constant
-   - making copies of the original charge to get a higher degree of symmetery
+   - making copies of the original charge to get a higher degree of symmetry
    - $\dots$ (other excellent transformations you *might* think of)
 ```
 
