@@ -1176,11 +1176,32 @@ $$
 \mathbf{E} = \frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}\mathbf{\hat{r}}
 $$
 
+```{important}
+Electric fields follow the rule of superposition.
+```
+
 Gauss's Law
 
 $$
 \Phi_e = \oint\mathbf{E}\cdot d\mathbf{A} = \frac{Q_{in}}{\varepsilon_0}
 $$
+
+```{note}
+- From now on, unless noted otherwise, every charge distribution is **uniform**.
+- As a convention $r$ is the distance to the charge distribution and $R$ is the geometric radius.
+```
+
+```{tip}
+The electric field of various charge distributions
+
+| Distribution              | $E$-field                                    |
+| ------------------------- | -------------------------------------------- |
+| point charge              | $\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}$   |
+| spherical shell (inside)  | $0$                                          |
+| spherical shell (outside) | $\frac{1}{4\pi\varepsilon_0}\frac{q}{r^2}$   |
+| infinitely long wire      | $\frac{1}{4\pi\varepsilon_0}\frac{2\eta}{r}$ |
+| infinitely large plane    | $\frac{\sigma}{2\varepsilon_0}$              |
+```
 
 ### The electric potential
 
