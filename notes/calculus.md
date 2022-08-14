@@ -431,7 +431,8 @@ $$
   \int \frac{dx}{x^2 + a^2} & = \frac{1}{a}\tan^{-1}\left(\frac{x}{a}\right) \\
   \int \frac{dx}{\sqrt{a^2 - x^2}} & = \sin^{-1}\left(\frac{x}{a}\right), \;a > 0 \\
   \int \frac{dx}{x^2 - a^2} & = \frac{1}{2a}\ln\left|\frac{x-a}{x+a}\right| \\
-  \int \frac{dx}{\sqrt{x^2 \pm a^2}} & = \ln\left|x + \sqrt{x^2 \pm a^2}\right|
+  \int \frac{dx}{\sqrt{x^2 \pm a^2}} & = \ln\left|x + \sqrt{x^2 \pm a^2}\right| \\
+  \int \frac{1}{1 + k\cos\theta}\,d\theta & = 2\sqrt{\frac{1}{1 - k^2}}\tan^{-1}\left(\sqrt{\frac{1+k}{1-k}}\tan\frac{\theta}{2}\right) \\
 \end{align*}
 $$
 
