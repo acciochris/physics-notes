@@ -1404,3 +1404,14 @@ $$
 
 Sometimes, to keep the shell neutral with no net charge, another charge is added at the center of the sphere.
 ```
+
+The electric displacement field
+
+$$
+\mathbf{D} = \varepsilon_0\mathbf{E} + \mathbf{P} \\
+\oint_A \mathbf{D}\cdot d\mathbf{A} = q_{free}
+$$
+
+```{note}
+This section needs expansion.
+```
