@@ -1455,3 +1455,31 @@ The heat produced by a current
 $$
 Q = I^2Rt
 $$
+
+### Transformations of circuits
+
+- folding: combine two identical parts of the circuit together by dividing their resistance in half
+- splitting/merging: split or merge points with the same electric potential
+- recursion: If the resistance of the whole **infinite** circuit is defined to be $R$, then adding
+  another segment does not change its resistance.
+- $Y-\Delta$ transform
+  
+  ![wye-delta transform](images/wye-delta.svg)
+  
+  (Xyzzy_n, [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0), via Wikimedia Commons)
+  
+  $$
+  \begin{align*}
+  R_a & = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_1} \\
+  R_b & = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_2} \\
+  R_c & = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_3}
+  \end{align*}
+  $$
+  
+  $$
+  \begin{align*}
+  R_1 & = \frac{R_b R_c}{R_a + R_b + R_c} \\
+  R_2 & = \frac{R_a R_c}{R_a + R_b + R_c} \\
+  R_3 & = \frac{R_a R_b}{R_a + R_b + R_c}
+  \end{align*}
+  $$
