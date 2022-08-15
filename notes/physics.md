@@ -1374,3 +1374,33 @@ When to use $\varepsilon_r$ and when not to use $\varepsilon_r$:
 - When it does not, or when the induced charge has already been considered in another equation,
 don't use $\varepsilon_r$.
 ```
+
+```{admonition} Method of image charges
+The method of image charges is an especially important method for solving polarization problems.
+Basically it utilizes the uniqueness theorem to replace the complex induced charge distribution
+with one or more image charges.
+
+The simplest case is simply a charge sitting in front of a conducting wall. In this case the image
+charge is located on the other side and the distances from two charges to the wall are the same.
+
+The following is a slightly more complex but especially useful example.
+
+![image charges of conducting spherical shell](images/image_charges.svg)
+
+The greem charge inside the spherical shell induces an image charge outside (the charge in red) and
+vice versa. The radius of the circle is the geometric mean of the distances between each of the two
+charges and the center. In other words, if $d_{out}$ is the distance between the red charge and the center,
+then
+
+$$
+d_{in} = \frac{R^2}{d_{out}}
+$$
+
+The ratio of the two charges is
+
+$$
+\frac{q_{in}}{q_{out}} = \frac{d_{in}}{R} = \frac{R}{d_{out}}
+$$
+
+Sometimes, to keep the shell neutral with no net charge, another charge is added at the center of the sphere.
+```
