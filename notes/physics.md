@@ -1336,3 +1336,41 @@ Series capacitors
 $$
 \frac{1}{C} = \sum_{i=1}^n\frac{1}{C_i}
 $$
+
+### The energy of an electric field
+
+The energy of a charged object (this does **NOT** work for particles)
+
+$$
+W = \frac{1}{2}QU = \frac{Q^2}{2C} = \frac{1}{2}CU^2
+$$
+
+The energy density of any electric field
+
+$$
+\omega = \frac{1}{2}\varepsilon_0E^2
+$$
+
+### Polarization
+
+Conductors in electrostatic equilibrium will have inducted charges which cancel the external electric
+field. Inside conductors, there is no net charge or electric field.
+
+For dielectrics, we define the relative permittivity
+
+$$
+\varepsilon_r = \frac{E_0}{E}
+$$
+
+where $E$ is the electric field in vacuum.
+
+Every equation concerning static electric fields also work in dielectrics. However, the vacuum permittivity
+constant $\varepsilon_0$ must be replaced with $\varepsilon_r\varepsilon_0$.
+
+```{important}
+When to use $\varepsilon_r$ and when not to use $\varepsilon_r$:
+
+- When the target charge distribution creates induced charges on the dielectric, use $\varepsilon_r$.
+- When it does not, or when the induced charge has already been considered in another equation,
+don't use $\varepsilon_r$.
+```
