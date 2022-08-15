@@ -1415,3 +1415,43 @@ $$
 ```{note}
 This section needs expansion.
 ```
+
+## Circuits
+
+### Ohm's law
+
+The current $I$ is defined to be
+
+$$
+I = \frac{dQ}{dt} = nAve
+$$
+
+Resistance is related to resistivity, length and cross-section area.
+
+$$
+R = \rho\frac{L}{A}
+$$
+
+Ohm's Law
+
+$$
+I = \frac{U}{R}
+$$
+
+Or alternatively, in terms of current density $J$ and conductivity $\sigma$ (SI unit siemens per meter $S/m$)
+
+$$
+J = \sigma E
+$$
+
+The work done by a current
+
+$$
+W = UIt
+$$
+
+The heat produced by a current
+
+$$
+Q = I^2Rt
+$$
