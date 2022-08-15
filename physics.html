@@ -1996,6 +1996,39 @@ Q = I^2Rt
 \]</div>
 </div>
 </section>
+<section id="transformations-of-circuits">
+<h3>Transformations of circuits<a class="headerlink" href="#transformations-of-circuits" title="Permalink to this heading">#</a></h3>
+<ul>
+<li><p>folding: combine two identical parts of the circuit together by dividing their resistance in half</p></li>
+<li><p>splitting/merging: split or merge points with the same electric potential</p></li>
+<li><p>recursion: If the resistance of the whole <strong>infinite</strong> circuit is defined to be <span class="math notranslate nohighlight">\(R\)</span>, then adding
+another segment does not change its resistance.</p></li>
+<li><p><span class="math notranslate nohighlight">\(Y-\Delta\)</span> transform</p>
+<p><img alt="wye-delta transform" src="_images/wye-delta.svg" /></p>
+<p>(Xyzzy_n, <a class="reference external" href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA 3.0</a>, via Wikimedia Commons)</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  \begin{align*}
+  R_a &amp; = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_1} \\
+  R_b &amp; = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_2} \\
+  R_c &amp; = \frac{R_1 R_2 + R_2 R_3 + R_3 R_1}{R_3}
+  \end{align*}
+  \end{split}\]</div>
+</div>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  \begin{align*}
+  R_1 &amp; = \frac{R_b R_c}{R_a + R_b + R_c} \\
+  R_2 &amp; = \frac{R_a R_c}{R_a + R_b + R_c} \\
+  R_3 &amp; = \frac{R_a R_b}{R_a + R_b + R_c}
+  \end{align*}
+  \end{split}\]</div>
+</div>
+</li>
+</ul>
+</section>
 </section>
 </section>
 
@@ -2115,6 +2148,7 @@ Q = I^2Rt
 </li>
 <li><a class="reference internal" href="#circuits">Circuits</a><ul>
 <li><a class="reference internal" href="#ohm-s-law">Ohm’s law</a></li>
+<li><a class="reference internal" href="#transformations-of-circuits">Transformations of circuits</a></li>
 </ul>
 </li>
 </ul>
