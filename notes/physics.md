@@ -1483,3 +1483,19 @@ $$
   R_3 & = \frac{R_a R_b}{R_a + R_b + R_c}
   \end{align*}
   $$
+
+### Kirchhoff's circuit laws
+
+TODO
+
+### Applications of circuits
+
+TODO
+
+### Properties of conductors
+
+TODO
+
+### Semiconductors
+
+TODO
