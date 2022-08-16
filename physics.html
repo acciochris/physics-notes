@@ -2029,6 +2029,133 @@ another segment does not change its resistance.</p></li>
 </li>
 </ul>
 </section>
+<section id="kirchhoff-s-circuit-laws">
+<h3>Kirchhoff’s circuit laws<a class="headerlink" href="#kirchhoff-s-circuit-laws" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="applications-of-circuits">
+<h3>Applications of circuits<a class="headerlink" href="#applications-of-circuits" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="properties-of-conductors">
+<h3>Properties of conductors<a class="headerlink" href="#properties-of-conductors" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+<section id="semiconductors">
+<h3>Semiconductors<a class="headerlink" href="#semiconductors" title="Permalink to this heading">#</a></h3>
+<p>TODO</p>
+</section>
+</section>
+<section id="magnetostatics">
+<h2>Magnetostatics<a class="headerlink" href="#magnetostatics" title="Permalink to this heading">#</a></h2>
+<section id="the-magnetic-field">
+<h3>The magnetic field<a class="headerlink" href="#the-magnetic-field" title="Permalink to this heading">#</a></h3>
+<p>The Biot-Savart law</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\mathbf{B}_{point\ charge} = \frac{\mu_0}{4\pi}\frac{q\mathbf{v}\times\mathbf{\hat{r}}}{r^2}
+\]</div>
+</div>
+<p>or alternatively, in terms of current segments</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+d\mathbf{B}_{current} = \frac{\mu_0}{4\pi}\frac{Id\mathbf{s}\times\mathbf{\hat{r}}}{r^2}
+\]</div>
+</div>
+<p>Ampère’s law</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\oint \mathbf{B}\cdot d\mathbf{s} = \mu_0I_{through}
+\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Common magnetic fields</p>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<thead>
+<tr class="row-odd"><th class="head"><p>Object</p></th>
+<th class="head"><p><span class="math notranslate nohighlight">\(B\)</span>-field</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>infinitely long wire</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{\mu_0I}{2\pi R}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>current loop (center)</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{\mu_0I}{2R}\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>current loop (<span class="math notranslate nohighlight">\(r \gg R\)</span>, on the axis)</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{\mu_0R^2I}{2r^3}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>solenoid</p></td>
+<td><p><span class="math notranslate nohighlight">\(\frac{\mu_0NI}{l}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p>The magnetic force</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  F &amp; = q\mathbf{v}\times\mathbf{B} \\
+  F &amp; = I\mathbf{\ell}\times\mathbf{B}
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="admonition-model-cyclotron-motion admonition">
+<p class="admonition-title">Model: Cyclotron motion</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+R = \frac{mv^2}{F_m} = \frac{mv^2}{qvB} = \frac{mv}{qB}
+\]</div>
+</div>
+</div>
+</section>
+<section id="applications-of-electromagnetic-fields">
+<h3>Applications of electromagnetic fields<a class="headerlink" href="#applications-of-electromagnetic-fields" title="Permalink to this heading">#</a></h3>
+<p>The Hall effect</p>
+<p>Suppose a wire with a rectangular cross section is put under a magnetic field <span class="math notranslate nohighlight">\(B\)</span>, and <span class="math notranslate nohighlight">\(w\)</span> and <span class="math notranslate nohighlight">\(t\)</span>
+are the length of the sides perpendicular and parallel to the magnetic field, respectively.</p>
+<p>Then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+E = vB = \frac{IB}{nwte}
+\]</div>
+</div>
+<p>Therefore</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+U = Ew = \frac{IB}{tne}
+\]</div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Dealing with a charged particle in a magnetic field on which external forces are applied:</p>
+<p>The <strong>key</strong> is that as the particle gains a velocity under the influence of the external force, the
+magnetic field <span class="math notranslate nohighlight">\(B\)</span> also has a force on it. Thus the path of the particle is a curve.</p>
+<p>To solve such a problem, split the velocity into its two components, <span class="math notranslate nohighlight">\(v_x\)</span> and <span class="math notranslate nohighlight">\(v_y\)</span>.</p>
+<p>Therefore</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  m\dot{v}_x &amp; = qv_yB \\
+  \int dv_x &amp; = \int \frac{qB}{m}v_y\,dt \\
+  v_x &amp; = \frac{qBy}{m}
+\end{align*}
+\end{split}\]</div>
+</div>
+</div>
+</section>
 </section>
 </section>
 
@@ -2149,6 +2276,15 @@ another segment does not change its resistance.</p></li>
 <li><a class="reference internal" href="#circuits">Circuits</a><ul>
 <li><a class="reference internal" href="#ohm-s-law">Ohm’s law</a></li>
 <li><a class="reference internal" href="#transformations-of-circuits">Transformations of circuits</a></li>
+<li><a class="reference internal" href="#kirchhoff-s-circuit-laws">Kirchhoff’s circuit laws</a></li>
+<li><a class="reference internal" href="#applications-of-circuits">Applications of circuits</a></li>
+<li><a class="reference internal" href="#properties-of-conductors">Properties of conductors</a></li>
+<li><a class="reference internal" href="#semiconductors">Semiconductors</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#magnetostatics">Magnetostatics</a><ul>
+<li><a class="reference internal" href="#the-magnetic-field">The magnetic field</a></li>
+<li><a class="reference internal" href="#applications-of-electromagnetic-fields">Applications of electromagnetic fields</a></li>
 </ul>
 </li>
 </ul>
