@@ -1499,3 +1499,89 @@ TODO
 ### Semiconductors
 
 TODO
+
+## Magnetostatics
+
+### The magnetic field
+
+The Biot-Savart law
+
+$$
+\mathbf{B}_{point\ charge} = \frac{\mu_0}{4\pi}\frac{q\mathbf{v}\times\mathbf{\hat{r}}}{r^2}
+$$
+
+or alternatively, in terms of current segments
+
+$$
+d\mathbf{B}_{current} = \frac{\mu_0}{4\pi}\frac{Id\mathbf{s}\times\mathbf{\hat{r}}}{r^2}
+$$
+
+Ampère's law
+
+$$
+\oint \mathbf{B}\cdot d\mathbf{s} = \mu_0I_{through}
+$$
+
+```{tip}
+Common magnetic fields
+
+| Object                                | $B$-field                |
+| ------------------------------------- | ------------------------ |
+| infinitely long wire                  | $\frac{\mu_0I}{2\pi R}$  |
+| current loop (center)                 | $\frac{\mu_0I}{2R}$      |
+| current loop ($r \gg R$, on the axis) | $\frac{\mu_0R^2I}{2r^3}$ |
+| solenoid                              | $\frac{\mu_0NI}{l}$      |
+```
+
+The magnetic force
+
+$$
+\begin{align*}
+  F & = q\mathbf{v}\times\mathbf{B} \\
+  F & = I\mathbf{\ell}\times\mathbf{B}
+\end{align*}
+$$
+
+```{admonition} Model: Cyclotron motion
+$$
+R = \frac{mv^2}{F_m} = \frac{mv^2}{qvB} = \frac{mv}{qB}
+$$
+```
+
+### Applications of electromagnetic fields
+
+The Hall effect
+
+Suppose a wire with a rectangular cross section is put under a magnetic field $B$, and $w$ and $t$
+are the length of the sides perpendicular and parallel to the magnetic field, respectively.
+
+Then
+
+$$
+E = vB = \frac{IB}{nwte}
+$$
+
+Therefore
+
+$$
+U = Ew = \frac{IB}{tne}
+$$
+
+```{tip}
+Dealing with a charged particle in a magnetic field on which external forces are applied:
+
+The **key** is that as the particle gains a velocity under the influence of the external force, the
+magnetic field $B$ also has a force on it. Thus the path of the particle is a curve.
+
+To solve such a problem, split the velocity into its two components, $v_x$ and $v_y$.
+
+Therefore
+
+$$
+\begin{align*}
+  m\dot{v}_x & = qv_yB \\
+  \int dv_x & = \int \frac{qB}{m}v_y\,dt \\
+  v_x & = \frac{qBy}{m}
+\end{align*}
+$$
+```
