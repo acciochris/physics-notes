@@ -1548,6 +1548,20 @@ R = \frac{mv^2}{F_m} = \frac{mv^2}{qvB} = \frac{mv}{qB}
 $$
 ```
 
+The energy of the magnetic field
+
+$$
+\omega_m = \frac{B^2}{2\mu_0}
+$$
+
+```{important}
+Regarding the energy of magnetic fields, the $B$-field, unlike the $E$-field cannot do work on
+moving charged particles.
+
+However, when the magnetic field is **changing**, it [induces](#electromagnetic-induction) an electric
+field, which **can** do work.
+```
+
 ### Applications of electromagnetic fields
 
 The Hall effect
