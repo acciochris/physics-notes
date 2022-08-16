@@ -1599,3 +1599,17 @@ $$
 \end{align*}
 $$
 ```
+
+## Electromagnetic induction
+
+Faraday's law
+
+$$
+\mathcal{E} = -\frac{d\Phi}{dt}
+$$
+
+For a conducting rod, this is also valid:
+
+$$
+\mathcal{E} = vlB
+$$
