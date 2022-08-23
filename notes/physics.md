@@ -885,6 +885,15 @@ When both the source and the observer are moving, it is not recommended to use t
 as it may yield incorrect answers when the velocities are not on the same line.
 
 Instead, trace the motion of a single wave crest (or trough) and use the definition of the frequency.
+
+Alternatively, use this formula:
+
+$$
+f' = \frac{c + v\cos\beta}{c - u\cos\alpha}f
+$$
+
+where $\alpha$ and $\beta$ are the angles between the velocities and the line connecting the
+source and the observer.
 ```
 
 ```{important}
