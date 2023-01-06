@@ -1,0 +1,14 @@
+image: gitpod/workspace-python:latest
+
+tasks:
+  - init: |
+      python3 -m venv .venv
+      source .venv/bin/activate
+      python3 -m pip install -r requirements.txt
+
+vscode:
+  extensions:
+    - ms-python.python
+    - yzhang.markdown-all-in-one
+    - https://marketplace.visualstudio.com/_apis/public/gallery/publishers/chrisjsewell/vsextensions/myst-lsp/0.0.7/vspackage
+    
