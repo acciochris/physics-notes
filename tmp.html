@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Problems I haven’t worked out" href="problems.html" /><link rel="prev" title="Calculus" href="calculus.html" />
+<link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="prev" title="Problems I haven’t worked out" href="problems.html" />
 
     <link rel="shortcut icon" href="_static/favicon.ico"/><meta name="generator" content="sphinx-5.2.3, furo 2022.09.29"/>
-        <title>Linear algebra - Physics Notes</title>
+        <title>Temporary notes - Physics Notes</title>
       <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?digest=d81277517bee4d6b0349d71bb2661d4890b5617c" />
     <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?digest=30d1aed668e5c3a91c3e3bf6a60b675221979f0e" />
@@ -158,9 +158,9 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="physics.html">Physics</a></li>
 <li class="toctree-l1"><a class="reference internal" href="calculus.html">Calculus</a></li>
-<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Linear algebra</a></li>
+<li class="toctree-l1"><a class="reference internal" href="linear-algebra.html">Linear algebra</a></li>
 <li class="toctree-l1"><a class="reference internal" href="problems.html">Problems I haven’t worked out</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tmp.html">Temporary notes</a></li>
+<li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Temporary notes</a></li>
 </ul>
 
 </div>
@@ -181,7 +181,7 @@
         </a>
         <div class="content-icon-container">
           <div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/acciochris/physics-notes/edit/main/notes/linear-algebra.md" title="Edit this page">
+  <a class="muted-link" href="https://github.com/acciochris/physics-notes/edit/main/notes/tmp.md" title="Edit this page">
     <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
       <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -203,51 +203,20 @@
           </label>
         </div>
         <article role="main">
-          <section class="tex2jax_ignore mathjax_ignore" id="linear-algebra">
-<h1>Linear algebra<a class="headerlink" href="#linear-algebra" title="Permalink to this heading">#</a></h1>
-<section id="linear-combinations">
-<h2>Linear combinations<a class="headerlink" href="#linear-combinations" title="Permalink to this heading">#</a></h2>
+          <section class="tex2jax_ignore mathjax_ignore" id="temporary-notes">
+<h1>Temporary notes<a class="headerlink" href="#temporary-notes" title="Permalink to this heading">#</a></h1>
+<blockquote>
+<div><p>Note:</p>
+<p>Notes taken here will eventually be moved to other places.</p>
+</div></blockquote>
+<section id="curve-length-integral">
+<h2>Curve length integral<a class="headerlink" href="#curve-length-integral" title="Permalink to this heading">#</a></h2>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
-\vec{0} \ne 0
+L = \int_a^b \sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx
 \]</div>
 </div>
-<section id="problem-1-1a">
-<h3>Problem 1.1A<a class="headerlink" href="#problem-1-1a" title="Permalink to this heading">#</a></h3>
-<p>Describe the plane the vectors <span class="math notranslate nohighlight">\(\vec{v} = (1,1,0)\)</span> and <span class="math notranslate nohighlight">\(\vec{w} = (0,1,1)\)</span> fill.</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-c\vec{v} + d\vec{w} = (c, c+d, d)
-\]</div>
-</div>
-</section>
-<section id="dot-products-and-lengths">
-<h3>Dot products and lengths<a class="headerlink" href="#dot-products-and-lengths" title="Permalink to this heading">#</a></h3>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\vec{v}\cdot\vec{w} = v_1w_1 + v_2w_2 \\
-\Vert\vec{v}\Vert = \sqrt{\vec{v}\cdot\vec{v}} = \sqrt{\sum v_i^2}
-\end{split}\]</div>
-</div>
-<p>If</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\vec{v}\cdot\vec{w} = 0
-\]</div>
-</div>
-<p>then <span class="math notranslate nohighlight">\(\vec{v}\)</span> ans <span class="math notranslate nohighlight">\(\vec{w}\)</span> are perpendicular.</p>
-<p>The angle between <span class="math notranslate nohighlight">\(\vec{v}\)</span> and <span class="math notranslate nohighlight">\(\vec{w}\)</span> is given by:</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\cos\theta = \frac{\vec{v}\cdot\vec{w}}{\Vert\vec{v}\Vert\Vert\vec{w}\Vert}
-\]</div>
-</div>
-</section>
 </section>
 </section>
 
@@ -256,23 +225,15 @@ c\vec{v} + d\vec{w} = (c, c+d, d)
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="problems.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Problems I haven’t worked out</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="calculus.html">
+          
+          <a class="prev-page" href="problems.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Calculus</div>
+                <div class="title">Problems I haven’t worked out</div>
                 
               </div>
             </a>
@@ -313,12 +274,8 @@ c\vec{v} + d\vec{w} = (c, c+d, d)
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Linear algebra</a><ul>
-<li><a class="reference internal" href="#linear-combinations">Linear combinations</a><ul>
-<li><a class="reference internal" href="#problem-1-1a">Problem 1.1A</a></li>
-<li><a class="reference internal" href="#dot-products-and-lengths">Dot products and lengths</a></li>
-</ul>
-</li>
+<li><a class="reference internal" href="#">Temporary notes</a><ul>
+<li><a class="reference internal" href="#curve-length-integral">Curve length integral</a></li>
 </ul>
 </li>
 </ul>
