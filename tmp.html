@@ -218,6 +218,42 @@ L = \int_a^b \sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx
 \]</div>
 </div>
 </section>
+<section id="speed-of-waves-in-fluids">
+<h2>Speed of waves in fluids<a class="headerlink" href="#speed-of-waves-in-fluids" title="Permalink to this heading">#</a></h2>
+<p>Continuity equation:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+  (\rho u)_x &amp; = -\rho_t \\
+  \rho_x u + \rho u_x &amp; = -\rho_t \\
+  \rho u_x &amp; = -\rho_t \\
+  \rho u_{xx} &amp; = -\rho_{tx} = -\rho_{xt}
+\end{align}
+\end{split}\]</div>
+</div>
+<p>Pressure:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+  p_x &amp; = -(\rho u)_t \\
+  \frac{\partial p}{\partial \rho} \rho_x &amp; = -\rho_t u - \rho u_t = -\rho u_t \\
+  \frac{\partial p}{\partial \rho} \rho_{xt} &amp; = -\rho_t u_t - \rho u_{tt} = -\rho u_{tt} \\
+\end{align}
+\end{split}\]</div>
+</div>
+<p>Combining <span class="math notranslate nohighlight">\((4)\)</span> and <span class="math notranslate nohighlight">\((7)\)</span>,</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+  u_{tt} &amp; = \frac{\partial p}{\partial \rho} u_{xx} \\
+  c &amp; = \sqrt{\frac{\partial p}{\partial \rho}} \\
+\end{align}
+\end{split}\]</div>
+</div>
+</section>
 </section>
 
         </article>
@@ -276,6 +312,7 @@ L = \int_a^b \sqrt{1 + \left(\frac{dy}{dx}\right)^2}\,dx
             <ul>
 <li><a class="reference internal" href="#">Temporary notes</a><ul>
 <li><a class="reference internal" href="#curve-length-integral">Curve length integral</a></li>
+<li><a class="reference internal" href="#speed-of-waves-in-fluids">Speed of waves in fluids</a></li>
 </ul>
 </li>
 </ul>
