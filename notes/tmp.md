@@ -41,3 +41,20 @@ $$
   c & = \sqrt{\frac{\partial p}{\partial \rho}} \\
 \end{align}
 $$
+
+## Oscillations
+
+Simple harmonic motion:
+
+$$
+A = \sqrt{x_0^2 + \left(\frac{v_0}{\omega}\right)^2}
+$$
+
+where $x_0$ and $v_0$ are the initial displacement and velocity, respectively.
+
+```{caution}
+Be careful with the signs of $x_0$ and $v_0$!!!
+```
+
+For the phase, draw a circle of trigonometry and be careful with the domain of the $\arcsin x$ and
+$\arccos x$ functions.
