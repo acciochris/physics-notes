@@ -58,3 +58,11 @@ Be careful with the signs of $x_0$ and $v_0$!!!
 
 For the phase, draw a circle of trigonometry and be careful with the domain of the $\arcsin x$ and
 $\arccos x$ functions.
+
+## Collisions
+
+$$
+v_1' = \frac{(m_1 - m_2)v_1 + 2m_2v_2}{m_1 + m_2}
+$$
+
+For $v_2'$, simply replace $1$ with $2$ and $2$ with $1$.
