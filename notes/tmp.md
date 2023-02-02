@@ -66,3 +66,15 @@ v_1' = \frac{(m_1 - m_2)v_1 + 2m_2v_2}{m_1 + m_2}
 $$
 
 For $v_2'$, simply replace $1$ with $2$ and $2$ with $1$.
+
+## Solid Angles
+
+$$
+d\Omega = \sin\theta\,d\theta\,d\phi
+$$
+
+A solid angle with apex angle $2\theta$
+
+$$
+\Omega = \int\sin\theta\,d\theta\,d\phi = \int_0^{2\pi}d\phi \int_0^\theta\sin\theta\,d\theta = 2\pi(1-\cos\theta) = 4\pi\sin^2\frac{\theta}{2}
+$$
