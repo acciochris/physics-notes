@@ -78,3 +78,18 @@ A solid angle with apex angle $2\theta$
 $$
 \Omega = \int\sin\theta\,d\theta\,d\phi = \int_0^{2\pi}d\phi \int_0^\theta\sin\theta\,d\theta = 2\pi(1-\cos\theta) = 4\pi\sin^2\frac{\theta}{2}
 $$
+
+## Envelope of a family of curves
+
+Assume every curve of the family is an implicitly defined function $f_t(x, y) = 0$ where $t$ is the
+parameter. Let
+
+$$
+F(t, x, y) = f_t(x, y)
+$$
+
+Then the envelope is the collection of points $(x, y)$ satisfying
+
+$$
+F(t, x, y) = 0\;\;\text{and}\;\;\frac{\partial F(t, x, y)}{\partial t} = 0 
+$$
