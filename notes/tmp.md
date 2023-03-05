@@ -93,3 +93,13 @@ Then the envelope is the collection of points $(x, y)$ satisfying
 $$
 F(t, x, y) = 0\;\;\text{and}\;\;\frac{\partial F(t, x, y)}{\partial t} = 0 
 $$
+
+## Circles in polar coordinates
+
+$$
+\begin{align*}
+  (x - a)^2 + (y - b)^2 & = R^2 \\
+  (r\cos{\theta} - a)^2 + (r\sin{\theta} - b)^2 & = R^2 \\
+  r^2 - (2a\cos{\theta} + 2b\sin{\theta})r + a^2 + b^2 - R^2 & = 0 \\
+\end{align*}
+$$
