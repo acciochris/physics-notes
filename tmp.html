@@ -328,6 +328,43 @@ F(t, x, y) = 0\;\;\text{and}\;\;\frac{\partial F(t, x, y)}{\partial t} = 0
 \end{split}\]</div>
 </div>
 </section>
+<section id="satellite-orbits-and-binet-equation">
+<h2>Satellite Orbits and Binet Equation<a class="headerlink" href="#satellite-orbits-and-binet-equation" title="Permalink to this heading">#</a></h2>
+<p>Polar coordinates:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+F(r) = m(\ddot r - r\dot\theta^2)
+\]</div>
+</div>
+<p>Let <span class="math notranslate nohighlight">\(u=r^{-1}\)</span>, then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\frac{du}{d\theta} = \frac{d}{d\theta}r^{-1} = -\frac{1}{r^2}\frac{dr}{dt}\frac{dt}{d\theta} = -\frac{\dot r}{r^2\dot\theta} \\
+\frac{d^2u}{d\theta^2} = \frac{d}{d\theta}-\frac{m\dot r}{L} = -\frac{m\ddot r}{L\dot\theta} = -\frac{\ddot r}{l^2u^2}
+\end{split}\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(l = \dfrac{L}{m} = r^2\dot\theta\)</span>.</p>
+<p>Therefore</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+F(u^{-1}) = -ml^2u^2(u'' + u)
+\]</div>
+</div>
+<p>For gravitational forces:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  -GMmu^2 &amp; = -ml^2u^2(u'' + u) \\
+  GM &amp; = l^2(u'' + u) \\
+  u'' + u &amp; = \frac{\alpha}{ml^2}
+\end{align*}
+\end{split}\]</div>
+</div>
+</section>
 </section>
 
         </article>
@@ -392,6 +429,7 @@ F(t, x, y) = 0\;\;\text{and}\;\;\frac{\partial F(t, x, y)}{\partial t} = 0
 <li><a class="reference internal" href="#solid-angles">Solid Angles</a></li>
 <li><a class="reference internal" href="#envelope-of-a-family-of-curves">Envelope of a family of curves</a></li>
 <li><a class="reference internal" href="#circles-in-polar-coordinates">Circles in polar coordinates</a></li>
+<li><a class="reference internal" href="#satellite-orbits-and-binet-equation">Satellite Orbits and Binet Equation</a></li>
 </ul>
 </li>
 </ul>
