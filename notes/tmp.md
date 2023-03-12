@@ -103,3 +103,36 @@ $$
   r^2 - (2a\cos{\theta} + 2b\sin{\theta})r + a^2 + b^2 - R^2 & = 0 \\
 \end{align*}
 $$
+
+## Satellite Orbits and Binet Equation
+
+Polar coordinates:
+
+$$
+F(r) = m(\ddot r - r\dot\theta^2)
+$$
+
+Let $u=r^{-1}$, then
+
+$$
+\frac{du}{d\theta} = \frac{d}{d\theta}r^{-1} = -\frac{1}{r^2}\frac{dr}{dt}\frac{dt}{d\theta} = -\frac{\dot r}{r^2\dot\theta} \\
+\frac{d^2u}{d\theta^2} = \frac{d}{d\theta}-\frac{m\dot r}{L} = -\frac{m\ddot r}{L\dot\theta} = -\frac{\ddot r}{l^2u^2}
+$$
+
+where $l = \dfrac{L}{m} = r^2\dot\theta$.
+
+Therefore
+
+$$
+F(u^{-1}) = -ml^2u^2(u'' + u)
+$$
+
+For gravitational forces:
+
+$$
+\begin{align*}
+  -GMmu^2 & = -ml^2u^2(u'' + u) \\
+  GM & = l^2(u'' + u) \\
+  u'' + u & = \frac{\alpha}{ml^2}
+\end{align*}
+$$
