@@ -14,7 +14,7 @@ mdit-py-plugins==0.3.5
 mdurl==0.1.2
 myst-parser==0.18.1
 packaging==21.3
-Pygments==2.13.0
+Pygments==2.15.1
 pyparsing==3.0.9
 pytz==2022.7.1
 PyYAML==6.0
