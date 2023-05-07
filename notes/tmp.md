@@ -136,3 +136,29 @@ $$
   u'' + u & = \frac{\alpha}{ml^2}
 \end{align*}
 $$
+
+## Multi-variable linear recurrence relations
+
+Suppose matrix $A$ has eigenvalue matrix $\Lambda$ and eigenvector matrix $X$, then
+
+$$
+\begin{align*}
+  \vec{v}_{n+1} & = A\vec{v}_n + \vec{b} \\
+  X^{-1}\vec{v}_{n+1} & = X^{-1}A\vec{v}_n + X^{-1}\vec{b} \\
+                      & = \Lambda X^{-1}\vec{v}_n + X^{-1}\vec{b} \\
+\end{align*}
+$$
+
+Let $X^{-1}\vec{v}_n = \vec{v}'_n$ and $X^{-1}\vec{b} = \vec{b}'$, then
+
+$$
+\vec{v}'_{n+1} = \Lambda\vec{v}'_n + \vec{b}'
+$$
+
+is a recurrence relation that can be solved one by one.
+
+Finally,
+
+$$
+\vec{v}_n = X\vec{v}'_n
+$$
