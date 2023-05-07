@@ -365,6 +365,35 @@ F(u^{-1}) = -ml^2u^2(u'' + u)
 \end{split}\]</div>
 </div>
 </section>
+<section id="multi-variable-linear-recurrence-relations">
+<h2>Multi-variable linear recurrence relations<a class="headerlink" href="#multi-variable-linear-recurrence-relations" title="Permalink to this heading">#</a></h2>
+<p>Suppose matrix <span class="math notranslate nohighlight">\(A\)</span> has eigenvalue matrix <span class="math notranslate nohighlight">\(\Lambda\)</span> and eigenvector matrix <span class="math notranslate nohighlight">\(X\)</span>, then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \vec{v}_{n+1} &amp; = A\vec{v}_n + \vec{b} \\
+  X^{-1}\vec{v}_{n+1} &amp; = X^{-1}A\vec{v}_n + X^{-1}\vec{b} \\
+                      &amp; = \Lambda X^{-1}\vec{v}_n + X^{-1}\vec{b} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Let <span class="math notranslate nohighlight">\(X^{-1}\vec{v}_n = \vec{v}'_n\)</span> and <span class="math notranslate nohighlight">\(X^{-1}\vec{b} = \vec{b}'\)</span>, then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec{v}'_{n+1} = \Lambda\vec{v}'_n + \vec{b}'
+\]</div>
+</div>
+<p>is a recurrence relation that can be solved one by one.</p>
+<p>Finally,</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec{v}_n = X\vec{v}'_n
+\]</div>
+</div>
+</section>
 </section>
 
         </article>
@@ -430,6 +459,7 @@ F(u^{-1}) = -ml^2u^2(u'' + u)
 <li><a class="reference internal" href="#envelope-of-a-family-of-curves">Envelope of a family of curves</a></li>
 <li><a class="reference internal" href="#circles-in-polar-coordinates">Circles in polar coordinates</a></li>
 <li><a class="reference internal" href="#satellite-orbits-and-binet-equation">Satellite Orbits and Binet Equation</a></li>
+<li><a class="reference internal" href="#multi-variable-linear-recurrence-relations">Multi-variable linear recurrence relations</a></li>
 </ul>
 </li>
 </ul>
