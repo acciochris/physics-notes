@@ -20,7 +20,7 @@ pytz==2022.7.1
 PyYAML==6.0
 requests==2.30.0
 snowballstemmer==2.2.0
-soupsieve==2.4
+soupsieve==2.4.1
 Sphinx==5.2.3
 sphinx-basic-ng==1.0.0b1
 sphinxcontrib-applehelp==1.0.4
