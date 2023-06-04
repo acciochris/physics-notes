@@ -162,3 +162,18 @@ Finally,
 $$
 \vec{v}_n = X\vec{v}'_n
 $$
+
+## Second derivative test of multi-variable functions
+
+If
+
+$$
+f_x(a, b) = f_y(a, b) = 0
+$$
+
+then
+
+- local maximum at $(a, b)$ if $f_{xx} < 0$ and $f_{xx}f_{yy} - f_{xy}^2 > 0$
+- local minimum at $(a, b)$ if $f_{xx} > 0$ and $f_{xx}f_{yy} - f_{xy}^2 > 0$
+- local saddle at $(a, b)$ if $f_{xx}f_{yy} - f_{xy}^2 <> 0$
+- inconclusive if $f_{xx}f_{yy} - f_{xy}^2 = 0$
