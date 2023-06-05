@@ -330,40 +330,90 @@ F(t, x, y) = 0\;\;\text{and}\;\;\frac{\partial F(t, x, y)}{\partial t} = 0
 </section>
 <section id="satellite-orbits-and-binet-equation">
 <h2>Satellite Orbits and Binet Equation<a class="headerlink" href="#satellite-orbits-and-binet-equation" title="Permalink to this heading">#</a></h2>
-<p>Polar coordinates:</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-F(r) = m(\ddot r - r\dot\theta^2)
-\]</div>
-</div>
-<p>Let <span class="math notranslate nohighlight">\(u=r^{-1}\)</span>, then</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[\begin{split}
-\frac{du}{d\theta} = \frac{d}{d\theta}r^{-1} = -\frac{1}{r^2}\frac{dr}{dt}\frac{dt}{d\theta} = -\frac{\dot r}{r^2\dot\theta} \\
-\frac{d^2u}{d\theta^2} = \frac{d}{d\theta}-\frac{m\dot r}{L} = -\frac{m\ddot r}{L\dot\theta} = -\frac{\ddot r}{l^2u^2}
-\end{split}\]</div>
-</div>
-<p>where <span class="math notranslate nohighlight">\(l = \dfrac{L}{m} = r^2\dot\theta\)</span>.</p>
-<p>Therefore</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-F(u^{-1}) = -ml^2u^2(u'' + u)
-\]</div>
-</div>
-<p>For gravitational forces:</p>
+<section id="part-i-integrating-orbital-motion">
+<h3>Part I: integrating orbital motion<a class="headerlink" href="#part-i-integrating-orbital-motion" title="Permalink to this heading">#</a></h3>
+<p>As</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[\begin{split}
 \begin{align*}
-  -GMmu^2 &amp; = -ml^2u^2(u'' + u) \\
-  GM &amp; = l^2(u'' + u) \\
-  u'' + u &amp; = \frac{\alpha}{ml^2}
+  E &amp; = \frac{L^2}{2mr^2} + \frac{1}{2}m\dot{r}^2 - \frac{GMm}{r} \\
+  \frac{dr}{d\theta} &amp; = \frac{\dot{r}}{\dot{\theta}} \\
+  L &amp; = mr^2\dot{\theta} \\
 \end{align*}
 \end{split}\]</div>
 </div>
+<p>If we eliminate <span class="math notranslate nohighlight">\(\dot{\theta}\)</span> and <span class="math notranslate nohighlight">\(\dot{r}\)</span>, and let <span class="math notranslate nohighlight">\(u = \dfrac{1}{r}\)</span>, then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  du &amp; = -\sqrt{\frac{2mE}{L^2} + \frac{2GMm^2}{L^2}u - u^2}\;d\theta \\
+  &amp; = -\sqrt{A^2 - (u - B)^2}\;d\theta
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>where <span class="math notranslate nohighlight">\(A = \sqrt{\dfrac{2mE}{L^2} + B^2}\)</span> and <span class="math notranslate nohighlight">\(B = \dfrac{GMm^2}{L^2}\)</span></p>
+<p>Substitute <span class="math notranslate nohighlight">\(u = Au' + B\)</span>, then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \int - \frac{du'}{\sqrt{1-u'^2}} &amp; = \int d\theta \\
+  \arccos \frac{u - B}{A} &amp; = \theta - \theta_0 \\
+  r &amp; = \frac{B^{-1}}{1 + \frac{A}{B}\cos(\theta - \theta_0)} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Thus semi-latus rectum</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+l = B^{-1} = \frac{L^2}{GMm^2} = \frac{b^2}{a}
+\]</div>
+</div>
+<p>and eccentricity</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+e = \frac{A}{B} = \sqrt{1 + \frac{2EL^2}{G^2M^2m^3}}
+\]</div>
+</div>
+</section>
+<section id="part-ii-binet-equation">
+<h3>Part II: Binet equation<a class="headerlink" href="#part-ii-binet-equation" title="Permalink to this heading">#</a></h3>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+E = \frac{L^2}{2m}u^2 + \frac{1}{2}m\left(\frac{d}{dt}\frac{1}{u}\right)^2 + V(r)
+\]</div>
+</div>
+<p>where</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{dt}\frac{1}{u} = \frac{d}{du}\left(\frac{1}{u}\right)\frac{du}{d\theta}\frac{d\theta}{dt} = -\frac{1}{u^2}u'\frac{L}{m}u^2 = -\frac{L}{m}u'
+\]</div>
+</div>
+<p>According to the conservation of energy</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \frac{dE}{du} &amp; = \frac{L^2}{2m}\left(2u + \frac{d(u'^2)}{d\theta}\frac{d\theta}{du}\right) + \frac{d}{dr}V(r)\frac{dr}{du} \\
+  &amp; = \frac{L^2}{m}(u + u'') + \frac{F(u^{-1})}{u^2} \\
+  &amp; = 0
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Thus we have Binet equation</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{L^2}{m}(u + u'') + \frac{F(u^{-1})}{u^2} = 0
+\]</div>
+</div>
+</section>
 </section>
 <section id="multi-variable-linear-recurrence-relations">
 <h2>Multi-variable linear recurrence relations<a class="headerlink" href="#multi-variable-linear-recurrence-relations" title="Permalink to this heading">#</a></h2>
@@ -475,7 +525,11 @@ f_x(a, b) = f_y(a, b) = 0
 <li><a class="reference internal" href="#solid-angles">Solid Angles</a></li>
 <li><a class="reference internal" href="#envelope-of-a-family-of-curves">Envelope of a family of curves</a></li>
 <li><a class="reference internal" href="#circles-in-polar-coordinates">Circles in polar coordinates</a></li>
-<li><a class="reference internal" href="#satellite-orbits-and-binet-equation">Satellite Orbits and Binet Equation</a></li>
+<li><a class="reference internal" href="#satellite-orbits-and-binet-equation">Satellite Orbits and Binet Equation</a><ul>
+<li><a class="reference internal" href="#part-i-integrating-orbital-motion">Part I: integrating orbital motion</a></li>
+<li><a class="reference internal" href="#part-ii-binet-equation">Part II: Binet equation</a></li>
+</ul>
+</li>
 <li><a class="reference internal" href="#multi-variable-linear-recurrence-relations">Multi-variable linear recurrence relations</a></li>
 <li><a class="reference internal" href="#second-derivative-test-of-multi-variable-functions">Second derivative test of multi-variable functions</a></li>
 </ul>
