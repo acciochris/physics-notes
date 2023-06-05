@@ -106,35 +106,77 @@ $$
 
 ## Satellite Orbits and Binet Equation
 
-Polar coordinates:
+### Part I: integrating orbital motion
 
-$$
-F(r) = m(\ddot r - r\dot\theta^2)
-$$
-
-Let $u=r^{-1}$, then
-
-$$
-\frac{du}{d\theta} = \frac{d}{d\theta}r^{-1} = -\frac{1}{r^2}\frac{dr}{dt}\frac{dt}{d\theta} = -\frac{\dot r}{r^2\dot\theta} \\
-\frac{d^2u}{d\theta^2} = \frac{d}{d\theta}-\frac{m\dot r}{L} = -\frac{m\ddot r}{L\dot\theta} = -\frac{\ddot r}{l^2u^2}
-$$
-
-where $l = \dfrac{L}{m} = r^2\dot\theta$.
-
-Therefore
-
-$$
-F(u^{-1}) = -ml^2u^2(u'' + u)
-$$
-
-For gravitational forces:
+As
 
 $$
 \begin{align*}
-  -GMmu^2 & = -ml^2u^2(u'' + u) \\
-  GM & = l^2(u'' + u) \\
-  u'' + u & = \frac{\alpha}{ml^2}
+  E & = \frac{L^2}{2mr^2} + \frac{1}{2}m\dot{r}^2 - \frac{GMm}{r} \\
+  \frac{dr}{d\theta} & = \frac{\dot{r}}{\dot{\theta}} \\
+  L & = mr^2\dot{\theta} \\
 \end{align*}
+$$
+
+If we eliminate $\dot{\theta}$ and $\dot{r}$, and let $u = \dfrac{1}{r}$, then
+
+$$
+\begin{align*}
+  du & = -\sqrt{\frac{2mE}{L^2} + \frac{2GMm^2}{L^2}u - u^2}\;d\theta \\
+  & = -\sqrt{A^2 - (u - B)^2}\;d\theta
+\end{align*}
+$$
+
+where $A = \sqrt{\dfrac{2mE}{L^2} + B^2}$ and $B = \dfrac{GMm^2}{L^2}$
+
+Substitute $u = Au' + B$, then
+
+$$
+\begin{align*}
+  \int - \frac{du'}{\sqrt{1-u'^2}} & = \int d\theta \\
+  \arccos \frac{u - B}{A} & = \theta - \theta_0 \\
+  r & = \frac{B^{-1}}{1 + \frac{A}{B}\cos(\theta - \theta_0)} \\
+\end{align*}
+$$
+
+Thus semi-latus rectum
+
+$$
+l = B^{-1} = \frac{L^2}{GMm^2} = \frac{b^2}{a}
+$$
+
+and eccentricity
+
+$$
+e = \frac{A}{B} = \sqrt{1 + \frac{2EL^2}{G^2M^2m^3}}
+$$
+
+### Part II: Binet equation
+
+$$
+E = \frac{L^2}{2m}u^2 + \frac{1}{2}m\left(\frac{d}{dt}\frac{1}{u}\right)^2 + V(r)
+$$
+
+where
+
+$$
+\frac{d}{dt}\frac{1}{u} = \frac{d}{du}\left(\frac{1}{u}\right)\frac{du}{d\theta}\frac{d\theta}{dt} = -\frac{1}{u^2}u'\frac{L}{m}u^2 = -\frac{L}{m}u'
+$$
+
+According to the conservation of energy
+
+$$
+\begin{align*}
+  \frac{dE}{du} & = \frac{L^2}{2m}\left(2u + \frac{d(u'^2)}{d\theta}\frac{d\theta}{du}\right) + \frac{d}{dr}V(r)\frac{dr}{du} \\
+  & = \frac{L^2}{m}(u + u'') + \frac{F(u^{-1})}{u^2} \\
+  & = 0
+\end{align*}
+$$
+
+Thus we have Binet equation
+
+$$
+\frac{L^2}{m}(u + u'') + \frac{F(u^{-1})}{u^2} = 0
 $$
 
 ## Multi-variable linear recurrence relations
