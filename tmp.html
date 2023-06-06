@@ -414,6 +414,47 @@ E = \frac{L^2}{2m}u^2 + \frac{1}{2}m\left(\frac{d}{dt}\frac{1}{u}\right)^2 + V(r
 \]</div>
 </div>
 </section>
+<section id="part-iii-the-laplace-runge-lenz-vector">
+<h3>Part III: the Laplace-Runge-Lenz vector<a class="headerlink" href="#part-iii-the-laplace-runge-lenz-vector" title="Permalink to this heading">#</a></h3>
+<p>This vector is somehow a bit exotic. However, it sometimes appears in problems.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec{B} = \vec{p}\times\vec{L} - \alpha m\hat{r}
+\]</div>
+</div>
+<p>(where <span class="math notranslate nohighlight">\(\vec{p}\)</span> is the momentum, <span class="math notranslate nohighlight">\(\vec{L}\)</span> is the angular momentum and <span class="math notranslate nohighlight">\(\alpha = GMm\)</span>)</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \frac{d\vec{B}}{dt} &amp; = \frac{d\vec{p}}{dt}\times\vec{L} - \alpha m \frac{d\hat{r}}{dt} \\
+  &amp; = -\frac{\alpha}{r^2}\hat{r}\times(mr^2\dot{\theta}\hat{z}) - \alpha m\dot{\theta}\hat{\theta} \\
+  &amp; = \vec{0}
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>As</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\vec{B}\cdot\vec{L} = 0
+\]</div>
+</div>
+<p>, <span class="math notranslate nohighlight">\(\vec{B}\)</span> is in the plane of motion.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+  \vec{r}\cdot\vec{B} &amp; = rB\cos\theta \\
+  &amp; = \vec{L}\cdot(\vec{r}\times\vec{p}) - \alpha mr \\
+  &amp; = L^2 - \alpha mr \\
+  r &amp; = \frac{L^2}{\alpha m + B\cos\theta}
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>which is a conic section.</p>
+</section>
 </section>
 <section id="multi-variable-linear-recurrence-relations">
 <h2>Multi-variable linear recurrence relations<a class="headerlink" href="#multi-variable-linear-recurrence-relations" title="Permalink to this heading">#</a></h2>
@@ -528,6 +569,7 @@ f_x(a, b) = f_y(a, b) = 0
 <li><a class="reference internal" href="#satellite-orbits-and-binet-equation">Satellite Orbits and Binet Equation</a><ul>
 <li><a class="reference internal" href="#part-i-integrating-orbital-motion">Part I: integrating orbital motion</a></li>
 <li><a class="reference internal" href="#part-ii-binet-equation">Part II: Binet equation</a></li>
+<li><a class="reference internal" href="#part-iii-the-laplace-runge-lenz-vector">Part III: the Laplace-Runge-Lenz vector</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#multi-variable-linear-recurrence-relations">Multi-variable linear recurrence relations</a></li>
