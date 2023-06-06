@@ -179,6 +179,43 @@ $$
 \frac{L^2}{m}(u + u'') + \frac{F(u^{-1})}{u^2} = 0
 $$
 
+### Part III: the Laplace-Runge-Lenz vector
+
+This vector is somehow a bit exotic. However, it sometimes appears in problems.
+
+$$
+\vec{B} = \vec{p}\times\vec{L} - \alpha m\hat{r}
+$$
+
+(where $\vec{p}$ is the momentum, $\vec{L}$ is the angular momentum and $\alpha = GMm$)
+
+$$
+\begin{align*}
+  \frac{d\vec{B}}{dt} & = \frac{d\vec{p}}{dt}\times\vec{L} - \alpha m \frac{d\hat{r}}{dt} \\
+  & = -\frac{\alpha}{r^2}\hat{r}\times(mr^2\dot{\theta}\hat{z}) - \alpha m\dot{\theta}\hat{\theta} \\
+  & = \vec{0}
+\end{align*}
+$$
+
+As
+
+$$
+\vec{B}\cdot\vec{L} = 0
+$$
+
+, $\vec{B}$ is in the plane of motion.
+
+$$
+\begin{align*}
+  \vec{r}\cdot\vec{B} & = rB\cos\theta \\
+  & = \vec{L}\cdot(\vec{r}\times\vec{p}) - \alpha mr \\
+  & = L^2 - \alpha mr \\
+  r & = \frac{L^2}{\alpha m + B\cos\theta}
+\end{align*}
+$$
+
+which is a conic section.
+
 ## Multi-variable linear recurrence relations
 
 Suppose matrix $A$ has eigenvalue matrix $\Lambda$ and eigenvector matrix $X$, then
