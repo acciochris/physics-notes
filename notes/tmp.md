@@ -270,3 +270,8 @@ $$
   \end{vmatrix}
 \end{align*}
 $$
+
+
+## Cross product in spherical coordinates
+
+There seems to be some dispute over this topic on the Internet. For the time being, I will stick to Cartesian coordinates.
