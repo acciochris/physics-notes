@@ -275,3 +275,37 @@ $$
 ## Cross product in spherical coordinates
 
 There seems to be some dispute over this topic on the Internet. For the time being, I will stick to Cartesian coordinates.
+
+## Spinning charged spherical shell and magnetization
+
+By means of integration of the magnetic vector potential, the magnetic field of a spinning charged spherical shell corresponds to a uniformly magnetized ball.
+
+$$
+\mathbf{K}_b = \mathbf{M}\times\mathbf{\hat{n}} = M\sin\theta\,\mathbf{\hat{\phi}} = \sigma\omega r\sin\theta\,\mathbf{\hat{\phi}}
+$$
+
+Thus $\mathbf{M} = \sigma\mathbf{\omega} r$ and
+
+$$
+\mathbf{B} = \frac{2}{3}\mu_0\mathbf{M}
+$$
+
+inside the sphere
+
+and
+
+$$
+\mathbf{m} = \frac{4}{3}\pi R^3\mathbf{M}
+$$
+
+outside the sphere.
+
+$$
+\mathbf{B}_{dip} = \frac{\mu_0}{4\pi}\frac{m}{r^3}(2\cos\theta\hat{r} + \sin\theta\hat{\theta})
+$$
+
+Compare:
+
+$$
+\mathbf{E}_{dip} = \frac{1}{4\pi\epsilon_0}\frac{p}{r^3}(2\cos\theta\hat{r} + \sin\theta\hat{\theta})
+$$
