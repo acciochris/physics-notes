@@ -256,3 +256,17 @@ then
 - local minimum at $(a, b)$ if $f_{xx} > 0$ and $f_{xx}f_{yy} - f_{xy}^2 > 0$
 - local saddle at $(a, b)$ if $f_{xx}f_{yy} - f_{xy}^2 < 0$
 - inconclusive if $f_{xx}f_{yy} - f_{xy}^2 = 0$
+
+## Vector calculus
+
+$$
+\begin{align*}
+  \nabla t & = \sum_{cyc}\frac{1}{f}\frac{\partial t}{\partial u}\hat{u} \\
+  \nabla\cdot\vec{A} & = \frac{1}{fgh}\sum_{cyc}\frac{\partial}{\partial u}(ghA_u) \\
+  \nabla\times\vec{A} & = \frac{1}{fgh}\begin{vmatrix}
+    f\hat{u} & g\hat{v} & h\hat{w} \\
+    \frac{\partial}{\partial u} & \frac{\partial}{\partial v} & \frac{\partial}{\partial w} \\
+    fA_u & gA_v & hA_w \\
+  \end{vmatrix}
+\end{align*}
+$$
