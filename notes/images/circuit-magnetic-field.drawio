@@ -1,0 +1,22 @@
+<mxfile host="65bd71144e">
+    <diagram id="k6FwdfPpB-PYvsMtpVek" name="Page-1">
+        <mxGraphModel dx="2995" dy="1718" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="500" pageHeight="500" background="none" math="1" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=none;strokeColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="100" y="100" width="300" height="300" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillStyle=dots;fillColor=#000000;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="210" width="80" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="B" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=35;fontFamily=Times New Roman;" vertex="1" parent="1">
+                    <mxGeometry x="269" y="171" width="60" height="68" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="R" style="text;strokeColor=none;fillColor=none;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Times New Roman;fontSize=35;" vertex="1" parent="1">
+                    <mxGeometry x="354" y="376" width="60" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
