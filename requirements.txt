@@ -8,7 +8,7 @@ furo==2023.5.20
 idna==3.4
 imagesize==1.4.1
 Jinja2==3.1.2
-markdown-it-py==2.2.0
+markdown-it-py==3.0.0
 MarkupSafe==2.1.2
 mdit-py-plugins==0.4.0
 mdurl==0.1.2
