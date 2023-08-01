@@ -349,3 +349,84 @@ $$
 \dot{p}_i &= -\frac{\partial H}{\partial q_i} \\
 \end{align*}
 $$
+
+## Lagrangian and Hamiltonian Mechanics
+
+### Lagrangian
+
+$$
+L = T - V
+$$
+
+Euler-Lagrange equation:
+
+$$
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot{q_i}}\right) = \frac{\partial L}{\partial q_i}
+$$
+
+Generalized force and momentum:
+
+$$
+\begin{align*}
+F_i &= \frac{\partial L}{\partial q_i} \\
+p_i &= \frac{\partial L}{\partial\dot{q_i}} \\
+\end{align*}
+$$
+
+### Hamiltonian
+
+$$
+H = \sum_i \dot{q}_i\frac{\partial L}{\partial \dot{q}_i} - L
+$$
+
+(and rewrite it in terms of the generalized momentum $p_i$)
+
+Hamiltonian's equations:
+
+$$
+\begin{align*}
+\dot{q}_i &= \frac{\partial H}{\partial p_i} \\
+\dot{p}_i &= -\frac{\partial H}{\partial q_i} \\
+\end{align*}
+$$
+
+## Inverse matrices
+
+- 2x2
+  $$
+  \begin{align*}
+    A & = \begin{pmatrix}
+      a & b \\
+      c & d \\
+    \end{pmatrix} \\
+    A^{-1} & = \frac{1}{\det A}\begin{pmatrix}
+      d & -b \\
+      -c & a \\
+    \end{pmatrix} \\
+  \end{align*}
+  $$
+- other
+  
+  Row-reduce
+
+  $$
+  \left(
+  \begin{array}{ccc|ccc}
+    a & b & c & 1 & 0 & 0 \\
+    d & e & f & 0 & 1 & 0 \\
+    g & h & i & 0 & 0 & 1 \\
+  \end{array}
+  \right)
+  $$
+
+  to get
+  
+  $$
+  \left(
+  \begin{array}{ccc|ccc}
+    1 & 0 & 0 & j & k & l \\
+    0 & 1 & 0 & m & n & o \\
+    0 & 0 & 1 & p & q & r \\
+  \end{array}
+  \right)
+  $$
