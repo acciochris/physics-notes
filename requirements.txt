@@ -15,7 +15,7 @@ mdurl==0.1.2
 myst-parser==2.0.0
 packaging==23.1
 Pygments==2.15.1
-pyparsing==3.0.9
+pyparsing==3.1.1
 pytz==2023.3
 PyYAML==6.0
 requests==2.31.0
