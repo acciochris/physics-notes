@@ -309,3 +309,43 @@ Compare:
 $$
 \mathbf{E}_{dip} = \frac{1}{4\pi\epsilon_0}\frac{p}{r^3}(2\cos\theta\hat{r} + \sin\theta\hat{\theta})
 $$
+
+## Lagrangian and Hamiltonian Mechanics
+
+### Lagrangian
+
+$$
+L = T - V
+$$
+
+Euler-Lagrange equation:
+
+$$
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot{q_i}}\right) = \frac{\partial L}{\partial q_i}
+$$
+
+Generalized force and momentum:
+
+$$
+\begin{align*}
+F_i &= \frac{\partial L}{\partial q_i} \\
+p_i &= \frac{\partial L}{\partial\dot{q_i}} \\
+\end{align*}
+$$
+
+### Hamiltonian
+
+$$
+H = \sum_i \dot{q}_i\frac{\partial L}{\partial \dot{q}_i} - L
+$$
+
+(and rewrite it in terms of the generalized momentum $p_i$)
+
+Hamiltonian's equations:
+
+$$
+\begin{align*}
+\dot{q}_i &= \frac{\partial H}{\partial p_i} \\
+\dot{p}_i &= -\frac{\partial H}{\partial q_i} \\
+\end{align*}
+$$
