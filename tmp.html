@@ -566,6 +566,55 @@ f_x(a, b) = f_y(a, b) = 0
 \]</div>
 </div>
 </section>
+<section id="lagrangian-and-hamiltonian-mechanics">
+<h2>Lagrangian and Hamiltonian Mechanics<a class="headerlink" href="#lagrangian-and-hamiltonian-mechanics" title="Permalink to this heading">#</a></h2>
+<section id="lagrangian">
+<h3>Lagrangian<a class="headerlink" href="#lagrangian" title="Permalink to this heading">#</a></h3>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+L = T - V
+\]</div>
+</div>
+<p>Euler-Lagrange equation:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot{q_i}}\right) = \frac{\partial L}{\partial q_i}
+\]</div>
+</div>
+<p>Generalized force and momentum:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+F_i &amp;= \frac{\partial L}{\partial q_i} \\
+p_i &amp;= \frac{\partial L}{\partial\dot{q_i}} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+</section>
+<section id="hamiltonian">
+<h3>Hamiltonian<a class="headerlink" href="#hamiltonian" title="Permalink to this heading">#</a></h3>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+H = \sum_i \dot{q}_i\frac{\partial L}{\partial \dot{q}_i} - L
+\]</div>
+</div>
+<p>(and rewrite it in terms of the generalized momentum <span class="math notranslate nohighlight">\(p_i\)</span>)</p>
+<p>Hamiltonian’s equations:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\dot{q}_i &amp;= \frac{\partial H}{\partial p_i} \\
+\dot{p}_i &amp;= -\frac{\partial H}{\partial q_i} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+</section>
+</section>
 </section>
 
         </article>
@@ -649,6 +698,11 @@ f_x(a, b) = f_y(a, b) = 0
 <li><a class="reference internal" href="#vector-calculus">Vector calculus</a></li>
 <li><a class="reference internal" href="#cross-product-in-spherical-coordinates">Cross product in spherical coordinates</a></li>
 <li><a class="reference internal" href="#spinning-charged-spherical-shell-and-magnetization">Spinning charged spherical shell and magnetization</a></li>
+<li><a class="reference internal" href="#lagrangian-and-hamiltonian-mechanics">Lagrangian and Hamiltonian Mechanics</a><ul>
+<li><a class="reference internal" href="#lagrangian">Lagrangian</a></li>
+<li><a class="reference internal" href="#hamiltonian">Hamiltonian</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
