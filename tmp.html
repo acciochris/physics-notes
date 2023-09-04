@@ -615,6 +615,101 @@ H = \sum_i \dot{q}_i\frac{\partial L}{\partial \dot{q}_i} - L
 </div>
 </section>
 </section>
+<section id="id1">
+<h2>Lagrangian and Hamiltonian Mechanics<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h2>
+<section id="id2">
+<h3>Lagrangian<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h3>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+L = T - V
+\]</div>
+</div>
+<p>Euler-Lagrange equation:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+\frac{d}{dt}\left(\frac{\partial L}{\partial\dot{q_i}}\right) = \frac{\partial L}{\partial q_i}
+\]</div>
+</div>
+<p>Generalized force and momentum:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+F_i &amp;= \frac{\partial L}{\partial q_i} \\
+p_i &amp;= \frac{\partial L}{\partial\dot{q_i}} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+</section>
+<section id="id3">
+<h3>Hamiltonian<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h3>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+H = \sum_i \dot{q}_i\frac{\partial L}{\partial \dot{q}_i} - L
+\]</div>
+</div>
+<p>(and rewrite it in terms of the generalized momentum <span class="math notranslate nohighlight">\(p_i\)</span>)</p>
+<p>Hamiltonian’s equations:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+\dot{q}_i &amp;= \frac{\partial H}{\partial p_i} \\
+\dot{p}_i &amp;= -\frac{\partial H}{\partial q_i} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+</section>
+</section>
+<section id="inverse-matrices">
+<h2>Inverse matrices<a class="headerlink" href="#inverse-matrices" title="Permalink to this heading">#</a></h2>
+<ul>
+<li><p>2x2
+$<span class="math notranslate nohighlight">\(
+\begin{align*}
+  A &amp; = \begin{pmatrix}
+    a &amp; b \\
+    c &amp; d \\
+  \end{pmatrix} \\
+  A^{-1} &amp; = \frac{1}{\det A}\begin{pmatrix}
+    d &amp; -b \\
+    -c &amp; a \\
+  \end{pmatrix} \\
+\end{align*}
+\)</span>$</p></li>
+<li><p>other</p>
+<p>Row-reduce</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  \left(
+  \begin{array}{ccc|ccc}
+    a &amp; b &amp; c &amp; 1 &amp; 0 &amp; 0 \\
+    d &amp; e &amp; f &amp; 0 &amp; 1 &amp; 0 \\
+    g &amp; h &amp; i &amp; 0 &amp; 0 &amp; 1 \\
+  \end{array}
+  \right)
+  \end{split}\]</div>
+</div>
+<p>to get</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+  \left(
+  \begin{array}{ccc|ccc}
+    1 &amp; 0 &amp; 0 &amp; j &amp; k &amp; l \\
+    0 &amp; 1 &amp; 0 &amp; m &amp; n &amp; o \\
+    0 &amp; 0 &amp; 1 &amp; p &amp; q &amp; r \\
+  \end{array}
+  \right)
+  \end{split}\]</div>
+</div>
+</li>
+</ul>
+</section>
 </section>
 
         </article>
@@ -703,6 +798,12 @@ H = \sum_i \dot{q}_i\frac{\partial L}{\partial \dot{q}_i} - L
 <li><a class="reference internal" href="#hamiltonian">Hamiltonian</a></li>
 </ul>
 </li>
+<li><a class="reference internal" href="#id1">Lagrangian and Hamiltonian Mechanics</a><ul>
+<li><a class="reference internal" href="#id2">Lagrangian</a></li>
+<li><a class="reference internal" href="#id3">Hamiltonian</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#inverse-matrices">Inverse matrices</a></li>
 </ul>
 </li>
 </ul>
