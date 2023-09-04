@@ -2,4 +2,5 @@
 
 ```{toctree}
 circuits
+transformer
 ```
