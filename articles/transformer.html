@@ -3,10 +3,10 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Transformers" href="transformer.html" /><link rel="prev" title="Articles" href="index.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="Circuits" href="circuits.html" />
 
     <link rel="shortcut icon" href="../_static/favicon.ico"/><!-- Generated with Sphinx 7.1.2 and Furo 2023.07.26 -->
-        <title>Circuits - Physics Notes</title>
+        <title>Transformers - Physics Notes</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=362ab14a" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?v=135e06be" />
     <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?v=36a5483c" />
@@ -162,8 +162,8 @@
 <li class="toctree-l1"><a class="reference internal" href="../problems.html">Problems I haven’t worked out</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../tmp.html">Temporary notes</a></li>
 <li class="toctree-l1 current has-children"><a class="reference internal" href="index.html">Articles</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><div class="visually-hidden">Toggle navigation of Articles</div><i class="icon"><svg><use href="#svg-arrow-right"></use></svg></i></label><ul class="current">
-<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Circuits</a></li>
-<li class="toctree-l2"><a class="reference internal" href="transformer.html">Transformers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="circuits.html">Circuits</a></li>
+<li class="toctree-l2 current current-page"><a class="current reference internal" href="#">Transformers</a></li>
 </ul>
 </li>
 </ul>
@@ -186,7 +186,7 @@
         </a>
         <div class="content-icon-container">
           <div class="edit-this-page">
-  <a class="muted-link" href="https://github.com/acciochris/physics-notes/edit/main/notes/articles/circuits.md" title="Edit this page">
+  <a class="muted-link" href="https://github.com/acciochris/physics-notes/edit/main/notes/articles/transformer.md" title="Edit this page">
     <svg aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
       <path d="M4 20h4l10.5 -10.5a1.5 1.5 0 0 0 -4 -4l-10.5 10.5v4" />
@@ -208,167 +208,153 @@
           </label>
         </div>
         <article role="main">
-          <section class="tex2jax_ignore mathjax_ignore" id="circuits">
-<h1>Circuits<a class="headerlink" href="#circuits" title="Permalink to this heading">#</a></h1>
-<p>Circuits are an important subfield in the science of electromagnetism, where batteries, wires,
-resistors, capacitors, inductors, and of course diodes play important roles. However, after studying
-circuits carefully, I seem to have discovered something that textbooks gloss over, but is crucial to
-understanding the fundamentals of circuits, especially complex ones. Hopefully, I have not made a
-terrible mistake.</p>
-<section id="current">
-<h2>Current<a class="headerlink" href="#current" title="Permalink to this heading">#</a></h2>
-<p>When a wire is connected to the two terminals of a battery (never do this at home, kids), current will
-flow in the wire.</p>
-<p>However, for the charge carriers (electrons) to start moving, we must first establish an electromagnetic
-field. When the fields are established, a <strong>steady current</strong> forms in the wire. In fact, the fields are
-also responsible for maintaining the current, so that it remains the same everywhere along the wires.
-Otherwise, charge would be piling up somewhere in the circuit. To be exact, as soon as charge begins to
-pile up, the Coulumb forces between the individual electrons force them apart, smoothing out the current.</p>
-<p>Therefore, when analyzing circuits, a rule of thumb is to assume steady current everywhere, even in
-AC circuits since EM fields establish themselves so quickly. (forget about capacitor plates, for now)</p>
-</section>
-<section id="electromotive-force">
-<h2>Electromotive force<a class="headerlink" href="#electromotive-force" title="Permalink to this heading">#</a></h2>
-<p>The source of an emf can be a battery, or a changing magnetic field (or even by manually pushing charges
-along), as long as work is done on the charges. The emf can be defined to be the <em>work done per unit charge</em>
-by a source.</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\mathcal{E} = \frac{W}{q} = \int_{\mathcal{P}} \mathbf{f}_s\cdot d\mathbf{l}
-\]</div>
-</div>
-<p>where <span class="math notranslate nohighlight">\(\mathbf{f}_s\)</span> is the force per unit charge and <span class="math notranslate nohighlight">\(\mathcal{P}\)</span> is <em>the path along the source</em>.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>There can be some subtleties, for example motional emfs. Magnetic forces indeed do no work, however, the
-force pulling on the wire does. So there is work done per unit charge.</p>
-</div>
-</section>
-<section id="resistance">
-<h2>Resistance<a class="headerlink" href="#resistance" title="Permalink to this heading">#</a></h2>
-<p>Resistance is often defined as</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-R = \frac{\Delta V}{I}
-\]</div>
-</div>
-<p>so that we would often say the potential difference between the two terminals of a resistor</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\Delta V = IR
-\]</div>
-</div>
-<p>However, consider the case where a solenoid is placed in a circular ring of wire and where the solenoid
-produces a changing magnetic field.</p>
-<p><img alt="Circular ring" src="../_images/circuit-magnetic-field.svg" /></p>
-<p>Since this is perfectly symmetric, will there be any potential difference? Since</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\nabla\times\mathbf{E} = -\frac{\partial\mathbf{B}}{\partial t}\neq 0
-\]</div>
-</div>
-<p>will there be any potential?</p>
-<p>Therefore resistance would be better defined by the equation for resistivity</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\mathbf{J} = \frac{1}{\rho}\mathbf{f}
-\]</div>
-</div>
-<p>where <span class="math notranslate nohighlight">\(\mathbf{f}\)</span> if the force per unit charge, and</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-R = \rho\frac{L}{A}
-\]</div>
-</div>
-<p>As to the original question, let us consider the energy of the individual electrons:</p>
+          <section class="tex2jax_ignore mathjax_ignore" id="transformers">
+<h1>Transformers<a class="headerlink" href="#transformers" title="Permalink to this heading">#</a></h1>
+<p><img alt="transformer" src="../_images/transformer.svg" /></p>
+<section id="step-1-determine-positive-direction-for-currents">
+<h2>Step 1: determine positive direction for currents<a class="headerlink" href="#step-1-determine-positive-direction-for-currents" title="Permalink to this heading">#</a></h2>
 <ol class="arabic simple">
-<li><p>The kinetic energy of electrons can be safely ignored, since <span class="math notranslate nohighlight">\(m_e\)</span> is so tiny.</p></li>
-<li><p>As a result of 1., the other forms of energy, namely electro<em><strong>static</strong></em> energy, heat, and work done by the
-<span class="math notranslate nohighlight">\(\nabla\times\mathbf{E} = -\dfrac{\partial\mathbf{B}}{\partial t}\)</span> field must transform into one another.</p></li>
-<li><p>In the original question, the work done by the curly <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> field perfectly transforms into heat,
-so there is no potential difference anywhere.</p></li>
+<li><p>select a positive direction for magnetic flux</p></li>
+<li><p>the positive direction for currents is the direction in which the flux produced will be positive</p></li>
 </ol>
 </section>
-<section id="inductors-and-capacitors">
-<h2>Inductors and Capacitors<a class="headerlink" href="#inductors-and-capacitors" title="Permalink to this heading">#</a></h2>
-<p>When it comes to inductors and capacitors, we need to view circuits from another perspective, so as to
-reduce our cognitive load. What we need, once again, is the aid of <em>energy</em>, but in a <em>macroscopic</em> manner.</p>
-<p>Consider this simple RLC circuit.</p>
-<p><img alt="RLC Circuit" src="../_images/circuit.svg" /></p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>When considering a circuit, it is important to give everything a sign, a sign as intuitive and as
-straightforward as possible. In this case, we will choose clockwise as the positive direction for currents
-and select the left terminal of the capacitor and the AC source to be the positive terminal.</p>
+<section id="step-2">
+<h2>Step 2<a class="headerlink" href="#step-2" title="Permalink to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>let the flux in the iron core be <span class="math notranslate nohighlight">\(\Phi\)</span></p></li>
+<li><p>write down the equations of electromagnetic induction</p></li>
+</ol>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\newcommand{\emf}{\mathcal{E}}
+\begin{align*}
+    \emf_1 &amp; = -\frac{d\Phi_1}{dt} = -N_1\frac{d\Phi}{dt} \\
+    \emf_2 &amp; = -\frac{d\Phi_2}{dt} = -N_2\frac{d\Phi}{dt} \\
+\end{align*}
+\end{split}\]</div>
 </div>
-<p>When current flows in the clockwise direction, the charge on the capacitor increases, implying the fact
-that the capacitor is gaining energy from the currunt, thus requiring the former to impede the flow
-of the latter, establishing a potential difference across the capacitor.</p>
-<p>Similarly, the inductor gains <em>magnetic</em> energy as the currunt increases, meaning the emf it induces
-must be in the opposite direction of the current. Taking into account the energy of electrons
-(see <a class="reference internal" href="#resistance">Resistance</a>), the corresponding electro<em><strong>static</strong></em> field must be in the same direction
-as the current.</p>
-<p>Thus we write (following clockwise around the circuit, considering whether the individual components encourage or oppose the current)</p>
+<p>According to <a class="reference internal" href="circuits.html"><span class="std std-doc">my last article on circuits</span></a>,</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\newcommand{\emf}{\mathcal{E}}
+\begin{align*}
+    U_1 &amp; = -\emf_1 = N_1\frac{d\Phi}{dt} \\
+    U_2 &amp; = -\emf_2 = N_2\frac{d\Phi}{dt} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>And this is where textbooks usually end. (except perhaps with another equation for COE)</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
-u - iR - \frac{q}{C} - L\frac{di}{dt} = 0
+U_1I_1 = U_2I_2
 \]</div>
 </div>
-<p>As <span class="math notranslate nohighlight">\(\dot{q} = i\)</span>, this can further be transformed into</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\frac{1}{C}q + R\dot{q} + L\ddot{q} = u
-\]</div>
-</div>
-<p>Assuming</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-u = \tilde{u} = \tilde{u}_0e^{j\omega t}
-\]</div>
-</div>
-<p>and</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-\dot{q} = \tilde{i} = \tilde{i}_0e^{j\omega t}
-\]</div>
-</div>
-<p>we have</p>
-<div class="math-wrapper docutils container">
-<div class="math notranslate nohighlight">
-\[
-(\frac{1}{j\omega C} + R + j\omega L)\tilde{i}_0 = \tilde{u}_0
-\]</div>
-</div>
-<p>(which is basically <em>the</em> most important equation to note in AC circuits, showing the impedances of capacitors,
-resistors and inductors)</p>
 </section>
-<section id="voltmeters">
-<h2>Voltmeters<a class="headerlink" href="#voltmeters" title="Permalink to this heading">#</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The following is one of <em>the</em> most crazy inventions by teachers!!!</p>
+<section id="step-3-dive-deeper">
+<h2>Step 3: dive deeper<a class="headerlink" href="#step-3-dive-deeper" title="Permalink to this heading">#</a></h2>
+<p>Let <span class="math notranslate nohighlight">\(L_i\)</span> be the self-inductance of the <span class="math notranslate nohighlight">\(i\)</span>th coil, and <span class="math notranslate nohighlight">\(M\)</span> be the mutual inductance.</p>
+<p>Then</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \Phi_1 = L_1I_1 + MI_2 \\
+    \Phi_2 = L_2I_2 + MI_1 \\
+\end{align*}
+\end{split}\]</div>
 </div>
-<p>You should definitly avoid putting voltmeters in strange circuits, <em>especially</em> those in which curly <span class="math notranslate nohighlight">\(\mathbf{E}\)</span> fields are involved. But they do appear in exams :-(</p>
-<p>First things first, what on earth do voltmeters measure???</p>
-<p><em>Answer</em>: Surprise! It does not measure the potential difference across its two terminals, since the potential
-itself is ill-defined when <span class="math notranslate nohighlight">\(\nabla\times\mathbf{E} \neq 0\)</span>. Instead, it measures</p>
+<p>Thus</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    U_1 &amp; = L_1\frac{dI_1}{dt} + M\frac{dI_2}{dt} \\
+    U_2 &amp; = L_2\frac{dI_2}{dt} + M\frac{dI_1}{dt} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Mutual Inductance reciprocity theorem:</p>
 <div class="math-wrapper docutils container">
 <div class="math notranslate nohighlight">
 \[
-\int\mathbf{E}\cdot d\mathbf{r}
+\newcommand{\V}[1]{\mathbf{#1}}
+M = \frac{\Psi_1}{I_2} = \frac{1}{I_2}\int\V{B}_2\cdot d\V{a}_1 = \frac{1}{I_2}\int\V{A}_2\cdot d\V{l}_1 = \frac{1}{I_2}\int\left(\frac{\mu_0}{4\pi}\int\frac{I_2d\V{l_2}}{r}\right)\cdot d\V{l}_1 = \frac{\mu_0}{4\pi}\iint\frac{d\V{l}_1 \cdot d\V{l}_2}{r}
 \]</div>
 </div>
-<p>And that’s it. Whenever crazy questions appear, try your best to determine this integral.</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+M = \frac{\Psi_1}{I_2} = \frac{\Psi_2}{I_1}
+\]</div>
+</div>
+</div>
+<p>Solving for <span class="math notranslate nohighlight">\(\dot{I}_1\)</span> and <span class="math notranslate nohighlight">\(\dot{I}_2\)</span>, we get</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    \dot{I}_1 &amp;= \frac{U_2L_1 - U_1M}{L_1L_2 - M^2} \\
+    \dot{I}_2 &amp;= \frac{U_1L_2 - U_2M}{L_1L_2 - M^2} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Switching to complex numbers<a class="footnote-reference brackets" href="#id2" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> (by assuming a sinusoidal signal), we get</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    j\omega\tilde{I}_{10} &amp;= \frac{\tilde{U}_{20}L_1 - \tilde{U}_{10}M}{L_1L_2 - M^2} \\
+    j\omega\tilde{I}_{20} &amp;= \frac{\tilde{U}_{10}L_2 - \tilde{U}_{20}M}{L_1L_2 - M^2} \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Below is a visualization of the four voltages and currents in Geogebra. (<a class="reference external" href="https://www.geogebra.org/calculator/hcamnfjm">unembedded version</a>)</p>
+<iframe src="https://www.geogebra.org/calculator/hcamnfjm?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+</section>
+<section id="step-4-power">
+<h2>Step 4: Power<a class="headerlink" href="#step-4-power" title="Permalink to this heading">#</a></h2>
+<p>You may have noticed that there are two additional points on the graph. They are the complex powers.</p>
+<p>Derivation:</p>
+<p>For</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align*}
+    U &amp;= U_0\cos(\omega t + \varphi_{U}) \\
+    I &amp;= I_0\cos(\omega t + \varphi_{I}) \\
+\end{align*}
+\end{split}\]</div>
+</div>
+<p>Power</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[\begin{split}
+P = UI = U_0I_0\cos(\omega t + \varphi_{U})\cos(\omega t + \varphi_{I}) \\
+= U_0I_0\frac{1}{2}\left(\cos(2\omega t + \varphi_{U} + \varphi_{I}) + \cos(\varphi_{U} - \varphi_{I})\right)
+\end{split}\]</div>
+</div>
+<p>The first term is sinusoidal and averages to zero. It’s called reactive power.
+The second term does not average to zero and is the real power.</p>
+<p>In complex form:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+S_0 = S = \frac{1}{2}\tilde{U}\tilde{I}^* = \frac{1}{2}\tilde{U}_0\tilde{I}_0^* = P_0 + jQ_0
+\]</div>
+</div>
+<p>where the real part is the real power and the complex part is the reactive power.</p>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="id2" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>We can always do so because <span class="math notranslate nohighlight">\(\Re(x)' = \Re(x')\)</span></p>
+</aside>
+</aside>
 </section>
 </section>
 
@@ -377,23 +363,15 @@ itself is ill-defined when <span class="math notranslate nohighlight">\(\nabla\t
       <footer>
         
         <div class="related-pages">
-          <a class="next-page" href="transformer.html">
-              <div class="page-info">
-                <div class="context">
-                  <span>Next</span>
-                </div>
-                <div class="title">Transformers</div>
-              </div>
-              <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
-            </a>
-          <a class="prev-page" href="index.html">
+          
+          <a class="prev-page" href="circuits.html">
               <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
                 <div class="context">
                   <span>Previous</span>
                 </div>
                 
-                <div class="title">Articles</div>
+                <div class="title">Circuits</div>
                 
               </div>
             </a>
@@ -434,12 +412,11 @@ itself is ill-defined when <span class="math notranslate nohighlight">\(\nabla\t
         <div class="toc-tree-container">
           <div class="toc-tree">
             <ul>
-<li><a class="reference internal" href="#">Circuits</a><ul>
-<li><a class="reference internal" href="#current">Current</a></li>
-<li><a class="reference internal" href="#electromotive-force">Electromotive force</a></li>
-<li><a class="reference internal" href="#resistance">Resistance</a></li>
-<li><a class="reference internal" href="#inductors-and-capacitors">Inductors and Capacitors</a></li>
-<li><a class="reference internal" href="#voltmeters">Voltmeters</a></li>
+<li><a class="reference internal" href="#">Transformers</a><ul>
+<li><a class="reference internal" href="#step-1-determine-positive-direction-for-currents">Step 1: determine positive direction for currents</a></li>
+<li><a class="reference internal" href="#step-2">Step 2</a></li>
+<li><a class="reference internal" href="#step-3-dive-deeper">Step 3: dive deeper</a></li>
+<li><a class="reference internal" href="#step-4-power">Step 4: Power</a></li>
 </ul>
 </li>
 </ul>
