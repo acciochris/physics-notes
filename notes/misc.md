@@ -1,8 +1,4 @@
-# Temporary notes
-
-> Note:
-> 
-> Notes taken here will eventually be moved to other places.
+# Miscellaneous notes
 
 ## Curve length integral
 

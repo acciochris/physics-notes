@@ -9,6 +9,6 @@ physics
 calculus
 linear-algebra
 problems
-tmp
+misc
 articles/index
 ```
