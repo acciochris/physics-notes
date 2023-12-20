@@ -707,6 +707,23 @@ $<span class="math notranslate nohighlight">\(
 </li>
 </ul>
 </section>
+<section id="uncertainty-in-measurements">
+<h2>Uncertainty in measurements<a class="headerlink" href="#uncertainty-in-measurements" title="Link to this heading">#</a></h2>
+<p>Uncertainty is calulated with the corrected sample standard deviation:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+s = \sqrt{\frac{\sum_{i=1}^N (x_i - \bar{x})^2}{N - 1}}
+\]</div>
+</div>
+<p>To determine the uncertainty of a dependent variable <span class="math notranslate nohighlight">\(y = f(\mathbf{x})\)</span>, use the following approximation:</p>
+<div class="math-wrapper docutils container">
+<div class="math notranslate nohighlight">
+\[
+s_y = \sqrt{\sum_{j=1}^m\left(\frac{\partial y}{\partial x_j}\right)^2 s_{x_j}^2}
+\]</div>
+</div>
+</section>
 </section>
 
         </article>
@@ -801,6 +818,7 @@ $<span class="math notranslate nohighlight">\(
 </ul>
 </li>
 <li><a class="reference internal" href="#inverse-matrices">Inverse matrices</a></li>
+<li><a class="reference internal" href="#uncertainty-in-measurements">Uncertainty in measurements</a></li>
 </ul>
 </li>
 </ul>
