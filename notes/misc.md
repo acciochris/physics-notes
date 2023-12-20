@@ -426,3 +426,17 @@ $$
   \end{array}
   \right)
   $$
+
+## Uncertainty in measurements
+
+Uncertainty is calulated with the corrected sample standard deviation:
+
+$$
+s = \sqrt{\frac{\sum_{i=1}^N (x_i - \bar{x})^2}{N - 1}}
+$$
+
+To determine the uncertainty of a dependent variable $y = f(\mathbf{x})$, use the following approximation:
+
+$$
+s_y = \sqrt{\sum_{j=1}^m\left(\frac{\partial y}{\partial x_j}\right)^2 s_{x_j}^2}
+$$
