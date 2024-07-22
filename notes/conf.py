@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Physics Notes'
-copyright = '2022, Chris Liu'
+copyright = '2024, Chris Liu'
 author = 'Chris Liu'
 
 
